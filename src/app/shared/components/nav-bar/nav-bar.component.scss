@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 20px;
   background-color: #353535;
-  color: #fff;
+  color: #c0c0c0;
 
   .logo {
     display: flex;
@@ -35,44 +35,51 @@
   }
 }
 
+//MOBILE
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: brown;
+    background-color: #353535;
 
     .nav-list {
       display: none;
     }
 
-
-
     img {
-      height: 25px;
+      height: 1.8em;
     }
 
     .menu-icon {
-      font-size: 25px;
-      color: #353535;
+      font-size: 2em;
+      color: #c0c0c0;
+
+      span {
+        display: block;
+      }
     }
   }
 
   .nav-list-mobile {
-    // height: 20vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: brown;
+    background-color: #353535;
+    color: #c0c0c0;
+    animation-name: translateX;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
 
     .nav-item-mobile {
-      padding: 10px 0px;
+      padding: 1em 0;
     }
   }
 }
 
+//TABLET / NOTEBOOK
 @media only screen and (min-width: 768px) and (max-width: 1240px) {
   .navbar {
-    background-color: green;
+    background-color: #353535;
   }
 
   .menu-icon {
@@ -80,9 +87,10 @@
   }
 }
 
+//ESCRITORIO
 @media only screen and (min-width: 1240px) {
   .navbar {
-    background-color: red;
+    background-color: #353535;
   }
 
   .menu-icon {
@@ -92,5 +100,14 @@
   img:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+}
+
+@keyframes translateX {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
