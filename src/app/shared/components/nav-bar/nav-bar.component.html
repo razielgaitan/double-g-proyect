@@ -1,29 +1,24 @@
 <nav class="navbar">
-  <div class="logo">
-    <img
-      src="../../../../assets/svg/g-letter.svg"
-      alt="insertar SVG con la etiqueta image"
-    />
+  <!-- Primera línea: Enlaces de texto -->
+  <div class="top-line">
+    <div class="logo">
+      <img src="../../../../assets/logo/logo.svg" alt="insertar SVG con la etiqueta image" />
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item" ><a>Servicios</a></li>
+      <li class="nav-item"><a routerLink="/about">Nosotros</a></li>
+      <li class="nav-item"><a routerLink="/contact">Contacto</a></li>
+    </ul>
   </div>
-  <ul class="nav-list">
-    <li class="nav-item"><a routerLink="/">Inicio</a></li>
-    <li class="nav-item"><a routerLink="/about">Servicios</a></li>
-    <li class="nav-item"><a routerLink="/contact">Somos</a></li>
-    <li class="nav-item"><a routerLink="/contact">Contacto</a></li>
-  </ul>
 
-  <div class="menu-icon">
-    <span class="material-symbols-rounded" (click)="openMenu()"> 
-      menu
-    </span>
+  <!-- Segunda línea: Iconos -->
+  <div class="bottom-line">
+    <div class="icon"><a href="#"><fa-icon matTooltip="Alojamientos" [icon]="faBed"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Rent a car" [icon]="faCar"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Vuelos" [icon]="faPlaneDeparture"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Parques Temáticos" [icon]="faWandMagicSparkles"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Luxury" [icon]="faStar"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Cruceros" [icon]="faShip"></fa-icon></a></div>
+    <div class="icon"><a href="#"><fa-icon matTooltip="Experiencia 360°" [icon]="faArrowsRotate"></fa-icon></a></div>
   </div>
 </nav>
-
-<div *ngIf="showMenu">
-  <ul class="nav-list-mobile">
-    <li class="nav-item-mobile"><a routerLink="/">Inicio</a></li>
-    <li class="nav-item-mobile"><a routerLink="/about">Servicios</a></li>
-    <li class="nav-item-mobile"><a routerLink="/contact">Somos</a></li>
-    <li class="nav-item-mobile"><a routerLink="/contact">Contacto</a></li>
-  </ul>
-</div>
