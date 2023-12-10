@@ -8,6 +8,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
+import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NewsletterComponent } from './components/forms/newsletter/newsletter.co
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
+    ContactoNewsletterComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { NewsletterComponent } from './components/forms/newsletter/newsletter.co
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
+    ContactoNewsletterComponent
   ]
 })
 export class SharedModule { }
