@@ -9,6 +9,7 @@ import { ImgCardComponent } from './components/cards/img-card/img-card.component
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
+import { ContactoComponent } from './components/forms/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
     OpinionCardComponent,
     NewsletterComponent,
     ContactoNewsletterComponent,
+    ContactoComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
-    ContactoNewsletterComponent
+    ContactoNewsletterComponent,
+    ContactoComponent
   ]
 })
 export class SharedModule { }
