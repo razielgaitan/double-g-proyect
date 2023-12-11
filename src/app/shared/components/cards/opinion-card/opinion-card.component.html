@@ -1,6 +1,6 @@
 <div class="contenedor">
   <div #slideTrack class="slide-track">
-    <div class="blog_post" *ngFor="let post of blogPosts">
+    <div class="blog_post" *ngFor="let post of blogPosts.slice(0, maxCardsToShow)">
       
       <div class="img_pod">
         <img [src]="post.imageUrl" alt="Imagen de la opinión">

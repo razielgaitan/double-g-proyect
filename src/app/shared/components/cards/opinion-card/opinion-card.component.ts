@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-opinion-card',
@@ -46,9 +47,23 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
     }
   ];
 
+  maxCardsToShow: number = 6; 
+
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {   
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if (window.innerWidth <= 768) {
+      this.maxCardsToShow = 2; 
+    } else if(window.innerWidth <= 485) {
+      this.maxCardsToShow = 1;
+    }else {
+      this.maxCardsToShow = 6;
+    }
+  }
 
   ngAfterViewInit(): void {
     const slideTrackElement = this.slideTrack.nativeElement;
