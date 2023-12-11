@@ -53,7 +53,7 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
 
   ngOnInit(): void {   
   }
-
+/*
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     if (window.innerWidth <= 768) {
@@ -64,7 +64,7 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
       this.maxCardsToShow = 6;
     }
   }
-
+*/
   ngAfterViewInit(): void {
     const slideTrackElement = this.slideTrack.nativeElement;
 
