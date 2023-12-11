@@ -48,11 +48,18 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   ngAfterViewInit(): void {
-   
+    const slideTrackElement = this.slideTrack.nativeElement;
+
+    slideTrackElement.addEventListener('mouseover', () => {
+      slideTrackElement.style.animationPlayState = 'paused';
+    });
+
+    slideTrackElement.addEventListener('mouseout', () => {
+      slideTrackElement.style.animationPlayState = 'running';
+    });
   }
 
 
