@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -9,6 +9,8 @@ import { ImgCardComponent } from './components/cards/img-card/img-card.component
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
+import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
     OpinionCardComponent,
     NewsletterComponent,
     ContactoNewsletterComponent,
+    ExperienceSectionComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     MatIconModule,
     MatTooltipModule,
+    YouTubePlayerModule
   ],
   exports: [
     NavBarComponent,
@@ -31,7 +35,9 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
-    ContactoNewsletterComponent
-  ]
+    ContactoNewsletterComponent,
+    ExperienceSectionComponent
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
 export class SharedModule { }
