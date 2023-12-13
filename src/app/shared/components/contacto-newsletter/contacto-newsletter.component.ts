@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-contacto-newsletter',
@@ -9,16 +9,22 @@ export class ContactoNewsletterComponent {
   private contactCardFlipped = false;
   private newsletterCardFlipped = false;
 
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
+
   flipContactCard(): void {
-    if (!this.contactCardFlipped) {
-      this.contactCardFlipped = true;
-    }
+    this.contactCardFlipped = true;
+
+    this.renderer.listen('document', 'mouseup', () => {
+      this.contactCardFlipped = false;
+    });
   }
 
   flipNewsletterCard(): void {
-    if (!this.newsletterCardFlipped) {
-      this.newsletterCardFlipped = true;
-    }
+    this.newsletterCardFlipped = true;
+
+    this.renderer.listen('document', 'mouseup', () => {
+      this.newsletterCardFlipped = false;
+    });
   }
 
   isContactCardFlipped(): boolean {
