@@ -9,7 +9,10 @@ import { ImgCardComponent } from './components/cards/img-card/img-card.component
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
+
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
+import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { ExperienceSectionComponent } from './components/experience-section/expe
     NewsletterComponent,
     ContactoNewsletterComponent,
     ExperienceSectionComponent,
+    PrimaryButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +38,8 @@ import { ExperienceSectionComponent } from './components/experience-section/expe
     OpinionCardComponent,
     NewsletterComponent,
     ContactoNewsletterComponent,
-    ExperienceSectionComponent
+    ExperienceSectionComponent,
+    PrimaryButtonComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
