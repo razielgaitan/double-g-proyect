@@ -10,7 +10,6 @@ import { OpinionCardComponent } from './components/cards/opinion-card/opinion-ca
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
-import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,6 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     FontAwesomeModule,
     MatIconModule,
     MatTooltipModule,
-    YouTubePlayerModule
   ],
   exports: [
     NavBarComponent,
