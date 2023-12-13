@@ -6,7 +6,7 @@
 }
 
 $animationSpeed: 15s;
-$blogPostWidth: 1080px; 
+$blogPostWidth: 990px; 
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
@@ -27,7 +27,7 @@ $blogPostWidth: 1080px;
   justify-content: center;
   align-items: center;
 
-  scroll-padding: 0 15%; // lo agregue, no se si hace falta
+
   
   &::before,
 	&::after {
