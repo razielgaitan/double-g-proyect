@@ -1,10 +1,17 @@
-<div class="blog_post">
-    <div class="img_pod">
-      <img src="https://pbs.twimg.com/profile_images/890901007387025408/oztASP4n.jpg" alt="random image">
+<div class="contenedor">
+  <div #slideTrack class="slide-track">
+    <div class="blog_post" *ngFor="let post of blogPosts.slice(0, maxCardsToShow)">
+      
+      <div class="img_pod">
+        <img [src]="post.imageUrl" alt="Imagen de la opinión">
+      </div>
+      
+      <div class="container_copy">
+        <h3>{{ post.date }}</h3>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+      </div>
+      <div class="coloreado"></div>
     </div>
-    <div class="container_copy">
-      <h3>28 de Noviembre 2023</h3>
-      <h1>El mejor viaje...</h1>
-      <p>"Gracias a Double G pude vivir una experiencia llena de emociones y conocer lugares mágicos."</p>
-    </div>
+  </div>
 </div>
