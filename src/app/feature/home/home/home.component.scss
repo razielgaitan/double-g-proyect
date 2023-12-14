@@ -80,21 +80,30 @@
 }
 
 .opinion-section {
-  height: 100vh;
+  height: 550px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  margin-bottom: 100px;
 
   .title {
-    margin-top: 10vh;
+    margin-top: 150px;
+    padding: 50px;
     text-align: center;
   }
 
   .opinions {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex: 0 0 calc(50% - 40px); /* Cambia a dos elementos por fila en dispositivos más pequeños */
+  }
+
+  @media screen and (max-width: 480px) {
+    flex: 0 0 calc(100% - 40px); /* Un elemento por fila en dispositivos aún más pequeños */
   }
 }
 
@@ -103,15 +112,6 @@
   display: grid;
   place-items: center;
   margin-bottom: 10vh;
-}
-
-.footer {
-  border-top: solid 2px #4b4b4bff;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 //ANIMACIONES

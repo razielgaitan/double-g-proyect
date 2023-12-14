@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -8,8 +8,13 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
 import { ContactoComponent } from './components/forms/contacto/contacto.component';
+
+import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
+import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +23,11 @@ import { ContactoComponent } from './components/forms/contacto/contacto.componen
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
-    ContactoNewsletterComponent,
+    FooterComponent,
+    ContactoNewsletterComponent
     ContactoComponent,
+    ExperienceSectionComponent,
+    PrimaryButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -35,6 +43,12 @@ import { ContactoComponent } from './components/forms/contacto/contacto.componen
     NewsletterComponent,
     ContactoNewsletterComponent,
     ContactoComponent
+    FooterComponent,
   ]
+    ContactoNewsletterComponent,
+    ExperienceSectionComponent,
+    PrimaryButtonComponent
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
 export class SharedModule { }

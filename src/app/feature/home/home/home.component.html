@@ -1,4 +1,5 @@
 <app-nav-bar></app-nav-bar>
+
 <div class="banner">
   <div class="title">
     <div>DOUBLE G</div>
@@ -14,27 +15,10 @@
 
 <div #firstSection class="container text-center" id="firstSection">
   <div class="row align-items-center" style="height: 100vh">
-    <div class="col img-first-section" style="height: 60vh">
-      <img
-        src="../../../../assets/images/miami.jpg"
-        alt="insertar SVG con la etiqueta image"
-        width="100%"
-        height="100%"
-        id="experiencie-img"
-      />
-    </div>
-    <div class="col text-color-gray">
-      <div><h1>Vive la Experiencia 360°</h1></div>
-      <div>
-        Somos Double G y junto a nosotros podés vivir la Experiencia 360° donde
-        creamos un itinerario completo y personalizado que refleje tus sueños de
-        viaje.
-      </div>
-      <div style="margin-top: 10px">
-        <button type="button" class="btn btn-outline-secondary">
-          Ir a la Sección
-        </button>
-      </div>
+
+    <div>
+      <app-experience-section></app-experience-section>
+
     </div>
   </div>
 </div>
@@ -104,23 +88,11 @@
   </div>
   <div class="opinions">
     <app-opinion-card></app-opinion-card>
-    <app-opinion-card></app-opinion-card>
-    <app-opinion-card></app-opinion-card>
   </div>
 </div>
 
 <app-contacto-newsletter></app-contacto-newsletter>
-<div class="footer">
-  <div>
-    <span>Nuestras Redes</span> 
-  </div>
-  <div>
-    <span>Instagram</span>
-    <span>Facebook</span>
-    <span>WhatsApp</span>
-  </div>
-  <div>
-    Copyright
-  </div>
-</div>
+
+
+<app-footer></app-footer>
 

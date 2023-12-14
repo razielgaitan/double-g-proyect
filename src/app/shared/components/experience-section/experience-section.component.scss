@@ -1,0 +1,56 @@
+.contenedor {
+  display: flex;
+  width: 100%;
+max-width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex: 0 0 calc(100% - 20px);
+}
+
+.first-part {
+  display: flex;
+  align-items: center;
+
+}
+
+.imagen img {
+  margin-right: 20px; 
+  max-width: 680px; 
+  height: auto; 
+  margin-bottom: 30px;
+}
+
+h1.title {
+  font-size: 5em;
+  margin: 0;
+  text-align: start;
+  margin-left: 15px
+}
+
+.second-part{
+  display: flex;
+  align-items: center;
+}
+
+.video{
+  overflow: hidden;
+  margin-left: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.text{
+  width: 500px;
+  margin-right: 50px;
+  margin-left: 30px;
+  padding: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+iframe{
+  top: 0;
+  left: 0;
+  margin-left:100px
+}
