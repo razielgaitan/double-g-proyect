@@ -10,6 +10,7 @@ import { OpinionCardComponent } from './components/cards/opinion-card/opinion-ca
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
+import { ContactoComponent } from './components/forms/contacto/contacto.component';
 
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
@@ -23,7 +24,8 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     OpinionCardComponent,
     NewsletterComponent,
     FooterComponent,
-    ContactoNewsletterComponent,
+    ContactoNewsletterComponent
+    ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
   ],
@@ -39,6 +41,8 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
+    ContactoNewsletterComponent,
+    ContactoComponent
     FooterComponent,
   ]
     ContactoNewsletterComponent,
