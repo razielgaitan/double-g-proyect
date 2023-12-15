@@ -6,6 +6,7 @@ max-width: 1500px;
   box-sizing: border-box;
   flex-direction: column;
   flex: 0 0 calc(100% - 20px);
+  z-index: 0;
 }
 
 .first-part {
