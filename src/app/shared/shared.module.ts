@@ -8,8 +8,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
 import { OpinionCardComponent } from './components/cards/opinion-card/opinion-card.component';
 import { NewsletterComponent } from './components/forms/newsletter/newsletter.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ContactoNewsletterComponent } from './components/contacto-newsletter/contacto-newsletter.component';
-
+import { ContactoComponent } from './components/forms/contacto/contacto.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
 
@@ -21,7 +22,9 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
+    FooterComponent,
     ContactoNewsletterComponent,
+    ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
   ],
@@ -37,9 +40,11 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ImgCardComponent,
     OpinionCardComponent,
     NewsletterComponent,
+    FooterComponent,
     ContactoNewsletterComponent,
+    ContactoComponent,
     ExperienceSectionComponent,
-    PrimaryButtonComponent
+    PrimaryButtonComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
