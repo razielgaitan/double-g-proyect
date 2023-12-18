@@ -15,6 +15,7 @@ import { ExperienceSectionComponent } from './components/experience-section/expe
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
 
 
+//import { YouTubePlayerModule } from '@angular/youtube-player';
 @NgModule({
   declarations: [
     NavBarComponent,
