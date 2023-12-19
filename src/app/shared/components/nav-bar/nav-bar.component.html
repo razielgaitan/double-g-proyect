@@ -1,9 +1,18 @@
+<div class="contenedor">
+<div class="first-nav">
 <nav class="navbar">
   <!-- Primera línea: Enlaces de texto -->
   <div class="top-line">
     <div class="logo">
-      <img src="../../../../assets/logo/logo.svg" alt="insertar SVG con la etiqueta image" />
+      <img src="../../../../assets/logo/Logo - Negro.svg" alt="insertar SVG con la etiqueta image" />
     </div>
+    <div class="media-icons">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook social-icon"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+      <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok social-icon"></i></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp social-icon"></i></a>
+      <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube social-icon"></i></a>
+  </div>
     <ul class="nav-list">
       <li class="nav-item" ><a>Servicios</a></li>
       <li class="nav-item"><a routerLink="/about">Nosotros</a></li>
@@ -11,18 +20,55 @@
     </ul>
   </div>
 </nav>
+</div>
   <!-- Segunda línea: Iconos -->
-  <div class="sticky">
+  <div class="second-nav">
   <nav class="navbar"> 
   <div class="bottom-line">
-    <div class="icon"><a href="#"><fa-icon matTooltip="Alojamientos" [icon]="faBed"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Rent a car" [icon]="faCar"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Vuelos" [icon]="faPlaneDeparture"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Parques Temáticos" [icon]="faWandMagicSparkles"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Luxury" [icon]="faStar"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Cruceros" [icon]="faShip"></fa-icon></a></div>
-    <div class="icon"><a href="#"><fa-icon matTooltip="Experiencia 360°" [icon]="faArrowsRotate"></fa-icon></a></div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionBedOutline"></ng-icon>
+        <span class="icon-text">Alojamientos</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionCarSportOutline"></ng-icon>
+        <span class="icon-text">Rent a Car</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionAirplaneOutline"></ng-icon>
+        <span class="icon-text">Vuelos</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionColorWandOutline"></ng-icon>
+        <span class="icon-text">Parques</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionStarOutline"></ng-icon>
+        <span class="icon-text">Luxury</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionBoatOutline"></ng-icon>
+        <span class="icon-text">Cruceros</span>
+      </a>
+    </div>
+    <div class="icon">
+      <a href="#" class="icon-link">
+        <ng-icon name="ionEarthOutline"></ng-icon>
+        <span class="icon-text">Experiencia360°</span>
+      </a>
+    </div>
   </div>
 </nav>
 
+</div>
 </div>
