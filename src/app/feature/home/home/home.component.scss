@@ -67,25 +67,17 @@ app-nav-bar{
 }
 
 #firstSection {
-  .img-first-section {
-    overflow: hidden;
-    border-radius: 8px;
-
-    img {
-      border-radius: 8px;
-      transition: all 1.5s ease;
-      filter: brightness(70%);
-
-      &:hover {
-        transform: scale(1.25);
-        border-radius: 8px;
-        transition: all 1.5s ease;
-        filter: brightness(100%);
-      }
-    }
-  }
+  min-height: 100vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#secondSection {
+  margin-top: 100px;
+}
 .opinion-section {
   height: 550px;
   width: 100%;
