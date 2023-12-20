@@ -13,6 +13,7 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
 import { ContactoComponent } from './components/forms/contacto/contacto.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
 
 
 //import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -28,6 +29,7 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
+    ServiciosComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +48,7 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
+    ServiciosComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
