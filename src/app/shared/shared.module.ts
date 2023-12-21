@@ -13,6 +13,7 @@ import { ContactoNewsletterComponent } from './components/contacto-newsletter/co
 import { ContactoComponent } from './components/forms/contacto/contacto.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
+import { FloatingWhatsappComponent } from './components/floating-whatsapp/floating-whatsapp.component';
 
 
 //import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -28,6 +29,7 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
+    FloatingWhatsappComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +48,7 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
     ContactoComponent,
     ExperienceSectionComponent,
     PrimaryButtonComponent,
+    FloatingWhatsappComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
