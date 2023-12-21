@@ -14,6 +14,8 @@ import { ContactoComponent } from './components/forms/contacto/contacto.componen
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
 import { FloatingWhatsappComponent } from './components/floating-whatsapp/floating-whatsapp.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+
 
 
 //import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -30,6 +32,8 @@ import { FloatingWhatsappComponent } from './components/floating-whatsapp/floati
     ExperienceSectionComponent,
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
+    ServiciosComponent,
+
   ],
   imports: [
     CommonModule,
@@ -49,6 +53,7 @@ import { FloatingWhatsappComponent } from './components/floating-whatsapp/floati
     ExperienceSectionComponent,
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
+    ServiciosComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
