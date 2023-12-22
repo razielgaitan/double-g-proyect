@@ -119,6 +119,37 @@
 }
 
 
+.media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.media-icons a {
+  text-decoration: none;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.media-icons a i {
+  font-size: 18px;
+  color: black;
+  opacity: 0.9;
+  transition: color 0.5s;
+}
+
+.media-icons a:hover {
+  background-color: var(--primary-color);
+}
+
+.media-icons a:hover i {
+  color: black;
+}
+
+
 .icon-link {
   text-decoration: none; 
   color: black; 
@@ -157,13 +188,57 @@ img:hover {
   }
 }
 
-@media screen and (max-width: 906px) {
+@media screen and (max-width: 980px) {
   .navbar {
     height: auto;
     justify-content: center;
+    position: relative;
   }
 
+.social-nav{
+  max-height: 400px;
+  height: 100%;
+  background-color: rgb(15, 15, 15);
+}
 
+.mobile-social{
+  max-height: 30px;
+  margin-top: 30%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mobile-social a {
+  text-decoration: none;
+  padding: 8px;
+  background-color: var(--primary-color);
+  margin: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.mobile-social a i {
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.9;
+  transition: color 0.5s;
+}
+
+  button{
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+
+  .logo{
+    justify-content: left;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+  .nav-list {
+    display: none;
+  }
 
   .first-nav {
     height: auto;
@@ -172,10 +247,11 @@ img:hover {
 
   .media-icons {
     padding-left: 0;
+    display: none;
   }
 
   .top-line {
-    flex-direction: column;
+
     align-items: center;
 
     width: 100%;
@@ -199,12 +275,12 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Alinea el texto al centro */
+    text-align: center; 
   }
 
   .icon ng-icon {
-    order: -1; /* Cambia el orden para mover el ícono al principio */
-    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    order: -1; 
+    margin-right: 5px; 
   }
 
   .icon-text {
@@ -212,4 +288,32 @@ img:hover {
     align-items: center;
     justify-content: center;
   }
+
+  .nav-item{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-icon-mobile{
+    margin-right: 10px;
+  }
+  .side-menu {
+    position: fixed;
+    top: 9vh; 
+    bottom: 0;
+    left: -70%;
+    width: 70%; 
+    background-color: #fff;
+    transition: left 0.3s ease; 
+    z-index: -1; 
+    padding-top: 20px; 
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.75);
+  }
+
+  .side-menu.show {
+    left: 0;
+  }
 }
+

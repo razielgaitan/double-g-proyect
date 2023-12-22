@@ -24,7 +24,7 @@ export class NavBarComponent implements OnInit{
   }
 
   checkScreenWidth() {
-    this.isMobile = window.innerWidth < 768; // Cambiar el valor según tu necesidad de tamaño de pantalla
+    this.isMobile = window.innerWidth < 990; // Cambiar el valor según tu necesidad de tamaño de pantalla
     if (!this.isMobile) {
       this.isMenuOpen = false; // Cierra el menú en pantallas más grandes
     }
