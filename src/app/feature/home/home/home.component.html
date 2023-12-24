@@ -1,20 +1,17 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="banner">
-  <div class="title">
-    <div>DOUBLE G</div>
-    <div class="sub-title">Tu Viaje Soñado</div>
-  </div>
 
-  <div class="navigation-arrow">
-    <a href="#"
-      ><fa-icon [icon]="faChevronDown" (click)="scrollDown()"></fa-icon
-    ></a>
-  </div>
+<div class="">
+  <app-carousel></app-carousel>
+</div>
+<div class="navigation-arrow">
+  <a href="#"
+    ><fa-icon [icon]="faChevronDown" (click)="scrollDown()"></fa-icon
+  ></a>
 </div>
 
 <div id="firstSection">
-    <app-experience-section></app-experience-section>
+  <app-experience-section></app-experience-section>
 </div>
 
 <app-servicios></app-servicios>
@@ -22,7 +19,7 @@
 
 
 <div class="opinion-section">
-  <div>
+  <div class="opinion-title">
     <h1 class="text-color-gray title">Opiniones de nuestros clientes</h1>
   </div>
   <div class="opinions">
