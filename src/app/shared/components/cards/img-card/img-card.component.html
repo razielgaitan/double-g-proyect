@@ -1,11 +1,10 @@
-<div class="service-card">
-  <div class="card-content" (click)="flipCard()" [class.flipped]="isCardFlipped()">
+<div class="service-card" (mouseenter)="flipCard(true)" (mouseleave)="flipCard(false)">
+  <div class="card-content" [class.flipped]="isCardFlipped()">
     <div class="card-front">
       <img [src]="cardImg" class="card-img-top" alt="...">
       <h5 class="card-title">{{ cardTitle }}</h5>
     </div>
 
-    
     <div class="card-back">
       <p class="card-text">
         {{ cardDesc }}
@@ -14,6 +13,5 @@
         <app-primary-button text="Conocer la Sección"></app-primary-button>
       </div>
     </div>
-    
   </div>
 </div>

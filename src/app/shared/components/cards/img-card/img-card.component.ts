@@ -10,20 +10,16 @@ export class ImgCardComponent {
   @Input() cardImg: string = '';
   @Input() cardDesc: string = '';
 
-  private CardFlipped = false;
+  private cardFlipped = false;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
-  flipCard(): void {
-    this.CardFlipped = true;
-
-    this.renderer.listen('document', 'mouseup', () => {
-      this.CardFlipped = false;
-    });
+  flipCard(isFlipped: boolean): void {
+    this.cardFlipped = isFlipped;
   }
 
   isCardFlipped(): boolean {
-    return this.CardFlipped;
+    return this.cardFlipped;
   }
 
 }
