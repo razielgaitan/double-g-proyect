@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   max-width: 1400px;
-  min-height: 100vh;
   max-height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
