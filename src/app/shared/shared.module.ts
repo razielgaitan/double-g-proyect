@@ -17,6 +17,7 @@ import { ExperienceSectionComponent } from './components/experience-section/expe
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
 import { FloatingWhatsappComponent } from './components/floating-whatsapp/floating-whatsapp.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { VideoExperiencieComponent } from './components/video-experiencie/video-experiencie.component';
 
 
 
@@ -35,6 +36,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
     ServiciosComponent,
+    VideoExperiencieComponent,
 
   ],
   imports: [
@@ -57,6 +59,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
     ServiciosComponent,
+    VideoExperiencieComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
