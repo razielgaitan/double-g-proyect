@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   flex-direction: column; 
-  height: 9vh;
+  height: 85px;
   width: 100%;
   
   justify-content: center;
@@ -18,8 +18,15 @@
 
 .first-nav{
   background-color: var(--primary-color);
-  height: 11vh;
+  height: 60px;
   top:100px;
+}
+
+.container-right{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: center;
 }
 
 .second-nav{
@@ -40,6 +47,8 @@
   }
 }
 
+
+
 .top-line {
   display: flex;
   justify-content: space-between;
@@ -47,6 +56,7 @@
   width: 80%;
   
 }
+
 
 .bottom-line{
   display: flex;
@@ -57,21 +67,26 @@
   height: 100%;
 }
 
+.logo{
+  margin-bottom: auto;
+}
+
 .top-line .logo img {
-  height: 3rem;
+  height: 35px;
   transition: all 0.3s;
 }
 
 .nav-list {
-  margin-top: 20px;
   display: flex;
   gap: 1em;
   font-size: 18px;
   cursor: pointer;
+  margin-bottom: 24px;
+  margin-left:auto;
 }
 
 .nav-item {
-  padding: 8px 15px;
+  padding: 2px 15px;
   position: relative;
 
   &::after {
@@ -91,10 +106,14 @@
   }
 }
 
+.nav-item a {
+  font-size: 16px;
+}
+
 .bottom-line {
   display: flex;
-  gap: 1em;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 28px;
 
 }
 
@@ -104,7 +123,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1px 50px;
+  padding: 1px 35px;
   justify-content: space-between;
 }
 
@@ -123,6 +142,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  padding-right:5px;
 }
 
 .media-icons a {
@@ -132,6 +153,7 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
+
 }
 
 .media-icons a i {
@@ -146,7 +168,7 @@
 }
 
 .media-icons a:hover i {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -160,12 +182,13 @@
 }
 
 ng-icon{
-  padding-bottom: 32px;
-  font-size: 25px;
+  padding-bottom: 45px;
+  font-size: 32px;
 }
 
 .media-icons{
   padding-left: 20%;
+
 }
 
 .social-icon{
