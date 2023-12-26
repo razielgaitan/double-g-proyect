@@ -1,6 +1,5 @@
-import { Component, ViewChild, OnInit, ElementRef, AfterViewInit, ChangeDetectorRef, OnDestroy, HostListener, Renderer2 } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-
+// experience-section.component.ts
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -8,7 +7,20 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './experience-section.component.html',
   styleUrls: ['./experience-section.component.scss'],
   animations: [
-    trigger('fadeInFromLeft', [
+    trigger('fadeInFromRight', [
+      state('initial', style({
+        opacity: 0,
+        transform: 'translateX(100%)'
+      })),
+      state('final', style({
+        opacity: 1,
+        transform: 'translateX(0)'
+      })),
+      transition('initial => final', [
+        animate('800ms')
+      ]),
+    ]),
+    trigger('fadeInLeft', [
       state('initial', style({
         opacity: 0,
         transform: 'translateX(-100%)'
@@ -19,99 +31,61 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       })),
       transition('initial => final', animate('800ms')),
     ]),
-    trigger('fadeInFromTop', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateY(-100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateY(0)'
-      })),
-      transition('initial => final', animate('800ms')),
+    trigger('fadeInFromRightSequence', [
+      transition('* => *', [
+        animate('0ms', style({ opacity: 0, transform: 'translateX(100%)' })),
+        animate('300ms', style({ opacity: 1, transform: 'translateX(0)' })),
+        animate('300ms', style({ opacity: 1, transform: 'translateX(0)' })),
+        animate('100ms', style({ opacity: 1, transform: 'translateX(0)' })),
+        animate('100ms', style({ opacity: 1, transform: 'translateX(0)' })),
+      ]),
     ]),
-    trigger('fadeInFromBottom', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateY(100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateY(0)'
-      })),
-      transition('initial => final', animate('800ms')),
-    ]),
-    trigger('fadeInFromRight', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateX(100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateX(0)'
-      })),
-      transition('initial => final', animate('800ms')),
-    ]),
-  ]
+  ],
 })
 export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
-  @ViewChild('videoPlayer') videoPlayer: ElementRef | undefined;
-  videoId = '9vfNDed835A';
-
-  fadeInFromLeftState = 'initial';
-  fadeInFromTopState = 'initial';
-  fadeInFromBottomState = 'initial';
-  fadeInFromRightState = 'initial';
-
-  firstPartVisible = false;
-  secondPartVisible = false;
+  fadeInFromRightStates = ['initial', 'initial', 'initial', 'initial'];
+  fadeInLeftState = 'initial';
 
   private intersectionObserver: IntersectionObserver | undefined;
 
-  ngAfterViewInit() {
-    const video = this.videoPlayer?.nativeElement as HTMLIFrameElement;
-    video.src = `https://www.youtube.com/embed/${this.videoId}?autoplay=1`;
-
-    this.initializeIntersectionObserver();
+  async ngAfterViewInit() {
+    await this.initializeIntersectionObserver();
   }
 
   ngOnDestroy() {
     this.disconnectIntersectionObserver();
   }
 
-  private initializeIntersectionObserver() {
+  private async initializeIntersectionObserver() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5,
+      threshold: 0.2,
     };
 
     this.intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains('first-part')) {
-              this.firstPartVisible = true;
-            } else if (entry.target.classList.contains('second-part')) {
-              this.secondPartVisible = true;
-            }
-            this.startAnimations();
+      async (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && entry.target.classList.contains('images-container')) {
+            await this.startImageAnimations();
           }
-        });
+          if (entry.isIntersecting && entry.target.classList.contains('info')) {
+            await this.startInfoAnimations();
+          }
+        }
       },
       options
     );
 
-    // Observa las partes del componente
-    const firstPart = document.querySelector('.first-part');
-    const secondPart = document.querySelector('.second-part');
+    const imagesContainer = document.querySelector('.images-container');
+    const infoContainer = document.querySelector('.info');
 
-    if (firstPart) {
-      this.intersectionObserver.observe(firstPart);
+    if (imagesContainer && this.intersectionObserver) {
+      this.intersectionObserver.observe(imagesContainer);
     }
 
-    if (secondPart) {
-      this.intersectionObserver.observe(secondPart);
+    if (infoContainer && this.intersectionObserver) {
+      this.intersectionObserver.observe(infoContainer);
     }
   }
 
@@ -121,15 +95,138 @@ export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  private startAnimations() {
-    if (this.firstPartVisible) {
-      this.fadeInFromLeftState = 'final';
-      this.fadeInFromTopState = 'final';
-    }
+  private async startImageAnimations() {
+    await this.delay(0);
+    this.fadeInFromRightStates[0] = 'final';
 
-    if (this.secondPartVisible) {
-      this.fadeInFromBottomState = 'final';
-      this.fadeInFromRightState = 'final';
-    }
+    await this.delay(100); // Retraso ajustado para #image-2
+    this.fadeInFromRightStates[1] = 'final';
+
+    await this.delay(200); // Retraso ajustado para #image-3
+    this.fadeInFromRightStates[2] = 'final';
+
+    await this.delay(300); // Retraso ajustado para #image-4
+    this.fadeInFromRightStates[3] = 'final';
+  }
+
+  private async startInfoAnimations() {
+    // Lógica para las animaciones de info (fadeInLeft, por ejemplo)
+    // Ajusta según tus necesidades
+    await this.delay(0);
+    this.fadeInLeftState = 'final';
+  }
+
+  private delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
+
+
+
+/*
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+@Component({
+  selector: 'app-experience-section',
+  templateUrl: './experience-section.component.html',
+  styleUrls: ['./experience-section.component.scss'],
+  animations: [
+    trigger('fadeInFromRight', [
+      state('initial', style({
+        opacity: 0,
+        transform: 'translateX(100%)'
+      })),
+      state('final', style({
+        opacity: 1,
+        transform: 'translateX(0)'
+      })),
+      transition('initial => final', [
+        animate('800ms')
+      ]),
+    ]),
+    trigger('fadeInLeft', [
+      state('initial', style({
+        opacity: 0,
+        transform: 'translateX(-100%)'
+      })),
+      state('final', style({
+        opacity: 1,
+        transform: 'translateX(0)'
+      })),
+      transition('initial => final', animate('800ms')),
+    ]),
+  ],
+})
+export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
+  fadeInFromRightStates = ['initial', 'initial', 'initial', 'initial'];
+  fadeInLeftState = 'initial';
+
+  private intersectionObserver: IntersectionObserver | undefined;
+
+  async ngAfterViewInit() {
+    await this.initializeIntersectionObserver();
+  }
+
+  ngOnDestroy() {
+    this.disconnectIntersectionObserver();
+  }
+
+  private async initializeIntersectionObserver() {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2,
+    };
+
+    this.intersectionObserver = new IntersectionObserver(
+      async (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && entry.target.classList.contains('photos')) {
+            await this.startImageAnimations();
+          }
+          if (entry.isIntersecting && entry.target.classList.contains('info')) {
+            await this.startInfoAnimations();
+          }
+        }
+      },
+      options
+    );
+
+    const photosContainer = document.querySelector('.photos');
+    const infoContainer = document.querySelector('.info');
+
+    if (photosContainer && this.intersectionObserver) {
+      this.intersectionObserver.observe(photosContainer);
+    }
+
+    if (infoContainer && this.intersectionObserver) {
+      this.intersectionObserver.observe(infoContainer);
+    }
+  }
+
+  private disconnectIntersectionObserver() {
+    if (this.intersectionObserver) {
+      this.intersectionObserver.disconnect();
+    }
+  }
+
+  private async startImageAnimations() {
+    const delays = [0, 300, 400, 500];
+    await Promise.all(
+      this.fadeInFromRightStates.map(async (_, index) => {
+        await this.delay(delays[index]);
+        this.fadeInFromRightStates[index] = 'final';
+      })
+    );
+  }
+
+  private async startInfoAnimations() {
+    await this.delay(0);
+    this.fadeInLeftState = 'final';
+  }
+
+  private delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+}
+*/

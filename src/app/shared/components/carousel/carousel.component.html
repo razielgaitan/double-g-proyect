@@ -1,45 +1,10 @@
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+  [@fadeInFromBottom]="animationExecuted ? 'final' : 'initial'">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../../../assets/images/coast-miami.jpg" class="d-block w-100" alt="...">
+    <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [class.active]="i === 0">
+      <img [src]="item.image" class="d-block w-100" alt="...">
       <div class="text">
-        <h1>Somos Double G</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/hotel-room.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Alojamientos</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/ren-a-car-2.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Rent a car</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/aeropuerto.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Vuelos</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/disney.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Parques Temáticos</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/luxury.2.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Luxury</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../../../assets/images/yate2.jpg" class="d-block w-100" alt="...">
-      <div class="text">
-        <h1>Cruceros</h1>
+        <h1>{{ item.title }}</h1>
       </div>
     </div>
   </div>
@@ -52,6 +17,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 
 <!--
 
