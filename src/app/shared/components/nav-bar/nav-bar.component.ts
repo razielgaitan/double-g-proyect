@@ -1,11 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { faBed } from '@fortawesome/free-solid-svg-icons';
-import { faCar } from '@fortawesome/free-solid-svg-icons';
-import { faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
-import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faShip } from '@fortawesome/free-solid-svg-icons';
-import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, HostListener  } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -24,13 +17,24 @@ export class NavBarComponent implements OnInit{
   }
 
   checkScreenWidth() {
-    this.isMobile = window.innerWidth < 990; // Cambiar el valor según tu necesidad de tamaño de pantalla
+    this.isMobile = window.innerWidth < 990;
     if (!this.isMobile) {
-      this.isMenuOpen = false; // Cierra el menú en pantallas más grandes
+      this.isMenuOpen = false; 
     }
   }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const toggleButton = document.querySelector('.navbar-toggler');
+
+    if (window.innerWidth > 980) { 
+      navbarCollapse?.classList.remove('show');
+    } 
+    
   }
 }
