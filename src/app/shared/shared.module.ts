@@ -18,6 +18,7 @@ import { PrimaryButtonComponent } from './components/buttons/primary-button/prim
 import { FloatingWhatsappComponent } from './components/floating-whatsapp/floating-whatsapp.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { VideoExperiencieComponent } from './components/video-experiencie/video-experiencie.component';
+import { PortadaComponent } from './components/portada/portada.component';
 
 
 
@@ -37,6 +38,7 @@ import { VideoExperiencieComponent } from './components/video-experiencie/video-
     FloatingWhatsappComponent,
     ServiciosComponent,
     VideoExperiencieComponent,
+    PortadaComponent,
 
   ],
   imports: [
@@ -60,6 +62,7 @@ import { VideoExperiencieComponent } from './components/video-experiencie/video-
     FloatingWhatsappComponent,
     ServiciosComponent,
     VideoExperiencieComponent,
+    PortadaComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

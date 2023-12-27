@@ -1,10 +1,4 @@
-#firstSection {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -12,6 +6,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow-x: hidden;
 }
 
 // Info
