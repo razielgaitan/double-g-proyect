@@ -1,0 +1,104 @@
+
+.text-color {
+    color: hsl(0, 0%, 7%);
+}
+
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ng-icon{
+    font-size: 120px;
+    margin:10px;
+    height: 100%;
+}
+
+
+
+.image-card{
+
+    text-align: center;
+    background-color: #caaf00;
+    width: 100%;
+    height:70%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.text-card{
+    margin:14px;
+    text-align: center;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.global-cards{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background: #fff;
+    max-width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 50px;
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, .25);
+
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.alojamiento-global{
+    display: grid;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    font-family: "Poppins";
+    font-size: 2rem;
+
+}
+
+@keyframes opacity {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .global-cards {
+        max-width: 80%; /* Ocupar todo el ancho disponible */
+        margin: 10px 0;
+    }
+    .contenedor-cards {
+        flex-direction: column; /* Cambiar a dirección de columna para apilar las tarjetas */
+        align-items: center; /* Centrar las tarjetas en el eje horizontal */
+    }
+}

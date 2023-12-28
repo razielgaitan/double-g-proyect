@@ -59,6 +59,12 @@ a {
 li {
   list-style: none;
 }
+app-nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  
+}
 
 //COLORES
 :root {
