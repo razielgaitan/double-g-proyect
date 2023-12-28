@@ -19,6 +19,8 @@ import { FloatingWhatsappComponent } from './components/floating-whatsapp/floati
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { VideoExperiencieComponent } from './components/video-experiencie/video-experiencie.component';
 import { PortadaComponent } from './components/portada/portada.component';
+import { MosaicoComponent } from './components/mosaico/mosaico.component';
+import { MosaicoCardComponent } from './components/cards/mosaico-card/mosaico-card.component';
 
 
 
@@ -39,6 +41,8 @@ import { PortadaComponent } from './components/portada/portada.component';
     ServiciosComponent,
     VideoExperiencieComponent,
     PortadaComponent,
+    MosaicoComponent,
+    MosaicoCardComponent,
 
   ],
   imports: [
@@ -63,6 +67,8 @@ import { PortadaComponent } from './components/portada/portada.component';
     ServiciosComponent,
     VideoExperiencieComponent,
     PortadaComponent,
+    MosaicoComponent,
+    MosaicoCardComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
