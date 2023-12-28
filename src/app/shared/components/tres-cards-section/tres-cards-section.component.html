@@ -1,0 +1,16 @@
+<div class="alojamiento-global">
+    <h3 class="text-color title">{{ mainTitle }}</h3>
+    <div class="contenedor-cards">
+        <div class="global-cards" *ngFor="let cardTitleItem of cardTitle; let i = index">
+            <div class="content">
+                <div class="image-card">
+                    <ng-icon class="global-icon" [name]="cardIcons[i]"></ng-icon>
+                </div>
+                <div class="text-card">
+                    <h4>{{ cardTitleItem }}</h4>
+                    <p>{{ cardDesc[i] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

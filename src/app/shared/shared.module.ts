@@ -20,7 +20,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { VideoExperiencieComponent } from './components/video-experiencie/video-experiencie.component';
 import { PortadaComponent } from './components/portada/portada.component';
 import { MosaicoComponent } from './components/mosaico/mosaico.component';
-import { MosaicoCardComponent } from './components/cards/mosaico-card/mosaico-card.component';
+import { TresCardsSectionComponent } from './components/tres-cards-section/tres-cards-section.component';
 
 
 
@@ -42,7 +42,7 @@ import { MosaicoCardComponent } from './components/cards/mosaico-card/mosaico-ca
     VideoExperiencieComponent,
     PortadaComponent,
     MosaicoComponent,
-    MosaicoCardComponent,
+    TresCardsSectionComponent,
 
   ],
   imports: [
@@ -68,7 +68,7 @@ import { MosaicoCardComponent } from './components/cards/mosaico-card/mosaico-ca
     VideoExperiencieComponent,
     PortadaComponent,
     MosaicoComponent,
-    MosaicoCardComponent,
+    TresCardsSectionComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

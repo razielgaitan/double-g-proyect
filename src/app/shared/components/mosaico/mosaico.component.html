@@ -1,52 +1,16 @@
 <div class="destinos-container">
     <div class="destino-title">
-        <h1>Destinos</h1>
+        <h1>{{ mainTitle }}</h1>
     </div>
     <div class="destino-text">
-        <p>¡Encontra tu siguiente alojamiento en diferentes partes del mundo!</p>
+        <p>{{ desc }}</p>
     </div>
     <div class="destinos-cards">
-        <app-mosaico-card 
-            id="img-1"
-            backImg = "../../../../../assets/images/hotel-room.jpg"
-            title = "Miami"
-            alter = "Miami">
-        </app-mosaico-card>
-
-        <div class="destino" id="img-2">
-            <img src="../../../../../assets/images/hotel-room.jpg" class="card-image" alt="Orlando">
+        <div class="destino" *ngFor="let image of images; let i = index" [attr.id]="'img-' + (i + 1)">
+            <img [src]="image" class="card-image" [alt]="texts[i]">
             <div class="card-text">
-                <p>Orlando</p>
-            </div>
-        </div>
-
-        <div class="destino" id="img-3">
-            <img src="../../../../../assets/images/hotel-room.jpg" class="card-image" alt="New York">
-            <div class="card-text">
-                <p>New York</p>
-            </div>
-        </div>
-
-        <div class="destino" id="img-4">
-            <img src="../../../../../assets/images/hotel-room.jpg" class="card-image" alt="Mundial">
-            <div class="card-text">
-                <p>Mundial</p>
-            </div>
-        </div>
-
-        <div class="destino" id="img-5">
-            <img src="../../../../../assets/images/hotel-room.jpg" class="card-image" alt="Parques Tematicos">
-            <div class="card-text">
-                <p>Parques Tematicos</p>
-            </div>
-        </div>
-
-        <div class="destino" id="img-6">
-            <img src="../../../../../assets/images/hotel-room.jpg" class="card-image" alt="Kissimmee">
-            <div class="card-text">
-                <p>Kissimmee</p>
+                <p>{{ texts[i] }}</p>
             </div>
         </div>
     </div>
-
 </div>
