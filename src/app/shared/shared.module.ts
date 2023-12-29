@@ -4,7 +4,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
 import { NgIconsModule } from '@ng-icons/core'
-import { ionCarSportOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline } from '@ng-icons/ionicons';
+import { ionCarSportOutline, ionCalendarOutline , ionOptionsOutline ,ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline } from '@ng-icons/ionicons';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
@@ -50,7 +50,7 @@ import { TresCardsSectionComponent } from './components/tres-cards-section/tres-
     FontAwesomeModule,
     MatIconModule,
     MatTooltipModule,
-    NgIconsModule.withIcons({ ionCarSportOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline }),
+    NgIconsModule.withIcons({ ionCarSportOutline, ionCalendarOutline, ionOptionsOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline }),
   ],
   exports: [
     NavBarComponent,

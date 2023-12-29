@@ -1,1 +1,26 @@
-<p>rent-a-car works!</p>
+<app-nav-bar></app-nav-bar>
+
+<app-portada
+    backImg="../../../../../assets/images/ren-a-car-2.jpg"
+    secTitle="MUEVETE POR LA FLORIDA CON EL ESTILO QUE MERECES"
+    mainTitle="Rent a Car"
+
+></app-portada>
+
+
+
+<app-mosaico mainTitle="Tipos de Autos" desc="¡Encontra el auto para tus mejores viajes!"
+    [images]="mosaicoImages" [texts]="mosaicoTexts"
+></app-mosaico>
+
+    
+
+<app-tres-cards-section mainTitle="Búsqueda de Alojamiento Global" [cardTitle]="globalTexts"
+    [cardDesc]="globalDescs"
+    [cardIcons]="globalIcons"
+></app-tres-cards-section>
+
+
+<app-experience-section></app-experience-section>
+<app-contacto></app-contacto>
+<app-footer></app-footer>
