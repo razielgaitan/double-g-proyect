@@ -1,0 +1,53 @@
+.sub-portada {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.sub-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-port-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+    width: 70%;
+    max-width: 600px; 
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sub-port-text h1 {
+    font-size: 1em; 
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.sub-port-text p {
+    font-size: 0.8em; 
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .sub-port-text {
+        width: 90%;
+    }
+
+    .sub-port-text h1 {
+        font-size: 1em; 
+    }
+
+    .sub-port-text p {
+        font-size: 0.7em; 
+    }
+}

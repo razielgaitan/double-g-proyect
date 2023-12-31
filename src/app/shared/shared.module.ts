@@ -21,6 +21,7 @@ import { VideoExperiencieComponent } from './components/video-experiencie/video-
 import { PortadaComponent } from './components/portada/portada.component';
 import { MosaicoComponent } from './components/mosaico/mosaico.component';
 import { TresCardsSectionComponent } from './components/tres-cards-section/tres-cards-section.component';
+import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.component';
 
 
 
@@ -43,6 +44,7 @@ import { TresCardsSectionComponent } from './components/tres-cards-section/tres-
     PortadaComponent,
     MosaicoComponent,
     TresCardsSectionComponent,
+    GaleriaAutosComponent,
 
   ],
   imports: [
@@ -69,6 +71,7 @@ import { TresCardsSectionComponent } from './components/tres-cards-section/tres-
     PortadaComponent,
     MosaicoComponent,
     TresCardsSectionComponent,
+    GaleriaAutosComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
