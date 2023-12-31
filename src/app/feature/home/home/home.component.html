@@ -1,131 +1,37 @@
 <app-nav-bar></app-nav-bar>
-<div class="banner">
-  <div class="title">
-    <div>DOUBLE G</div>
-    <div class="sub-title">Tu Viaje Soñado</div>
-  </div>
 
-  <div class="navigation-arrow">
-    <a href="#"
-      ><fa-icon [icon]="faChevronDown" (click)="scrollDown()"></fa-icon
-    ></a>
-  </div>
+
+<div class="">
+  <app-carousel></app-carousel>
+</div>
+<div class="navigation-arrow">
+  <a href="#"
+    ><fa-icon [icon]="faChevronDown" (click)="scrollDown()"></fa-icon
+  ></a>
 </div>
 
-<div #firstSection class="container text-center" id="firstSection">
-  <div class="row align-items-center" style="height: 100vh">
-    <div class="col img-first-section" style="height: 60vh">
-      <img
-        src="../../../../assets/images/miami.jpg"
-        alt="insertar SVG con la etiqueta image"
-        width="100%"
-        height="100%"
-        id="experiencie-img"
-      />
-    </div>
-    <div class="col text-color-gray">
-      <div><h1>Vive la Experiencia 360°</h1></div>
-      <div>
-        Somos Double G y junto a nosotros podés vivir la Experiencia 360° donde
-        creamos un itinerario completo y personalizado que refleje tus sueños de
-        viaje.
-      </div>
-      <div style="margin-top: 10px">
-        <button type="button" class="btn btn-outline-secondary">
-          Ir a la Sección
-        </button>
-      </div>
-    </div>
-  </div>
+<div id="firstSection">
+  <app-experience-section></app-experience-section>
 </div>
 
-<div class="container text-center" id="secondSection">
-  <div class="row align-items-center">
-    <div class="col">
-      <div class="row">
-        <h1 class="text-color-gray" style="margin-bottom: 50px">
-          Conoce Nuestros Servicios
-        </h1>
-      </div>
-      <div class="row" style="margin-bottom: 20px">
-        <div class="col">
-          <app-img-card
-            cardTitle="Alojamientos"
-            cardImg="../../../../../assets/images/alojamiento.jpg"
-            cardDesc="Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos."
-          ></app-img-card>
-        </div>
-        <div class="col">
-          <app-img-card
-            cardTitle="Rent a car"
-            cardImg="../../../../../assets/images/rent-car.jpg"
-            cardDesc="Descubre la libertad de explorar a tu propio ritmo con nuestro servicio de alquiler de vehículos."
-          ></app-img-card>
-        </div>
-        <div class="col">
-          <app-img-card
-            cardTitle="Vuelos"
-            cardImg="../../../../../assets/images/vuelos-baratos-paginas-b.webp"
-            cardDesc="Eleva tus expectativas con nuestro servicio de vuelos, diseñado para ofrecer comodidad, eficiencia y una experiencia de viaje inigualable."
-          ></app-img-card>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom: 10px">
-        <div class="col">
-          <app-img-card
-            cardTitle="Parques Temáticos"
-            cardImg="../../../../../assets/images/disney.jpg"
-            cardDesc="¡Sumérgete en la magia y la diversión con nuestro servicio de visita a parques temáticos!"
-          ></app-img-card>
-        </div>
-        <div class="col">
-          <app-img-card
-            cardTitle="Luxury"
-            cardImg="../../../../../assets/images/Luxury.jpg"
-            cardDesc="Descubre la definición del lujo con nuestro exclusivo servicio de categoría Luxury."
-          ></app-img-card>
-        </div>
-        <div class="col">
-          <app-img-card
-            cardTitle="Cruceros"
-            cardImg="../../../../../assets/images/crucero.webp"
-            cardDesc="
-            ¡Descubre el placer de navegar con nuestro servicio de cruceros excepcional! "
-          ></app-img-card>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-video-experiencie></app-video-experiencie>
+<app-servicios></app-servicios>
+
+
 
 <div class="opinion-section">
-  <div>
+  <div class="opinion-title">
     <h1 class="text-color-gray title">Opiniones de nuestros clientes</h1>
   </div>
   <div class="opinions">
     <app-opinion-card></app-opinion-card>
-    <app-opinion-card></app-opinion-card>
-    <app-opinion-card></app-opinion-card>
   </div>
 </div>
 
-<div class="newsletter">
-  <h1 class="text-color-gray title">Subscribete a nuestro Newsletter</h1>
-  <div class="text-color-gray">¡Recibe promociones y novedades exclusivas!</div>
-  <app-newsletter></app-newsletter>
-</div>
+<app-floating-whatsapp></app-floating-whatsapp>
 
-<div class="footer">
-  <div>
-    <span>Nuestras Redes</span> 
-  </div>
-  <div>
-    <span>Instagram</span>
-    <span>Facebook</span>
-    <span>WhatsApp</span>
-  </div>
-  <div>
-    Copyright
-  </div>
-</div>
+<app-contacto-newsletter></app-contacto-newsletter>
+
+
+<app-footer></app-footer>
 

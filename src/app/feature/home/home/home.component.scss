@@ -2,6 +2,13 @@
   color: hsl(0, 0%, 29%);
 }
 
+app-nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  
+}
+
 .banner::before {
   content: "";
   top: 0;
@@ -40,61 +47,63 @@
     text-align: center;
     font-size: 1.2rem;
   }
+}
 
-  .navigation-arrow {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    background-color: transparent;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.655);
+.navigation-arrow {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: transparent;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.655);
 
-    fa-icon {
-      font-size: 20px;
-      color: #c3c3c3;
-      &:hover {
-        color: #ffffff;
-      }
+  fa-icon {
+    font-size: 20px;
+    color: #c3c3c3;
+    &:hover {
+      color: #ffffff;
     }
   }
 }
 
 #firstSection {
-  .img-first-section {
-    overflow: hidden;
-    border-radius: 8px;
-
-    img {
-      border-radius: 8px;
-      transition: all 1.5s ease;
-      filter: brightness(70%);
-
-      &:hover {
-        transform: scale(1.25);
-        border-radius: 8px;
-        transition: all 1.5s ease;
-        filter: brightness(100%);
-      }
-    }
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#secondSection {
+  margin-top: 100px;
+}
 .opinion-section {
-  height: 100vh;
+  max-height: 550px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  margin-bottom: 100px;
+  overflow-y: auto;
 
   .title {
-    margin-top: 10vh;
+    margin-top: 20px;
+    padding: 20px;
     text-align: center;
   }
 
   .opinions {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex: 0 0 calc(50% - 40px);
+  }
+
+  @media screen and (max-width: 480px) {
+    flex: 0 0 calc(100% - 40px);
   }
 }
 
@@ -103,15 +112,6 @@
   display: grid;
   place-items: center;
   margin-bottom: 10vh;
-}
-
-.footer {
-  border-top: solid 2px #4b4b4bff;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 //ANIMACIONES

@@ -1,12 +1,17 @@
-<div class="card h-100">
-  <img [src]="cardImg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ cardTitle }}</h5>
-    <p class="card-text">
-      {{ cardDesc }}
-    </p>
-  </div>
-  <div class="card-footer">
-    <a href="#" class="btn btn-outline-secondary">Conocer la Sección</a>
+<div class="service-card" (mouseenter)="flipCard(true)" (mouseleave)="flipCard(false)">
+  <div class="card-content" [class.flipped]="isCardFlipped()">
+    <div class="card-front">
+      <img [src]="cardImg" class="card-img-top" alt="...">
+      <h5 class="card-title">{{ cardTitle }}</h5>
+    </div>
+
+    <div class="card-back">
+      <p class="card-text">
+        {{ cardDesc }}
+      </p>
+      <div class="card-button" style="width:90%;">
+        <app-primary-button text="Conocer la Sección"></app-primary-button>
+      </div>
+    </div>
   </div>
 </div>

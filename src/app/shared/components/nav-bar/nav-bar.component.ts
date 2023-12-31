@@ -1,23 +1,40 @@
-import { Component } from '@angular/core';
-import { faBed } from '@fortawesome/free-solid-svg-icons';
-import { faCar } from '@fortawesome/free-solid-svg-icons';
-import { faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
-import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faShip } from '@fortawesome/free-solid-svg-icons';
-import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, HostListener  } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  styleUrls: ['./nav-bar.component.scss'],
 })
-export class NavBarComponent {
-  faBed = faBed;
-  faCar = faCar;
-  faPlaneDeparture = faPlaneDeparture;
-  faWandMagicSparkles = faWandMagicSparkles;
-  faStar = faStar;
-  faShip = faShip;
-  faArrowsRotate = faArrowsRotate;
+export class NavBarComponent implements OnInit{
+  isMenuOpen: boolean = false;
+  isMobile: boolean = false;
+
+  ngOnInit() {
+    this.checkScreenWidth();
+    window.addEventListener('resize', () => {
+      this.checkScreenWidth();
+    });
+  }
+
+  checkScreenWidth() {
+    this.isMobile = window.innerWidth < 990;
+    if (!this.isMobile) {
+      this.isMenuOpen = false; 
+    }
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const toggleButton = document.querySelector('.navbar-toggler');
+
+    if (window.innerWidth > 980) { 
+      navbarCollapse?.classList.remove('show');
+    } 
+    
+  }
 }
