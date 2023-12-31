@@ -1,0 +1,20 @@
+<div class="container">
+    <div>
+        <input *ngFor="let card of cardData; let i = index" type="radio" name="slider" [id]="'s' + (i + 1)" [checked]="i === 0">
+
+        <div class="cards">
+            <label *ngFor="let card of cardData; let i = index" [for]="'s' + (i + 1)" [id]="'slide' + (i + 1)">
+                <div class="card">
+                    <img class="card-img" [src]="card.imageSrc">                    
+                    <div class="infos">
+                        <span class="name">{{ card.name }}</span>
+                        <span class="lorem">{{ card.lorem }}</span>
+                        <div>
+                            <app-primary-button text="Más Info"></app-primary-button>
+                        </div>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>

@@ -22,6 +22,7 @@ import { PortadaComponent } from './components/portada/portada.component';
 import { MosaicoComponent } from './components/mosaico/mosaico.component';
 import { TresCardsSectionComponent } from './components/tres-cards-section/tres-cards-section.component';
 import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.component';
+import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-carrousel.component';
 
 
 
@@ -45,6 +46,7 @@ import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.
     MosaicoComponent,
     TresCardsSectionComponent,
     GaleriaAutosComponent,
+    LuxuryCarrouselComponent,
 
   ],
   imports: [
@@ -72,6 +74,7 @@ import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.
     MosaicoComponent,
     TresCardsSectionComponent,
     GaleriaAutosComponent,
+    LuxuryCarrouselComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
