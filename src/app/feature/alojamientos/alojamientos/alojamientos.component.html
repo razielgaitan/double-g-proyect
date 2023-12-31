@@ -1,0 +1,26 @@
+<app-nav-bar></app-nav-bar>
+
+<app-portada
+    backImg="../../../../../assets/images/hotel-room.jpg"
+    secTitle="MIAMI ES COMODIDAD"
+    mainTitle="Alojamientos"
+    desc="Conoce nuestras opciones de hospedaje"
+></app-portada>
+
+
+
+<app-mosaico mainTitle="Destinos" desc="¡Encontra tu siguiente alojamiento en diferentes partes del mundo!"
+    [images]="mosaicoImages" [texts]="mosaicoTexts"
+></app-mosaico>
+
+    
+
+<app-tres-cards-section mainTitle="Búsqueda de Alojamiento Global" [cardTitle]="globalTexts"
+    [cardDesc]="globalDescs"
+    [cardIcons]="globalIcons"
+></app-tres-cards-section>
+
+
+<app-experience-section></app-experience-section>
+<app-contacto></app-contacto>
+<app-footer></app-footer>
