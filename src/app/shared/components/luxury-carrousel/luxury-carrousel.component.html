@@ -1,20 +1,23 @@
-<div class="container">
-    <div>
-        <input *ngFor="let card of cardData; let i = index" type="radio" name="slider" [id]="'s' + (i + 1)" [checked]="i === 0">
 
-        <div class="cards">
-            <label *ngFor="let card of cardData; let i = index" [for]="'s' + (i + 1)" [id]="'slide' + (i + 1)">
-                <div class="card">
-                    <img class="card-img" [src]="card.imageSrc">                    
-                    <div class="infos">
-                        <span class="name">{{ card.name }}</span>
-                        <span class="lorem">{{ card.lorem }}</span>
-                        <div>
-                            <app-primary-button text="Más Info"></app-primary-button>
-                        </div>
+
+<div class="container">
+    <h1>{{ title }}</h1>
+    <swiper-container class="mySwiper" effect="coverflow" navigation="true" grab-cursor="true" centered-slides="true"
+        slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="300"
+        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    
+        <swiper-slide *ngFor="let card of cardData">
+            <div class="card">
+                <img class="card-img" [src]="card.imageSrc">
+                <div class="infos">
+                    <span class="name">{{ card.name }}</span>
+                    <span class="lorem">{{ card.loremText }}</span>
+                    <div>
+                        <app-primary-button text="Más Info"></app-primary-button>
                     </div>
                 </div>
-            </label>
-        </div>
-    </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
 </div>
+

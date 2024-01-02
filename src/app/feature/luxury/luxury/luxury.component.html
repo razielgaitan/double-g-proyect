@@ -1,11 +1,13 @@
 <app-nav-bar></app-nav-bar>
 
-<app-portada backImg="../../../../../assets/images/aeropuerto.jpg" secTitle="DESPEGA JUNTO A DOUBLE G"
-    mainTitle="Vuelos"
+<app-portada backImg="../../../../../assets/images/luxury.2.jpg" secTitle="UNA EXPERIENCIA DE LUJO EN MIAMI"
+    mainTitle="Luxury"
 ></app-portada>
 
+<app-luxury-carrousel [cardData]="yateData" title="Nuestros Yates: "></app-luxury-carrousel>
 
-<app-luxury-carrousel [cardData]="carData"></app-luxury-carrousel>
+<app-luxury-carrousel [cardData]="carData" title="Nuestros Autos: "></app-luxury-carrousel>
+
 
 <app-contacto></app-contacto>
 
