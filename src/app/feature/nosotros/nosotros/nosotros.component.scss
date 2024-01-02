@@ -1,0 +1,104 @@
+.experience-container {
+    max-width: 975px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    position: relative; /* Añadido para establecer un contexto de posición para la línea absoluta */
+}
+
+.main-line {
+    background: #444;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0; /* Añadido para que la línea abarque todo el alto del contenedor */
+    width: 2px;
+    margin: auto;
+}
+
+.circle {
+    box-sizing: border-box;
+    background: #444;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    content: "";
+    height: 18px;
+    left: 100%;
+    margin: -15px 0 0 -8px;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.grid-experiencie {
+    width: 100%;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-experience {
+    margin-top: 15px;
+    padding: 0 60px 50px;
+    position: relative;
+}
+
+.title-experience h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text-experience p {
+    font-size: 16px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+.left-box {
+    text-align: right;
+    justify-content: right;
+}
+.logo-experience {
+    padding: 0 60px 60px;
+    margin-top: 15px;
+    position: relative;
+}
+.logo-experience img {
+
+}
+/*
+ .circle {
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    content: "";
+    height: 18px;
+    left: 50%;
+    margin: 0 0 0 -9px;
+    position: absolute;
+    top: 0;
+    width: 18px
+}
+
+.qode-workflow .main-line {
+    background: #fff;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+}
+
+*/

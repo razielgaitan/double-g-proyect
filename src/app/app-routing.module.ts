@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'vuelos',
     loadChildren: () => import('./feature/vuelos/vuelos.module').then((m) => m.VuelosModule),
   },
+  {
+    path: 'nosotros',
+    loadChildren: () => import('./feature/nosotros/nosotros.module').then((m) => m.NosotrosModule),
+  },
 ];
 
 @NgModule({
