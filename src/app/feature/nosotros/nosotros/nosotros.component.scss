@@ -1,3 +1,102 @@
+// portada
+.portada-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 100px auto 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .portada-img {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .portada-img img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        object-fit: cover;
+        border-radius: 8px;
+        filter: brightness(75%);
+    }
+
+    .portada-info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .portada-info h1{
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 60px;
+    }
+
+    .portada-info p{
+        margin-top: 20px;
+        padding-right: 10px;
+        line-height: 32px;
+    }
+
+    .grid-caracteristicas {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+    
+    .caracteristica p{
+        display: flex;
+        align-items: center; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    span i {
+        border: solid 1px black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: black;
+        background-color: var(--primary-color);
+        opacity: 0.45;
+        transition: color 0.5s;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr;
+
+        .portada-info {
+            order: -1;
+            text-align: center;
+        }
+    }
+}
+//--------------------------------------
+
+// experience
 .experience-container {
     max-width: 975px;
     display: flex;
@@ -5,100 +104,186 @@
     justify-content: center;
     align-items: center;
     margin: 100px auto;
-    position: relative; /* Añadido para establecer un contexto de posición para la línea absoluta */
+    position: relative; 
+    .main-line {
+            background: #444;
+            left: 50%;
+            margin-left: -1px;
+            position: absolute;
+            right: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            margin: auto;
+        }
+    
+        .circule {
+            box-sizing: border-box;
+            background: #444;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            content: "";
+            height: 18px;
+            left: 100%;
+            margin: -15px 0 0 -8px;
+            position: absolute;
+            top: 0;
+            width: 18px;
+        }
+    
+        .grid-experiencie {
+            width: 100%;
+            max-width: 100%;
+    
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    
+        .info-experience {
+            margin-top: 15px;
+            padding: 0 60px 50px;
+            position: relative;
+        }
+    
+        .title-experience h3 {
+            font-size: 18px;
+            line-height: 30px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    
+        .text-experience p {
+            font-size: 16px;
+            line-height: 30px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    
+        .left-box {
+            text-align: right;
+            justify-content: right;
+        }
+    
+        .logo-experience {
+            padding: 0 60px 60px;
+            margin-top: 15px;
+            position: relative;
+        }
+    
+        @media screen and (max-width:600px) {
+            .grid-experiencie {
+                grid-template-columns: 100%;
+            }
+    
+            .main-line,
+            .circule {
+                display: none;
+            }
+    
+            .info-experience,
+            .logo-experience {
+                text-align: center;
+                justify-content: center;
+            }
+    
+            .order-down {
+                order: -1;
+            }
+    
+            .order-up {
+                order: +1;
+            }
+        }
 }
+//--------------------------------------
 
-.main-line {
-    background: #444;
-    left: 50%;
-    margin-left: -1px;
-    position: absolute;
-    right: 50%;
-    top: 0;
-    bottom: 0; /* Añadido para que la línea abarque todo el alto del contenedor */
-    width: 2px;
-    margin: auto;
-}
+//Beneficios
 
-.circle {
-    box-sizing: border-box;
-    background: #444;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    content: "";
-    height: 18px;
-    left: 100%;
-    margin: -15px 0 0 -8px;
-    position: absolute;
-    top: 0;
-    width: 18px;
-}
-
-.grid-experiencie {
+.beneficios-container {
     width: 100%;
-    max-width: 100%;
+    max-width: 1400px;
+    margin: 100px auto;
+    text-align: center;
 
-    display: grid;
-    grid-template-columns: 50% 50%;
+    .beneficios-main-title {
+        margin-bottom: 3rem;
+    }
+
+    .beneficios-main-title h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+    .grid-beneficios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .beneficio {
+        text-align: center;
+    }
+
+    .logo-beneficio {
+        height: 3rem;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-beneficio svg {
+        width: 40px;
+        height: auto;
+    }
+
+    .beneficio-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+    }
+
+    .beneficio-title h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .beneficio p {
+        padding: 0 1rem;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 2.8125rem;
+    }
+    @media screen and (max-width:1024px) {
+        .beneficio-title h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .beneficio p {
+            font-size: 0.875rem;
+        }
+        
+    }
 }
 
-.info-experience {
-    margin-top: 15px;
-    padding: 0 60px 50px;
-    position: relative;
-}
 
-.title-experience h3 {
-    font-size: 18px;
-    line-height: 30px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.text-experience p {
-    font-size: 16px;
-    line-height: 30px;
-    font-style: normal;
-    font-weight: 400;
-}
-.left-box {
-    text-align: right;
-    justify-content: right;
-}
-.logo-experience {
-    padding: 0 60px 60px;
-    margin-top: 15px;
-    position: relative;
-}
-.logo-experience img {
-
-}
-/*
- .circle {
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    content: "";
-    height: 18px;
-    left: 50%;
-    margin: 0 0 0 -9px;
-    position: absolute;
-    top: 0;
-    width: 18px
-}
-
-.qode-workflow .main-line {
-    background: #fff;
-    left: 50%;
-    margin-left: -1px;
-    position: absolute;
-    right: 50%;
-    top: 0;
-    height: 100%;
-    width: 2px;
-}
-
-*/
