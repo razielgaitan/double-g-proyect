@@ -1,23 +1,40 @@
 
 
-<div class="container">
-    <h1>{{ title }}</h1>
-    <swiper-container class="mySwiper" effect="coverflow" navigation="true" grab-cursor="true" centered-slides="true"
-        slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="300"
-        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-    
-        <swiper-slide *ngFor="let card of cardData">
-            <div class="card">
-                <img class="card-img" [src]="card.imageSrc">
-                <div class="infos">
-                    <span class="name">{{ card.name }}</span>
-                    <span class="lorem">{{ card.loremText }}</span>
-                    <div>
-                        <app-primary-button text="Más Info"></app-primary-button>
+<!--
+        <div class="container">
+        <h1>{{ title }}</h1>
+        <swiper-container class="mySwiper" effect="coverflow" navigation="true" grab-cursor="true" centered-slides="true"
+            slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="300"
+            coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        
+            <swiper-slide *ngFor="let card of cardData">
+                <div class="card">
+                    <img class="card-img" [src]="card.imageSrc">
+                    <div class="infos">
+                        <span class="name">{{ card.name }}</span>
+                        <span class="lorem">{{ card.loremText }}</span>
+                        <div>
+                            <app-primary-button text="Más Info"></app-primary-button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </swiper-slide>
-    </swiper-container>
-</div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+-->
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <swiper-container class="mySwiper" navigation="true"
+    centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+
+            <swiper-slide *ngFor="let card of cardData">
+                <div class="card">
+                    <img class="card-img" [src]="card.imageSrc">
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <div class="luxury-button">
+            <app-primary-button text="Pedir Asesoramiento"></app-primary-button>
+        </div>
+    </div>
 
