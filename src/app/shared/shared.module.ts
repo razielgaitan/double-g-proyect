@@ -4,7 +4,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
 import { NgIconsModule } from '@ng-icons/core'
-import { ionCarSportOutline, ionCalendarOutline , ionOptionsOutline ,ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline } from '@ng-icons/ionicons';
+import { ionCarSportOutline, ionCalendarOutline , ionOptionsOutline ,ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline } from '@ng-icons/ionicons';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
@@ -23,6 +23,7 @@ import { MosaicoComponent } from './components/mosaico/mosaico.component';
 import { TresCardsSectionComponent } from './components/tres-cards-section/tres-cards-section.component';
 import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.component';
 import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-carrousel.component';
+import { ExperienceCardsComponent } from './components/experience-cards/experience-cards.component';
 
 
 
@@ -47,6 +48,7 @@ import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-c
     TresCardsSectionComponent,
     GaleriaAutosComponent,
     LuxuryCarrouselComponent,
+    ExperienceCardsComponent,
 
   ],
   imports: [
@@ -54,7 +56,7 @@ import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-c
     FontAwesomeModule,
     MatIconModule,
     MatTooltipModule,
-    NgIconsModule.withIcons({ ionCarSportOutline, ionCalendarOutline, ionOptionsOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline }),
+    NgIconsModule.withIcons({ ionCarSportOutline, ionCalendarOutline, ionOptionsOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline }),
   ],
   exports: [
     NavBarComponent,
@@ -75,6 +77,7 @@ import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-c
     TresCardsSectionComponent,
     GaleriaAutosComponent,
     LuxuryCarrouselComponent,
+    ExperienceCardsComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

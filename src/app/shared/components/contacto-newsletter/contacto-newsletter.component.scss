@@ -60,6 +60,7 @@
 .card-back {
     background: rgb(238, 238, 254);
     transform: rotateY(180deg);
+    border: 2px solid var(--primary-color);
 
     display: flex;
     flex-direction: column;
