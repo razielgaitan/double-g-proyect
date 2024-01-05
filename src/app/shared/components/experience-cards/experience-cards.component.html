@@ -1,10 +1,10 @@
-<div class="container">
+<div class="alojamiento-global">
     <h3 class="text-color title">{{ mainTitle }}</h3>
     <div class="contenedor-cards">
         <ng-container *ngFor="let card of cardData; let i = index">
             <div class="cards" *ngIf="i !== skipIndex">
                 <div class="content">
-                    <div class="image-card"  (click)="navigateToPage(card.link)">
+                    <div class="image-card" (click)="navigateToPage(card.link)">
                         <ng-icon class="icon" [name]="card.icon"></ng-icon>
                     </div>
                     <div class="text-card">
