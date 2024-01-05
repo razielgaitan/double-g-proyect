@@ -6,14 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./alojamientos.component.scss']
 })
 export class AlojamientosComponent {
-  mosaicoImages: string[] = ['../../../../../assets/images/coast-miami.jpg',
-    '../../../../../assets/images/costa-palemras.jpg',
-    '../../../../../assets/images/miami-aereo.jpg',
-    '../../../../../assets/images/crucero.webp',
-    '../../../../../assets/images/disney.jpg',
-    '../../../../../assets/images/paisaje-costa-brava.jpg'
+  mosaicoImages: string[] = ['https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
+    'https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_640,q_75,w_1000/https://assets.simpleviewcms.com/simpleview/image/upload/v1/clients/ftlauderdale/AJR_FTL_Beach_0364_1__02d4d0a7-c538-42dc-ae3d-89f575ba4bf8.png',
+    'https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
+    'https://secretescapes-web.imgix.net/hotels/4683/a96e3ca9_8c20_461c_8dee_6f4bebd84b06.jpg?w=640&h=459&fit=crop&crop=entropy&auto=format,compress',
+    'https://www.miamiandbeaches.com/getmedia/695d7afd-b742-4e22-87fd-f44da6fedec4/Sunny_Isles_Beach_aerial_pier_1440x900.jpg?width=1000&resizemode=force',
+    'https://www.jetsetter.com//uploads/sites/7/2018/07/GettyImages-866059648-1380x690.jpg',
+    'https://alwaysontheshore.com/wp-content/uploads/2021/01/002-1-1080x675.jpg',
+    'https://static.cozycozy.com/images/catalog/bg2/horizontal-surfside-beach-sc.jpg',
+    'https://imageio.forbes.com/blogs-images/thumbnails/blog_946/pt_946_6348_o.jpg?format=jpg&height=600&width=1200&fit=bounds',
+
   ];
-  mosaicoTexts: string[] = ['Miami', 'Orlando', 'New York', 'Mundial', 'Parques Tematicos', 'Kissimmee'];
+  mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Surfside', 'Indian Greek'];
 
   globalTexts: string[] = ['Acomodamiento', 'Acompañamiento', 'Financiacion'];
   globalDescs: string[] = ['Te buscamos el lugar que necesites', 'Tenemos gente 24hs a tu necesidad', 'Te buscamos el mejor lugar con el mejor precio'];
