@@ -9,10 +9,6 @@ export class NosotrosComponent implements OnInit {
   isScreenSmall = false;
   isPhoneScreen = false;
 
-  globalTexts: string[] = ['Reservas', 'Flexibilidad', 'Servicio'];
-  globalDescs: string[] = ['Te ayudamos a buscar el auto que necesitas para tu viaje', 'Nos adaptamos a tus planes y tus decisiones!', 'Te brindamos un servicio constante solo para vos'];
-  globalIcons: string[] = ['ionCarSportOutline', 'ionCalendarOutline', 'ionOptionsOutline'];
-
   ngOnInit(): void {
     this.checkScreenSize();
   }
