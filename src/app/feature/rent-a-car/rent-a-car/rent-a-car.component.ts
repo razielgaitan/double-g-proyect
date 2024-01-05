@@ -17,10 +17,7 @@ export class RentACarComponent implements OnInit {
   mosaicoTexts: string[] = ['MID-SIZE', 'FULL-SIZE', 'SUV-MID-SIZE', 'MINIVAN', 'DEPORTIVOS', 'SUV-FULL-SIZE'];
 */
 
-  // Variables del Tres-Cards
-  globalTexts: string[] = ['Reservas', 'Flexibilidad', 'Servicio'];
-  globalDescs: string[] = ['Te ayudamos a buscar el auto que necesitas para tu viaje', 'Nos adaptamos a tus planes y tus decisiones!', 'Te brindamos un servicio constante solo para vos'];
-  globalIcons: string[] = ['ionCarSportOutline', 'ionCalendarOutline', 'ionOptionsOutline'];
+
   
   // Variables del slider
   carData = [

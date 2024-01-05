@@ -19,7 +19,4 @@ export class AlojamientosComponent {
   ];
   mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Surfside', 'Indian Greek'];
 
-  globalTexts: string[] = ['Acomodamiento', 'Acompañamiento', 'Financiacion'];
-  globalDescs: string[] = ['Te buscamos el lugar que necesites', 'Tenemos gente 24hs a tu necesidad', 'Te buscamos el mejor lugar con el mejor precio'];
-  globalIcons: string[] = ['ionBusinessOutline', 'ionPeopleOutline', 'ionColorWandOutline'];
 }
