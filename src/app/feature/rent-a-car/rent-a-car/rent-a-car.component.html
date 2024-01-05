@@ -21,8 +21,40 @@
     </div>
 </div> -->
 
-<app-galeria-autos></app-galeria-autos>
 
+<div class="container" *ngIf="!isPhoneScreen">
+    <input *ngFor="let car of carData; let i = index" type="radio" name="slider" [id]="'s' + (i + 1)"
+        [checked]="i === 0">
+
+    <div class="cards">
+        <label *ngFor="let car of carData; let i = index" [for]="'s' + (i + 1)" [id]="'slide' + (i + 1)">
+            <div class="card">
+                <img class="card-img" [src]="car.imageSrc">
+                <div class="infos">
+                    <p class="name"><span><i aria-hidden="true" class="fa fa-car"></i></span>{{ car.name }}</p>
+                    <p class="price"><span><i aria-hidden="true" class="fa fa-usd"></i></span>{{ car.price }}</p>
+                    <p class="persons"><span><i aria-hidden="true" class="fa fa-male"></i></span>{{ car.persons }} PERSONAS</p>
+                </div>
+            </div>
+        </label>
+        </div>
+</div>
+
+<div *ngIf="isPhoneScreen" class="grid-container">
+        <div class="grid-card" *ngFor="let car of carData">
+            <img class="grid-card-img" [src]="car.imageSrc">
+            <div class="grid-card-infos">
+                <p class="name"><span><i aria-hidden="true" class="fa fa-car"></i></span>{{ car.name }}</p>
+                <p class="price"><span><i aria-hidden="true" class="fa fa-usd"></i></span>{{ car.price }}</p>
+                <p class="persons"><span><i aria-hidden="true" class="fa fa-male"></i></span>{{ car.persons }}
+                    PERSONAS</p>
+            </div>
+        </div>
+</div>
+
+<!--
+<app-galeria-autos></app-galeria-autos>
+-->
 
 <!--
 <app-mosaico mainTitle="Tipos de Autos" desc="¡Encontra el auto para tus mejores viajes!"
