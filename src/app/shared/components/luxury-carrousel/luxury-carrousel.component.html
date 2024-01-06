@@ -24,12 +24,13 @@
 -->
     <div class="container">
         <h1>{{ title }}</h1>
-        <swiper-container class="mySwiper" navigation="true"
-    centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+        <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
 
             <swiper-slide *ngFor="let card of cardData">
+                <div class="round-item">
                 <div class="card">
                     <img class="card-img" [src]="card.imageSrc">
+                </div>
                 </div>
             </swiper-slide>
         </swiper-container>
