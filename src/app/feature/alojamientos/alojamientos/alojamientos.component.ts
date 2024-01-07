@@ -19,4 +19,22 @@ export class AlojamientosComponent {
   ];
   mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Surfside', 'Indian Greek'];
 
+
+  beneficios = [
+    {
+      icon: 'ionBedOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+    {
+      icon: 'ionAirplaneOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+    {
+      icon: 'ionBedOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+  ]
 }
