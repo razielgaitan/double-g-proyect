@@ -58,6 +58,24 @@ export class RentACarComponent implements OnInit {
       persons: '5'
     }
   ];
+  
+  beneficios = [
+    {
+      icon: 'ionBedOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+    {
+      icon: 'ionAirplaneOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+    {
+      icon: 'ionBedOutline',
+      title: 'Alojamientos',
+      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+    },
+  ] 
 
   // Detectar tamoaño de pantalla
   isPhoneScreen = false;

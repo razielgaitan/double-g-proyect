@@ -8,12 +8,15 @@
 
 ></app-portada>
 
-<app-tres-cards-section 
+<!--
+    <app-tres-cards-section 
     mainTitle="Encontramos tu vuelo  juntos" 
     [cardTitle]="globalTexts" 
     [cardDesc]="globalDescs"
     [cardIcons]="globalIcons"
 ></app-tres-cards-section>
+-->
+<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Porque volar con Double G?"></app-tres-cards-section>
 
 <app-experience-cards [skipIndex]="2"></app-experience-cards>
 <app-contacto></app-contacto>

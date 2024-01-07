@@ -1,16 +1,62 @@
-<div class="alojamiento-global">
-    <h3 class="text-color title">{{ mainTitle }}</h3>
-    <div class="contenedor-cards">
-        <div class="global-cards" *ngFor="let cardTitleItem of cardTitle; let i = index">
-            <div class="content">
-                <div class="image-card">
-                    <ng-icon class="global-icon" [name]="cardIcons[i]"></ng-icon>
+
+
+<div class="beneficios-container">
+    <div class="beneficios-main-title">
+        <h1>{{mainTitle}}</h1>
+    </div>
+    <div class="grid-beneficios" *ngIf="!isPhoneScreen">
+        <div class="beneficio" *ngFor="let beneficio of cardData">
+            <div class="logo-beneficio">
+                <ng-icon class="icon" [name]="beneficio.icon"></ng-icon>
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficio.title }}</h3>
+            </div>
+            <p>{{ beneficio.text }}</p>
+        </div>
+    </div>
+
+    <div class="slider-beneficios" *ngIf="isPhoneScreen">
+        <swiper-container pagination="true" pagination-clickable="true" space-between="50">
+            <swiper-slide *ngFor="let beneficio of cardData">
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <ng-icon class="icon" [name]="beneficio.icon"></ng-icon>
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficio.title }}</h3>
+                    </div>
+                    <p>{{ beneficio.text }}</p>
                 </div>
-                <div class="text-card">
-                    <h4>{{ cardTitleItem }}</h4>
-                    <p>{{ cardDesc[i] }}</p>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="alojamiento-global">
+        <h3 class="text-color title">{{ mainTitle }}</h3>
+        <div class="contenedor-cards">
+            <div class="global-cards" *ngFor="let cardTitleItem of cardTitle; let i = index">
+                <div class="content">
+                    <div class="image-card">
+                        <ng-icon class="global-icon" [name]="cardIcons[i]"></ng-icon>
+                    </div>
+                    <div class="text-card">
+                        <h4>{{ cardTitleItem }}</h4>
+                        <p>{{ cardDesc[i] }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+-->
