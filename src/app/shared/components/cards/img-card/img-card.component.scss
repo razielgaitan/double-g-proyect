@@ -24,7 +24,7 @@
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 540px;
+    height: 460px;
     overflow: hidden;
     border: none;
     border-radius: 8px;
@@ -95,5 +95,11 @@
 @media (max-width: 768px) {
     .service-card {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .card-title {
+        font-size: 30px;
     }
 }

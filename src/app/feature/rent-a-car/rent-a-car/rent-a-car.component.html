@@ -23,6 +23,9 @@
 
 
 <div class="container" *ngIf="!isPhoneScreen">
+    <div class="title">
+        <h2>Maneja el modelo que necesites</h2>
+    </div>
     <input *ngFor="let car of carData; let i = index" type="radio" name="slider" [id]="'s' + (i + 1)"
         [checked]="i === 0">
 
@@ -40,16 +43,19 @@
         </div>
 </div>
 
+<div class="title" *ngIf="isPhoneScreen">
+    <h2>Maneja el modelo que necesites</h2>
+</div>
 <div *ngIf="isPhoneScreen" class="grid-container">
-        <div class="grid-card" *ngFor="let car of carData">
-            <img class="grid-card-img" [src]="car.imageSrc">
-            <div class="grid-card-infos">
-                <p class="name"><span><i aria-hidden="true" class="fa fa-car"></i></span>{{ car.name }}</p>
-                <p class="price"><span><i aria-hidden="true" class="fa fa-usd"></i></span>{{ car.price }}</p>
-                <p class="persons"><span><i aria-hidden="true" class="fa fa-male"></i></span>{{ car.persons }}
-                    PERSONAS</p>
-            </div>
+    <div class="grid-card" *ngFor="let car of carData">
+        <img class="grid-card-img" [src]="car.imageSrc">
+        <div class="grid-card-infos">
+            <p class="name"><span><i aria-hidden="true" class="fa fa-car"></i></span>{{ car.name }}</p>
+            <p class="price"><span><i aria-hidden="true" class="fa fa-usd"></i></span>{{ car.price }}</p>
+            <p class="persons"><span><i aria-hidden="true" class="fa fa-male"></i></span>{{ car.persons }}
+                PERSONAS</p>
         </div>
+    </div>
 </div>
 
 <!--
@@ -65,7 +71,7 @@
     
 
 
-<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Porque volar con Double G?"></app-tres-cards-section>
+<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que volar con Double G?"></app-tres-cards-section>
 <app-experience-cards [skipIndex]="1"></app-experience-cards>
 <app-contacto></app-contacto>
 <app-footer></app-footer>

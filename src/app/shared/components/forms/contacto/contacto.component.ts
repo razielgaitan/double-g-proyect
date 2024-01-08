@@ -20,16 +20,23 @@ export class ContactoComponent {
             font-family: 'Arial', sans-serif;
             background-color: rgb(238, 238, 254);
             display: flex;
+            flex-direction:column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
+            max-height:100%;
+            margin: 0 auto;
           }
           
-          @media only screen and (min-width: 600px) {
-            .form-container {
-              max-width: 70%;
-            }
+          .b24-form {
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+            max-height:100%;
+            margin:5px;
+          }
+
+          .b24-form-wrapper.b24-form-border-bottom {
+            border-bottom: 5px solid var(--b24-primary-color);
+            border-radius: 8px;
           }
 
           @media only screen and (min-width: 900px) {
@@ -37,6 +44,14 @@ export class ContactoComponent {
               max-width: 60%;
             }
           }
+
+          @media only screen and (min-width: 600px) {
+            .form-container {
+              max-width: 70%;
+            }
+          }
+
+          
         </style>
       </head>
       <body>
