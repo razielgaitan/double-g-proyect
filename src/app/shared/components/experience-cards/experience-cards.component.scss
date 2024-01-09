@@ -79,12 +79,15 @@ h4 {
     display: grid;
     height: auto;
     width: 100%;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+    border-top: 1px solid black;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2), 0px -8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -128,5 +131,11 @@ h4 {
     .contenedor-cards {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .alojamiento-global {
+        overflow: hidden;
     }
 }

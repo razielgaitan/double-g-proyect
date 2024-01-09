@@ -1,7 +1,7 @@
 
 .carousel-item {
   position: relative;
-  height: 82vh;
+  height: 86vh;
 }
 
 img {
@@ -40,12 +40,31 @@ h1 {
 }
 
 
+
+@media screen and (max-width: 1024px) and (max-height:1368px) {
+  .carousel-item {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height:600px) {
+  .carousel-item {
+    height: 78vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .carousel-item {
+    height: 94vh;
+  }
+}
+
 @media (max-width: 768px) {
 
   .text {
     width: 80%;
-    max-width: none;
-    height: auto;
+    max-width: 400px;
+    height: 130px;
     padding: 15px;
     font-size: 1.8rem;
   }
@@ -55,4 +74,17 @@ h1 {
     line-height: 1.1;
   }
 
+  .carousel-item {
+    height: 92vh;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .text {
+    width: 65%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
 }

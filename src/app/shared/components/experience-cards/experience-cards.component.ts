@@ -30,13 +30,13 @@ export class ExperienceCardsComponent {
       link: '/vuelos'
     },
     {
-      icon: 'ionStarOutline', 
+      icon: 'ionColorWandOutline', 
       title: 'Parque Tematicos',
       text: '¡Sumérgete en la magia y la diversión con nuestro servicio de visita a parques temáticos!',
       link: '/parques'
     },
     {
-      icon: 'ionDiamondOutline', 
+      icon: 'ionStarOutline', 
       title: 'Luxury',
       text: 'Descubre la definición del lujo con nuestro exclusivo servicio de categoría Luxury.',
       link: '/luxury'

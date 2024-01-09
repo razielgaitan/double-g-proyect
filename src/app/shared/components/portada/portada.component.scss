@@ -1,7 +1,7 @@
 .container {
     position: relative;
-    height: 550px;
-    max-height: 550px;
+    height: 100%;
+    max-height: 85vh;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -9,6 +9,7 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .background {
@@ -56,10 +57,17 @@ p {
     color: #fff;
 }
 
+@media screen and (max-width: 991px) {
+    .container {
+        height: 94vh;
+        max-height: 94vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
-        height: 60vh;
-        max-height: 60vh;
+        height: 94vh;
+        max-height: 94vh;
     }
 
     h1 {
