@@ -1,53 +1,56 @@
-<div class="container">
-    <div class="info"[@fadeInLeft]="fadeInLeftState">
-        <div class="title">
-            <h2>Vive la Experiencia 360</h2>
+
+    <div class="container">
+        <div class="info">
+            <div class="title" [@fadeInLeft]="fadeInLeftState">
+                <h2>Vive la Experiencia 360</h2>
+            </div>
+            <div class="info-text" [@fadeInLeft]="fadeInLeftState">
+                <p>Creamos un itinerario completo y personalizado que refleje tus sueños de viaje</p>
+            </div>
+            <div class="list" [@fadeInLeft]="fadeInLeftState">
+                <ul>
+                    <li>
+                        <span><i class="fa fa-code-fork" aria-hidden="true"></i></span>
+                        <span>Conéctate con turistas internacionales</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Mejora tu visión del Mundo</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        <span>Conviértete en Viajero</span>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: flex; width: 100%; justify-content: center; align-items: center;"  [@fadeInLeft]="fadeInLeftState">
+                <div class="info-button" style="max-width: 30%;">
+                    <app-primary-button text="Explora"></app-primary-button>
+                </div>
+            </div>
         </div>
-        <div class="info-text">
-            <p>Creamos un itinerario completo y personalizado que refleje tus sueños de viaje</p>
-        </div>
-        <div class="list">
-            <ul>
-                <li>
-                    <span><i class="fa fa-code-fork" aria-hidden="true"></i></span>
-                    <span>Conectate con turistas Internacionales</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-map-o" aria-hidden="true"></i></span>
-                    <span>Mejora tu vision del Mundo</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                    <span>Conviertete en Viajero</span>
-                </li>
-            </ul>
-        </div>
-        <div style="display: flex;width: 100%;justify-content: center;align-items: center;">
-            <div class="info-button" style="max-width: 30%;">
-                <app-primary-button text="Explora"></app-primary-button>
+        <div class="photos">
+            <div class="images-container" [@fadeInRight]="fadeInRightState">
+                <div class="top">
+                    <div class="image" id="image-1">
+                        <img src="../../../../../assets/images/Luxury.jpg" class="exp-img" alt="Luxury">
+                    </div>
+                    <div class="image" id="image-2">
+                        <img src="../../../../../assets/images/crucero.webp" class="exp-img" alt="Crucero">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="image" id="image-3">
+                        <img src="../../../../assets/images/yate2.jpg" class="exp-img" alt="Yate">
+                    </div>
+                    <div class="image" id="image-4">
+                        <img src="../../../../../assets/images/alojamiento.jpg" class="exp-img" alt="Alojamiento">
+                    </div>
+                    <!-- Agrega más imágenes para la parte inferior según sea necesario -->
+                </div>
             </div>
         </div>
     </div>
-    <div class="photos">
-    <div class="images-container">
-    <div class="top">
-        <div [@fadeInFromRight]="fadeInFromRightStates[0]" class="image" id="image-1">
-            <img src="../../../../../assets/images/Luxury.jpg" class="exp-img" alt="...">
-        </div>
-        <div [@fadeInFromRight]="fadeInFromRightStates[1]" class="image" id="image-2">
-            <img src="../../../../../assets/images/crucero.webp" class="exp-img" alt="...">
-        </div>
-    </div>
-    <div class="bottom">
-        <div [@fadeInFromRight]="fadeInFromRightStates[2]" class="image" id="image-3">
-            <img src="../../../../assets/images/yate2.jpg" class="exp-img" alt="...">
-        </div>
-        <div [@fadeInFromRight]="fadeInFromRightStates[3]" class="image" id="image-4">
-            <img src="../../../../../assets/images/alojamiento.jpg" class="exp-img" alt="...">
-        </div>
-    </div>
-  </div>
-</div>
 <!--
 <div class="container">
     <div class="info"[@fadeInLeft]="fadeInLeftState">
@@ -105,7 +108,7 @@
     <div class="contenedor">
         <div class="first-part" >
             <div class="imagen " [@fadeInFromLeft]="fadeInFromLeftState"  >
-                <img src="../../../../assets/images/miami.jpg" alt="insertar SVG con la etiqueta image" id="experiencie-img" />
+                <img src="../../../../assets/images/miami.jpg"/>
             </div>
             <div class="title " [@fadeInFromTop]="fadeInFromTopState">
                 <h1 class="title-experience">VIVI <br>

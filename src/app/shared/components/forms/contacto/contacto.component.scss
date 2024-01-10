@@ -1,12 +1,12 @@
 .contacto-form {
-    padding: 15px;
     text-align: center;
     height: 580px;
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .hablanos-ahora {
@@ -26,6 +26,19 @@ form {
 }
 
 
+.main-title, 
+.sub-title {
+    margin-bottom: 40px;
+}
+.text {
+    margin-bottom: 50px;
+}
+
 button {
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-form {
+    width: 150px;
+    margin: 0 auto;
 }

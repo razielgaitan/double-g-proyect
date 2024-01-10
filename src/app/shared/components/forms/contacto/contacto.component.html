@@ -2,18 +2,15 @@
 <div class="contacto-form">
     
     <div class="hablanos-ahora">
-        <div>
-            <h3>¿Listo para empacar?</h3>
+        <div class="main-title">
+            <h2>{{mainTitle}}</h2>
         </div>
-        <div>
-            <h4>Te estamos esperando</h4>
-        </div>
-        <div>
-            <p>"Contactanos sin costo alguno y haznos todas las consultas que quieras. Estamos disponibles ahora para resolver los planes de tu viaje y que empieces a disfrutar ya."</p>
+        <div class="sub-title">
+            <h4>{{subTitle}}</h4>
         </div>
         <!---->
-        <div>
-            <app-primary-button text="Contactanos"  (click)="openBitrix24Popup()"></app-primary-button>
+        <div class="button-form">
+            <app-primary-button text="Contactanos"  (click)="selectFunction()"></app-primary-button>
         </div>
         
     </div>

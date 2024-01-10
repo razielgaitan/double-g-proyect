@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contacto',
@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
+  @Input() mainTitle: string = "¿Listo para empacar?";
+  @Input() subTitle: string = "Te estamos esperando";
+  @Input() functionName: string = "contactForm";
+
   openBitrix24Popup(): void {
-    
     const bitrix24Html = `
       <!DOCTYPE html>
       <html lang="es">
@@ -20,16 +23,23 @@ export class ContactoComponent {
             font-family: 'Arial', sans-serif;
             background-color: rgb(238, 238, 254);
             display: flex;
+            flex-direction:column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
+            max-height:100%;
+            margin: 0 auto;
           }
           
-          @media only screen and (min-width: 600px) {
-            .form-container {
-              max-width: 70%;
-            }
+          .b24-form {
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+            max-height:100%;
+            margin:5px;
+          }
+
+          .b24-form-wrapper.b24-form-border-bottom {
+            border-bottom: 5px solid var(--b24-primary-color);
+            border-radius: 8px;
           }
 
           @media only screen and (min-width: 900px) {
@@ -37,6 +47,14 @@ export class ContactoComponent {
               max-width: 60%;
             }
           }
+
+          @media only screen and (min-width: 600px) {
+            .form-container {
+              max-width: 70%;
+            }
+          }
+
+          
         </style>
       </head>
       <body>
@@ -66,5 +84,21 @@ export class ContactoComponent {
       console.error('No se pudo abrir la nueva ventana o pestaña.');
     }
   }
-  
+
+  openWhatsApp() {
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank');
+  }
+
+  selectFunction(): void {
+    switch (this.functionName) {
+      case 'contactForm':
+        this.openBitrix24Popup();
+        break;
+      case 'whatsapp':
+        this.openWhatsApp();
+        break;
+      default:
+        console.error('Función no reconocida:', this.functionName);
+    }
+  }
 }

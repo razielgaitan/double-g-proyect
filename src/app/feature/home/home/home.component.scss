@@ -2,12 +2,7 @@
   color: hsl(0, 0%, 29%);
 }
 
-app-nav-bar{
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
-  
-}
+
 
 .banner::before {
   content: "";
@@ -68,6 +63,7 @@ app-nav-bar{
 
 #firstSection {
   min-height: 100vh;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;

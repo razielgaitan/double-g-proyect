@@ -1,0 +1,16 @@
+<div class="destinos-container">
+    <div class="destino-title">
+        <h1>{{ mainTitle }}</h1>
+    </div>
+    <div class="destino-text">
+        <p>{{ desc }}</p>
+    </div>
+    <div class="destinos-cards">
+        <div class="destino" *ngFor="let image of images; let i = index" [attr.id]="'img-' + (i + 1)">
+            <img [src]="image" class="card-image" [alt]="texts[i]">
+            <div class="card-text">
+                <p>{{ texts[i] }}</p>
+            </div>
+        </div>
+    </div>
+</div>
