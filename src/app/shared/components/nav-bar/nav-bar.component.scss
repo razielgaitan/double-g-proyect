@@ -110,7 +110,6 @@
 
 .nav-item a {
   font-size: 16px;
-  color: black;
 }
 
 .bottom-line {
@@ -213,6 +212,11 @@ img:hover {
 }
 
 @media screen and (max-width: 980px) {
+.contenedor{
+  z-index: 1000;
+}
+
+
   .navbar {
     height: auto;
     justify-content: center;
@@ -275,7 +279,6 @@ img:hover {
 
 .nav-item a{
   margin-top:5px;
-  color: black;
 }
 
   .logo{
