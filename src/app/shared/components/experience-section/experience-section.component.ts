@@ -1,88 +1,88 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+//import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-experience-section',
   templateUrl: './experience-section.component.html',
   styleUrls: ['./experience-section.component.scss'],
-  animations: [
-    trigger('fadeInLeft', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateX(-100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateX(0)'
-      })),
-      transition('initial => final', animate('800ms')),
-    ]),
-    trigger('fadeInRight', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateX(100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateX(0)'
-      })),
-      transition('initial => final', animate('800ms')),
-    ]),
-  ],
+  //animations: [
+  //  trigger('fadeInLeft', [
+  //    state('initial', style({
+  //      opacity: 0,
+  //      transform: 'translateX(-100%)'
+  //    })),
+  //    state('final', style({
+  //      opacity: 1,
+  //      transform: 'translateX(0)'
+  //    })),
+  //    transition('initial => final', animate('800ms')),
+  //  ]),
+  //  trigger('fadeInRight', [
+  //    state('initial', style({
+  //      opacity: 0,
+  //      transform: 'translateX(100%)'
+  //    })),
+  //    state('final', style({
+  //      opacity: 1,
+  //      transform: 'translateX(0)'
+  //    })),
+  //    transition('initial => final', animate('800ms')),
+  //  ]),
+  //],
 })
 export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
-  fadeInLeftState = 'initial';
-  fadeInRightState = 'initial';
-
-  private intersectionObserver: IntersectionObserver | undefined;
+  //fadeInLeftState = 'initial';
+  //fadeInRightState = 'initial';
+//
+  //private intersectionObserver: IntersectionObserver | undefined;
 
   ngAfterViewInit() {
-    this.initializeIntersectionObserver();
+  //  this.initializeIntersectionObserver();
   }
 
   ngOnDestroy() {
-    this.disconnectIntersectionObserver();
+  //  this.disconnectIntersectionObserver();
   }
 
-  private initializeIntersectionObserver() {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.3,
-    };
-
-    this.intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains('info')) {
-              this.fadeInLeftState = 'final';
-            } else if (entry.target.classList.contains('photos')) {
-              this.fadeInRightState = 'final';
-            }
-          }
-        }
-      },
-      options
-    );
-
-    const infoElement = document.querySelector('.info');
-    const photosElement = document.querySelector('.photos');
-
-    if (infoElement && this.intersectionObserver) {
-      this.intersectionObserver.observe(infoElement);
-    }
-
-    if (photosElement && this.intersectionObserver) {
-      this.intersectionObserver.observe(photosElement);
-    }
-  }
-
-  private disconnectIntersectionObserver() {
-    if (this.intersectionObserver) {
-      this.intersectionObserver.disconnect();
-    }
-  }
+  //private initializeIntersectionObserver() {
+  //  const options = {
+  //    root: null,
+  //    rootMargin: '0px',
+  //    threshold: 0.3,
+  //  };
+//
+  //  this.intersectionObserver = new IntersectionObserver(
+  //    (entries) => {
+  //      for (const entry of entries) {
+  //        if (entry.isIntersecting) {
+  //          if (entry.target.classList.contains('info')) {
+  //            this.fadeInLeftState = 'final';
+  //          } else if (entry.target.classList.contains('photos')) {
+  //            this.fadeInRightState = 'final';
+  //          }
+  //        }
+  //      }
+  //    },
+  //    options
+  //  );
+//
+  //  const infoElement = document.querySelector('.info');
+  //  const photosElement = document.querySelector('.photos');
+//
+  //  if (infoElement && this.intersectionObserver) {
+  //    this.intersectionObserver.observe(infoElement);
+  //  }
+//
+  //  if (photosElement && this.intersectionObserver) {
+  //    this.intersectionObserver.observe(photosElement);
+  //  }
+  //}
+//
+  //private disconnectIntersectionObserver() {
+  //  if (this.intersectionObserver) {
+  //    this.intersectionObserver.disconnect();
+  //  }
+  //}
 }
 
 
