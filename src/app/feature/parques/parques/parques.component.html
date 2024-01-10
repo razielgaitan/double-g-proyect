@@ -135,15 +135,15 @@
                 </div>
             </div>
             <div class="item photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipN99RB9eukhclEiS6no75fa0wOBxB1WPYjIYzs1=s680-w680-h510">
+                <img src="../../../../assets/images/volvano-bay.jpg">
             </div>
         </div>
     </div>
 </div>
 
 <div class="park-portada">
-    <div class="logo">
-        <img src="../../../../assets/svg/island-png.png">
+    <div class="portada-title">
+        <h2>Tenemos mas parques para ti</h2>
     </div>
 </div>
 
@@ -152,7 +152,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPr8mt7iE5sRWocDRHYxml5QGmFfI4L-VA--90b=s680-w680-h510">
+                <img src="../../../../assets/images/busch-gardens.jpg">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="item photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNdLWaP01EY-ia1oeu0YT3aT0G66LJ20WcVotiv=s680-w680-h510">
+                <img src="../../../../assets/images/seaworld-orlando.jpg">
             </div>
         </div>
     </div>
@@ -186,7 +186,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipN0ZbKbCD7F3VrjwmN8zzgPnTTXNwVVOlYL3acM=s680-w680-h510">
+                <img src="../../../../assets/images/adventure-island.jpg">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -208,8 +208,12 @@
 
 <app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que eligir a Double G?"></app-tres-cards-section>
 
-<app-experience-cards [skipIndex]="3"></app-experience-cards>
+<app-experience-cards [skipIndex]="3" [subTitleFlag]=true mainTitle="¿Tienes todo para tu viaje?"></app-experience-cards>
 
-<app-contacto></app-contacto>
+<app-contacto 
+    functionName="whatsapp"
+    mainTitle="¡Hospedate en los Resorts!"
+    subTitle="Consulta disponibilidad"
+></app-contacto>
 
 <app-footer></app-footer>

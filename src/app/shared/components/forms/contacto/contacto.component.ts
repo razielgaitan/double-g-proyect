@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contacto',
@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
+  @Input() mainTitle: string = "¿Listo para empacar?";
+  @Input() subTitle: string = "Te estamos esperando";
+  @Input() functionName: string = "contactForm";
+
   openBitrix24Popup(): void {
-    
     const bitrix24Html = `
       <!DOCTYPE html>
       <html lang="es">
@@ -81,5 +84,21 @@ export class ContactoComponent {
       console.error('No se pudo abrir la nueva ventana o pestaña.');
     }
   }
-  
+
+  openWhatsApp() {
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank');
+  }
+
+  selectFunction(): void {
+    switch (this.functionName) {
+      case 'contactForm':
+        this.openBitrix24Popup();
+        break;
+      case 'whatsapp':
+        this.openWhatsApp();
+        break;
+      default:
+        console.error('Función no reconocida:', this.functionName);
+    }
+  }
 }
