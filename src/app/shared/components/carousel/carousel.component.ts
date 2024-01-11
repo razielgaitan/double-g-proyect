@@ -1,23 +1,23 @@
 import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+//import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
-  animations: [
-    trigger('fadeInFromBottom', [
-      state('initial', style({
-        opacity: 0,
-        transform: 'translateY(100%)'
-      })),
-      state('final', style({
-        opacity: 1,
-        transform: 'translateY(0)'
-      })),
-      transition('initial => final', animate('800ms ease-in-out')),
-    ]),
-  ]
+  //animations: [
+  //  trigger('fadeInFromBottom', [
+  //    state('initial', style({
+  //      opacity: 0,
+  //      transform: 'translateY(100%)'
+  //    })),
+  //    state('final', style({
+  //      opacity: 1,
+  //      transform: 'translateY(0)'
+  //    })),
+  //    transition('initial => final', animate('800ms ease-in-out')),
+  //  ]),
+  //]
 })
 export class CarouselComponent implements AfterViewInit {
   carouselItems = [
@@ -30,24 +30,24 @@ export class CarouselComponent implements AfterViewInit {
     { image: '../../../../assets/images/yate2.jpg', title: 'Cruceros' },
   ];
 
-  animationState = 'initial';
-  animationExecuted = false;
+  //animationState = 'initial';
+  //animationExecuted = false;
 
   constructor(private el: ElementRef) { }
 
   ngAfterViewInit() {
-    this.checkIfElementInView();
+  //  this.checkIfElementInView();
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.checkIfElementInView();
-  }
-
-  checkIfElementInView() {
-    
-      this.animationState = 'final';
-      this.animationExecuted = true;
-    }
+  //@HostListener('window:scroll', [])
+  //onWindowScroll() {
+  //  this.checkIfElementInView();
+  //}
+//
+  //checkIfElementInView() {
+  //  
+  //    this.animationState = 'final';
+  //    this.animationExecuted = true;
+  //  }
   
 }

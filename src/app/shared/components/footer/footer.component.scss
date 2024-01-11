@@ -29,7 +29,7 @@
 }
 .legal-part{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
     justify-content: end;
     align-content: end;
@@ -42,21 +42,6 @@
     margin: 20px;
 }
 .logo img {
-    height: 4rem;
-    transition: all 0.3s;
-}
-.imagen-qrs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.imagen-qrs img{
-    max-width: 100%; 
-    max-height: 100px; 
-    height: auto; 
-}
-.foto-estudiantil img {
     width: auto; 
     max-width: 100%; 
     max-height: 150px; 
@@ -64,45 +49,36 @@
     display: block; 
     margin: 0 auto; 
 }
-.qrs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
 
-.habilitacion-info{
-    text-align: justify;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 13px;
-}
-.habilitacion-info p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 .title {
     position: relative;
     color: var(--primary-color);
     font-weight: 500;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .title h2{
-    font-size: 16px;
+    font-size: 20px;
 }
 ul {
     padding-left: 0;
 }
 
 li {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .lista {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lista li{
@@ -121,7 +97,9 @@ li {
 .lista li i {
     margin-right: 10px;
 }
-
+.lista-redes ul li:hover {
+    color: #8c7300;
+}
 .redes-footer {
     display: flex;
     flex-direction: column;
@@ -170,6 +148,7 @@ li {
 
 
 .bottom-footer {
+    /*
     border-top: solid 1px black;
     color: black;
     display: grid;
@@ -178,8 +157,43 @@ li {
     padding: 10px;
     align-items: center;
     min-height: 100px;
+    */
+    border-top: solid 1px black;
+    color: black;
+    background-color: var(--primary-color);
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+
+.footer-main-title {
+    width: 100%;
+    margin: 40px auto 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-main-title::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.footer-main-title h1 {
+    background-color: #333;
+    z-index: 1;
+    padding: 0 30px;
+}
 
 
 .redes-footer {
@@ -194,7 +208,7 @@ li {
     width: 100%; 
 }
 .copyright-text {
-    font-size: 0.8em;
+    font-size: 0.9em;
     width: 100%;
     margin: 0;
 }
@@ -208,14 +222,13 @@ li {
     .legal-part {
         grid-template-columns: repeat(2, 1fr);
     }
-    .column.habilitacion .imagen-qrs img,
-    .column.estudiantil .foto-estudiantil img {
-        max-height: 200px; 
-    }
 }
 
 @media screen and (max-width: 768px) {
 
+    .contacto{
+        order: -1;
+    }
     .media-icons a {
         margin: 5px;
     }
@@ -224,13 +237,7 @@ li {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .column.habilitacion .imagen-qrs img,
-    .column.estudiantil .foto-estudiantil img {
-        max-height: 300px;
-    }
-    .qrs {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    
         
 
     .media-icons a {

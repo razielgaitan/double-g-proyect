@@ -1,5 +1,4 @@
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
-  [@fadeInFromBottom]="animationExecuted ? 'final' : 'initial'">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [class.active]="i === 0">
       <img [src]="item.image" class="d-block w-100" alt="...">
