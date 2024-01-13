@@ -1,5 +1,61 @@
 <app-nav-bar></app-nav-bar>
 
-<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que volar con Double G?"></app-tres-cards-section>
+<app-portada
+    backImg="../../../../../assets/images/crucero.webp"
+    secTitle="NAVEGA CON DOUBLE G"
+    mainTitle="Cruceros"
+></app-portada>
+
+<app-contacto style="margin-top:-100px;"></app-contacto>
+
 <app-experience-cards [skipIndex]="5"></app-experience-cards>
+
+<div class="container">
+    <div class="info">
+        <div class="title">
+            <h2>Navega con Double G</h2>
+        </div>
+        <div class="info-text">
+            <p>Creamos un itinerario completo y personalizado que refleje tus sueños de viaje</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <span><i class="fa fa-code-fork" aria-hidden="true"></i></span>
+                    <span>Conéctate con turistas internacionales</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Mejora tu visión del Mundo</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <span>Conviértete en Viajero</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="photos">
+        <div class="images-container">
+            <div class="top">
+                <div class="image" id="image-1">
+                    <img src="https://content.boats.com/files/Tipos-de-yates.jpg" class="exp-img" alt="Luxury">
+                </div>
+                <div class="image" id="image-2">
+                    <img src="../../../../../assets/images/crucero.webp" class="exp-img" alt="Crucero">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="image" id="image-3">
+                    <img src="../../../../assets/images/yate2.jpg" class="exp-img" alt="Yate">
+                </div>
+                <div class="image" id="image-4">
+                    <img src="https://content.boats.com/files/Tipo-de-yates_yate-crucero-a-motor.jpg" class="exp-img"
+                        alt="Alojamiento">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <app-footer></app-footer>
