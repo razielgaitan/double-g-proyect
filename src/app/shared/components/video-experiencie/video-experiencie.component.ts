@@ -10,7 +10,6 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
   @ViewChild('videoPlayer') videoPlayer: ElementRef | undefined;
   videoId = '9vfNDed835A';
 
-  fadeInFromLeftState = 'initial';
 
   private intersectionObserver: IntersectionObserver | undefined;
 
@@ -21,15 +20,13 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
     this.initializeIntersectionObserver();
   }
 
-  ngOnDestroy() {
-    this.disconnectIntersectionObserver();
-  }
+  
 
   private initializeIntersectionObserver() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5,
+      threshold: 0.8,
     };
 
     this.intersectionObserver = new IntersectionObserver(
@@ -40,24 +37,36 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
           }
         });
       },
-      options
     );
 
-    // Observa las partes del componente
-    const videoSection = document.querySelector('.video');
+    const titleElement = document.querySelector('.title-video');
+    const videoElement = document.querySelector('.video');
 
-    if (videoSection) {
-      this.intersectionObserver.observe(videoSection);
+    if (titleElement) {
+      this.intersectionObserver.observe(titleElement);
+    }
+
+    if (videoElement) {
+      this.intersectionObserver.observe(videoElement);
     }
   }
 
-  private disconnectIntersectionObserver() {
+  ngOnDestroy() {
     if (this.intersectionObserver) {
       this.intersectionObserver.disconnect();
     }
   }
 
   private startAnimations() {
-    this.fadeInFromLeftState = 'final';
+    const titleElement = document.querySelector('.title-video');
+    const videoElement = document.querySelector('.video');
+
+    if (titleElement) {
+      titleElement.classList.add('slide-left');
+    }
+
+    if (videoElement) {
+      videoElement.classList.add('slide-right');
+    }
   }
 }
