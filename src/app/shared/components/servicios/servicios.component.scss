@@ -23,6 +23,21 @@ h1 {
     width: 100%;
 }
 
+#secondSection.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 @media (max-width: 768px) {
     .cards-container {
         grid-template-columns: 1fr;

@@ -2,6 +2,8 @@
 .carousel-item {
   position: relative;
   height: 86vh;
+  margin-bottom: 100px;
+  overflow: hidden;
 }
 
 img {
@@ -81,10 +83,33 @@ h1 {
 }
 
 @media screen and (max-width: 430px) {
+  .carousel-item {
+    height: 100vh;
+  }
   .text {
     width: 65%;
   }
   h1 {
     font-size: 1.5rem;
+  }
+}
+
+// Animacion
+#carouselExampleControls {
+  view-timeline-axis: block;
+  animation-timeline: view();
+  animation-range: contain;
+  animation: showBottom 1s ease-in;
+}
+
+@keyframes showBottom {
+  from {
+    opacity: 0;
+    transform: translateY(350px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
