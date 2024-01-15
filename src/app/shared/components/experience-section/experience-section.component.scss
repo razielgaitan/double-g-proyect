@@ -1,21 +1,21 @@
 
 .container {
-  width: 100%;
-  max-width: 1400px;
+  width: 1400px;
+  max-width: 100%;
   max-height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 // Info
 .info {
   text-align: left;
   padding: 15px;
-  
+  position: relative;
 }
 
 .title {
@@ -82,6 +82,7 @@
   padding: 15px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .images-container {
   width: 100%;
@@ -138,6 +139,38 @@
   border-radius: 8px;
 }
 
+.slide-left {
+  animation: fadeInLeft 2s ease-in;
+}
+
+.slide-right {
+  animation: showRight 2s ease-in;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@keyframes showRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -155,3 +188,53 @@
     }
 
 }
+
+
+// Animaciones
+
+//view-timeline-name: --info;
+//view-timeline-axis: block;
+//animation-timeline: --info;
+
+/*
+.info {
+  animation: showLeft 4s ease-in;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+  animation-delay: 1s;
+}
+
+.photos {
+  animation: showLeft 4s ease-in;
+  animation-timeline: scroll(root);
+  animation-range: 0 200px;
+  animation-range: entry 60%;
+
+}
+*/
+
+/*
+.image {
+  animation-timeline: view();
+  animation-range: entry 90%;
+  animation-delay: 1s;
+
+}
+.images-container .top #image-1 {
+  animation: showRight 3s forwards;
+}
+
+.images-container .top #image-2 {
+  animation: showRight 3.5s forwards;
+}
+
+#image-3 {
+  animation: showRight 4s forwards;
+}
+
+#image-4 {
+  animation: showRight 4.5s forwards;
+}
+*/
+
+
