@@ -16,7 +16,6 @@ import { ContactoComponent } from './components/forms/contacto/contacto.componen
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { PrimaryButtonComponent } from './components/buttons/primary-button/primary-button.component';
 import { FloatingWhatsappComponent } from './components/floating-whatsapp/floating-whatsapp.component';
-import { ServiciosComponent } from './components/servicios/servicios.component';
 import { VideoExperiencieComponent } from './components/video-experiencie/video-experiencie.component';
 import { PortadaComponent } from './components/portada/portada.component';
 import { MosaicoComponent } from './components/mosaico/mosaico.component';
@@ -24,6 +23,7 @@ import { TresCardsSectionComponent } from './components/tres-cards-section/tres-
 import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.component';
 import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-carrousel.component';
 import { ExperienceCardsComponent } from './components/experience-cards/experience-cards.component';
+import { ServiciosCardsComponent } from './components/servicios-cards/servicios-cards.component';
 
 
 
@@ -41,7 +41,6 @@ import { ExperienceCardsComponent } from './components/experience-cards/experien
     ExperienceSectionComponent,
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
-    ServiciosComponent,
     VideoExperiencieComponent,
     PortadaComponent,
     MosaicoComponent,
@@ -49,6 +48,7 @@ import { ExperienceCardsComponent } from './components/experience-cards/experien
     GaleriaAutosComponent,
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
+    ServiciosCardsComponent,
 
   ],
   imports: [
@@ -70,7 +70,6 @@ import { ExperienceCardsComponent } from './components/experience-cards/experien
     ExperienceSectionComponent,
     PrimaryButtonComponent,
     FloatingWhatsappComponent,
-    ServiciosComponent,
     VideoExperiencieComponent,
     PortadaComponent,
     MosaicoComponent,
@@ -78,6 +77,7 @@ import { ExperienceCardsComponent } from './components/experience-cards/experien
     GaleriaAutosComponent,
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
+    ServiciosCardsComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })
