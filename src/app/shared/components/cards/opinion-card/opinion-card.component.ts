@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { HostListener } from '@angular/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { HostListener } from '@angular/core';
   templateUrl: './opinion-card.component.html',
   styleUrls: ['./opinion-card.component.scss']
 })
-export class OpinionCardComponent implements OnInit,AfterViewInit {
+export class OpinionCardComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('slideTrack') slideTrack: ElementRef | undefined | any;
   blogPosts: any[] = [
     {
@@ -47,25 +47,16 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
     }
   ];
 
+  private intersectionObserver: IntersectionObserver | undefined;
   maxCardsToShow: number = 6; 
 
   constructor() { }
 
   ngOnInit(): void {   
   }
-/*
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    if (window.innerWidth <= 768) {
-      this.maxCardsToShow = 2; 
-    } else if(window.innerWidth <= 485) {
-      this.maxCardsToShow = 1;
-    }else {
-      this.maxCardsToShow = 6;
-    }
-  }
-*/
+
   ngAfterViewInit(): void {
+    
     const slideTrackElement = this.slideTrack.nativeElement;
 
     slideTrackElement.addEventListener('mouseover', () => {
@@ -75,7 +66,32 @@ export class OpinionCardComponent implements OnInit,AfterViewInit {
     slideTrackElement.addEventListener('mouseout', () => {
       slideTrackElement.style.animationPlayState = 'running';
     });
+
+    this.intersectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.applyAnimations(entry.target as HTMLElement);
+          this.intersectionObserver?.unobserve(entry.target);
+        }
+      });
+    });
+
+    const sectionElement = document.getElementById('opinions-container');
+
+    if (sectionElement) {
+      this.intersectionObserver?.observe(sectionElement);
+    }
+
   }
 
+  ngOnDestroy() {
+    if (this.intersectionObserver) {
+      this.intersectionObserver.disconnect();
+    }
+  }
+
+  private applyAnimations(element: HTMLElement) {
+    element.classList.add('fade-in');
+  }
 
 }
