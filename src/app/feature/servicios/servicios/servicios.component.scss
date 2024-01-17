@@ -179,33 +179,6 @@
     height: 100%;
     max-height: 100%;
 }
-/*
-.right .info::after {
-    content: '';
-    position: absolute;
-    top: 0; 
-    right: -12.5vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 12.5vw 420px 0;
-    border-color: transparent #DDD291 transparent transparent;
-    transform: scaleY(-1) scaleX(-1);
-}
-
-.left .info::before {
-    content: '';
-    position: absolute;
-    top: 0; 
-    left: -12.5vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 12.5vw 420px 0;
-    border-color: transparent #DDD291 transparent transparent;
-    transform: scaleY(-1);
-}
-*/
 .right .info::after {
     content: '';
     position: absolute;
