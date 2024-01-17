@@ -50,9 +50,9 @@ h1 {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media (min-width: 1024px) and (max-height: 600px) {
     .cards-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
