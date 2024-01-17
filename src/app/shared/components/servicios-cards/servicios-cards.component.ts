@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-servicios',
-  templateUrl: './servicios.component.html',
-  styleUrls: ['./servicios.component.scss']
+  selector: 'app-servicios-cards',
+  templateUrl: './servicios-cards.component.html',
+  styleUrls: ['./servicios-cards.component.scss']
 })
-export class ServiciosComponent implements AfterViewInit, OnDestroy {
+export class ServiciosCardsComponent implements AfterViewInit, OnDestroy {
   private intersectionObserver: IntersectionObserver | undefined;
 
   ngAfterViewInit() {

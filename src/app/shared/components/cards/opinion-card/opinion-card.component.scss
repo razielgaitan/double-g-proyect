@@ -20,7 +20,7 @@ $blogPostWidth: 990px;
   max-width: 100%;
 	margin: auto;
 	overflow:hidden;
-  width: 90%; //se lo agregue
+  width: 90%; 
   max-width: 1000px;
 	position: relative;
   display: flex;
@@ -56,42 +56,16 @@ $blogPostWidth: 990px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 	}
-  /* se saco 
-
-        @media screen and (max-width: 768px) {
-          animation-play-state: paused;
-          width: 100%;
-          justify-content: center;
-        }
-    
-        @media screen and (max-width: 485px) {
-          animation-play-state: paused;
-          width: 150%;
-          justify-content: center;
-        }
-        }
-    
-        @media screen and (max-width: 768px) {
-          animation-play-state: paused;
-          width: 90%;
-        }
-    
-        @media screen and (max-width: 485px) {
-          animation-play-state: paused;
-          width: 150%;
-          justify-content: center;
-        }
-        */
 }
 
 .blog_post {
-  justify-content: center; //antes justify-content: space-between;
+  justify-content: center; 
   display: flex;
-  flex-direction: column; //agregado
-  flex: 0 0 calc(100% - 20px);// cambiado de lugar
+  flex-direction: column; 
+  flex: 0 0 calc(100% - 20px);
   align-items: center;
   background: #fff;
-  max-width: 270px; // antes max-width: 30%;
+  max-width: 270px;
   height: 300px;
   border-radius: 10px;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
@@ -108,7 +82,7 @@ $blogPostWidth: 990px;
 }
 
 .container_copy {
-  padding: 5%;//agregado
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,10 +95,9 @@ $blogPostWidth: 990px;
   width: 5.3rem;
   background: var(--primary-color);
   z-index: 10;
-  //box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   position: absolute;
-  left: 50%; // antes left: 105px;
+  left: 50%;
   transform: translateX(-50%);
   top: -5%;
   display: flex;
@@ -193,6 +166,20 @@ p {
     cursor: pointer;
   }
 
+}
+
+#opinions-container.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
