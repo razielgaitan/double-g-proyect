@@ -38,6 +38,9 @@
     transition: all 0.6s ease;
   }
 
+  a{
+    color: var(--primary-font-color);
+  }
   span {
     display: grid;
     place-items: center;
