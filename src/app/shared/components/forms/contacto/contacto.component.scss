@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    animation: fadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
 }
 
 .hablanos-ahora {
@@ -41,4 +45,14 @@ button {
 .button-form {
     width: 150px;
     margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
