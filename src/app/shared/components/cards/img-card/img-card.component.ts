@@ -9,6 +9,7 @@ export class ImgCardComponent {
   @Input() cardTitle: string = '';
   @Input() cardImg: string = '';
   @Input() cardDesc: string = '';
+  @Input() href: string = '';
 
   private cardFlipped = false;
 
