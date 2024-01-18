@@ -40,11 +40,11 @@ export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
     const photosElement = document.querySelector('.photos');
 
     if (infoElement) {
-      infoElement.classList.add('slide-left');
+      infoElement.classList.add('fade-up');
     }
 
     if (photosElement) {
-      photosElement.classList.add('slide-right');
+      photosElement.classList.add('fade-down');
     }
   }
 }

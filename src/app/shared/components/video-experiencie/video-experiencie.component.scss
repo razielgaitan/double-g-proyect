@@ -59,23 +59,35 @@ iframe {
     height: 350px;
 }
 
-.slide-left {
-    animation: fadeInLeft 1s ease-in;
+.fade-up {
+    animation: fadeUp 2s;
 }
 
-.slide-right {
-    animation: showRight 1s ease-in;
+.fade-down {
+    animation: fadeDown 1.5s;
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translate3d(-100%, 0, 0)
+        transform: translateY(30px) scale(0.9);
     }
 
     to {
         opacity: 1;
-        transform: none
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1)
     }
 }
 

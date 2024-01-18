@@ -26,7 +26,7 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.8,
+      threshold: 1.0,
     };
 
     this.intersectionObserver = new IntersectionObserver(
@@ -36,7 +36,7 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
             this.startAnimations();
           }
         });
-      },
+      }
     );
 
     const titleElement = document.querySelector('.title-video');
@@ -62,11 +62,11 @@ export class VideoExperiencieComponent implements AfterViewInit, OnDestroy {
     const videoElement = document.querySelector('.video');
 
     if (titleElement) {
-      titleElement.classList.add('slide-left');
+      titleElement.classList.add('fadeUp');
     }
 
     if (videoElement) {
-      videoElement.classList.add('slide-right');
+      videoElement.classList.add('fadeUp');
     }
   }
 }

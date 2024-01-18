@@ -10,6 +10,10 @@
     text-align: center;
     padding: auto;
     margin-bottom: 20vh;
+
+    animation: fadeIn ease-in both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 10%;
 }
 
 .text-portada{
@@ -84,6 +88,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    animation: fadeIn ease-in both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 10%;
 }
 
 .img-exp {
@@ -144,12 +152,20 @@ h1 {
     margin: 0;
 }
 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
 @media screen and (max-width: 980px) {
-    // .park-portada{
-    //     height: 10vw;
-    // }
-
-
     h1 {
         font-size: 15px;
     }
