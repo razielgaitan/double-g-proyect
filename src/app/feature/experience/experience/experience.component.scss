@@ -4,7 +4,7 @@
     height: 25vw;
     overflow: hidden;
     display: flex;
-    background-color: #caaf00;
+    background-color: #DDD291;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .text-portada{
-    margin: 0;
+    margin: 0 auto;
     width: 30%;
 }
 
@@ -29,7 +29,17 @@
 .title{
     color:white;
 }
+h1 {
+    font-size: 2rem;
+}
 
+.logo-container{
+    width: 100%;
+    max-width: 27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo {
     position: relative;
     max-width: 27vw;
@@ -53,21 +63,179 @@
     max-height: 100%;
 }
 
+
+//-----------------------------------------------------------------------------
+
+.services-exp-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.service-exp {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-exp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all .7s;
+}
+
+.info-exp {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -15%;
+    z-index: 1;
+    padding: 20px;
+}
+
+.title-exp {
+    width: 280px;
+    height: 240px;
+    background-color: #DDD291;
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title-exp h3 {
+    position: absolute;
+    top: 30%; 
+    font-weight: 600;
+}
+
+.text-exp {
+    width: 260px;
+    min-height: 130px;
+    background-color: #DDD291;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-exp p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 @media screen and (max-width: 980px) {
     // .park-portada{
     //     height: 10vw;
     // }
 
-    h1{
+
+    h1 {
         font-size: 15px;
     }
 }
-@media screen and (max-width: 350px) {
-    // .park-portada{
-    //     height: 10vw;
-    // }
 
-    h1{
-        font-size: 10px;
+@media screen and (max-width: 768px) {
+    .park-portada {
+        margin-bottom: 10vh;
+    }
+    .info-exp {
+            height: 110%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            top: -10%;
+        }
+    
+        .title-exp {
+            width: 160px;
+            height: 80px;
+            clip-path: none;
+            align-items: center;
+            order: -1;
+        }
+    
+        .title-exp h3 {
+            position: relative;
+            top: 0;
+        }
+    
+        .text-exp {
+            width: 80%;
+            min-height: 80px;
+            height: auto;
+            padding: 5px;
+        }
+    
+        .text-exp p {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin: 0;
+        }
+}
+
+
+@media screen and (max-width: 540px) {
+    .park-portada {
+        flex-direction: column;
+        height: auto;
+    }
+    .text-portada {
+        margin: 1rem auto;
+        width: 60%;
+    }
+    .logo {
+        max-width: 30vw;
+        height: 30vw;
+        background-color:rgb(238, 238, 254);
+    }
+    .logo-container{
+        max-width: 100%;
+    }
+
+    .logo-container::after {
+        content: "";
+        width: 100%;
+        height: 4vh;
+        background-color: rgb(238, 238, 254);
+        position: absolute;
+        left: 0;
+        
+    }
+
+
+    .text-exp {
+        width: 100%;
+        min-height: 80px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .text-exp p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0;
     }
 }
+
