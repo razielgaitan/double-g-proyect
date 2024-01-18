@@ -1,0 +1,56 @@
+.container-vuelos{
+    position: relative;
+    height: 60vh;
+    max-height: 85vh;
+    display: flex;
+
+    overflow: hidden;
+    
+}
+
+h1{
+    font-weight: bold;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada-vuelos{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 5%;
+    margin-left: 70%;
+    text-align: center;
+    margin-right: 5%;
+    
+}
+
+.container-vuelos img{
+    width: 100%;
+}
+
+.bottom{
+    margin-top: 20%;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.texto-vuelos{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .bottom{
+        margin-right: 50%
+    }
+}
