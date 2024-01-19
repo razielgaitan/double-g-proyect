@@ -8,19 +8,19 @@ import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 export class CrucerosComponent implements AfterViewInit, OnDestroy {
   beneficios = [
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionBoatOutline',
+      title: 'Eleccion tuya',
+      text: 'Conocé y elegí en donde queres navegar.'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionEarthOutline',
+      title: 'Conocé lugares',
+      text: 'Podés viajar por donde quieras con Double G.'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionPeopleOutline',
+      title: 'Disfruta con amigos',
+      text: 'Elegí con quien viajar para disfrutar una aventura única.'
     },
   ]
   private intersectionObserver: IntersectionObserver | undefined;

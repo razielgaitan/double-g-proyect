@@ -23,18 +23,18 @@ export class AlojamientosComponent {
   beneficios = [
     {
       icon: 'ionBedOutline',
-      title: 'Alojamientos',
+      title: 'Comodidad',
       text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionStarOutline',
+      title: 'Mejores lugares',
+      text: 'Reservamos los mejores lugares para tu comodidad.'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionCalendarOutline',
+      title: 'Flexibilidad',
+      text: 'Elejimos las mejores temporadas para que puedas disfrutar un viaje inolvidable'
     },
   ]
 }
