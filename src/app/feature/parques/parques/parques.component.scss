@@ -66,6 +66,8 @@
 .background-container {
     background-color: var(--primary-color);
     margin: 100px 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1),
+            0px -8px 15px rgba(0, 0, 0, 0.1);
 
     animation: fadeIn ease-in both;
     animation-timeline: view();
@@ -100,6 +102,7 @@
     overflow: visible;
     width: 450px; 
     height: 450px; 
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
 }
 
 .photo img {
