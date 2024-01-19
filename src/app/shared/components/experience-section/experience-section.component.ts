@@ -1,50 +1,33 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-experience-section',
   templateUrl: './experience-section.component.html',
   styleUrls: ['./experience-section.component.scss'],
 })
-export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
-  private intersectionObserver: IntersectionObserver | undefined;
+export class ExperienceSectionComponent implements AfterViewInit {
+  private containerElement: Element | null = null;
+  private animatedElements: NodeListOf<Element> | undefined;
+  private animationActivated = false;
 
   ngAfterViewInit() {
-    this.intersectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.applyAnimations();
-        }
-      });
-    });
-
-    const infoElement = document.querySelector('.info');
-    const photosElement = document.querySelector('.photos');
-
-    if (infoElement) {
-      this.intersectionObserver.observe(infoElement);
-    }
-
-    if (photosElement) {
-      this.intersectionObserver.observe(photosElement);
-    }
+    this.containerElement = document.querySelector('.container');
+    this.animatedElements = document.querySelectorAll('.info, .photos');
   }
 
-  ngOnDestroy() {
-    if (this.intersectionObserver) {
-      this.intersectionObserver.disconnect();
-    }
-  }
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event) {
+    if (!this.animationActivated && this.containerElement && this.animatedElements) {
+      const containerOffset = this.containerElement.getBoundingClientRect().top;
+      const threshold = window.innerHeight * 0.7;
 
-  private applyAnimations() {
-    const infoElement = document.querySelector('.info');
-    const photosElement = document.querySelector('.photos');
+      if (containerOffset <= threshold) {
+        this.animatedElements.forEach(element => {
+          element.classList.add('visible', 'fade-up');
+        });
 
-    if (infoElement) {
-      infoElement.classList.add('fade-up');
-    }
-
-    if (photosElement) {
-      photosElement.classList.add('fade-down');
+        this.animationActivated = true;
+      }
     }
   }
 }
