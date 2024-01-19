@@ -10,6 +10,7 @@
     text-align: center;
     overflow: hidden;
     margin-bottom: 100px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .background {
@@ -73,15 +74,13 @@ p {
 
 @media screen and (max-width: 991px) {
     .container {
-        height: 94vh;
-        max-height: 94vh;
+        max-height: 100vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 94vh;
-        max-height: 94vh;
+        max-height: 100vh;
     }
 
     h1 {

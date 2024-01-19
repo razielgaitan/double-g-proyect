@@ -12,19 +12,19 @@ export class ParquesComponent {
 
   beneficios = [
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionBusinessOutline',
+      title: 'Hospedaje',
+      text: 'Nosotros te ayudaremos a encontrar el mejor hospedaje.'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionReaderOutline',
+      title: 'Planes perfectos',
+      text: 'Podrás disfrutar de cualquier parque.'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionStarOutline',
+      title: 'Comodidad',
+      text: 'Con Double G te llevamos y traemos a cada uno de los parques.'
     },
   ]
 }

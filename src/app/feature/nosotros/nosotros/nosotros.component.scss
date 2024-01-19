@@ -29,7 +29,6 @@
         position: relative;
         object-fit: cover;
         border-radius: 8px;
-        filter: brightness(75%);
     }
 
     .portada-info {
@@ -329,6 +328,14 @@
             font-size: 0.875rem;
         }
         
+    }
+     @media screen and (max-width:1024px) {
+        .slider-beneficios {
+            animation: fadeIn ease-in both;
+            animation-timeline: view();
+            animation-range: entry 15% cover 15%;
+        }
+    
     }
 }
 

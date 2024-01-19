@@ -4,6 +4,7 @@
   height: 86vh;
   margin-bottom: 100px;
   overflow: hidden;
+  box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -31,6 +32,7 @@ img {
   justify-content: center;
   text-align: center;
   border: 2px solid #fff;
+  cursor: pointer;
 }
 
 h1 {
@@ -41,7 +43,18 @@ h1 {
   margin: 0;
 }
 
+.controls-container {
+  display: flex;
+  align-items: center;
+  height:100%;
+  
+}
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: -12%;
+}
 
 @media screen and (max-width: 1024px) and (max-height:1368px) {
   .carousel-item {
@@ -55,16 +68,16 @@ h1 {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 980px) {
   .carousel-item {
-    height: 94vh;
+    height: 100vh;
   }
 }
 
 @media (max-width: 768px) {
 
   .text {
-    width: 80%;
+    width: 75%;
     max-width: 400px;
     height: 130px;
     padding: 15px;
@@ -77,7 +90,7 @@ h1 {
   }
 
   .carousel-item {
-    height: 92vh;
+    height: 100vh;
   }
 
 }

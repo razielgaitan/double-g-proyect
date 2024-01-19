@@ -68,19 +68,19 @@ export class LuxuryComponent {
 
   beneficios = [
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionCarSportOutline',
+      title: 'Coches lujosos',
+      text: 'Luxury te permitirá viajar con los mejores coches.'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionBoatOutline',
+      title: 'Botes increibles',
+      text: 'Double G te permite navegar por donde sea.'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionStarOutline',
+      title: 'Viaje único',
+      text: 'Podrás disfrutar de una experiencia única.'
     },
   ]
 }
