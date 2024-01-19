@@ -1,50 +1,33 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-experience-section',
   templateUrl: './experience-section.component.html',
   styleUrls: ['./experience-section.component.scss'],
 })
-export class ExperienceSectionComponent implements AfterViewInit, OnDestroy {
-  private intersectionObserver: IntersectionObserver | undefined;
+export class ExperienceSectionComponent implements AfterViewInit {
+  private animatedElements: NodeListOf<Element> | undefined;
+  private animationActivated = false;
 
   ngAfterViewInit() {
-    this.intersectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.applyAnimations();
+    this.animatedElements = document.querySelectorAll('.info, .photos');
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event) {
+    console.log('onWindowScroll triggered');
+    if (!this.animationActivated && this.animatedElements) {
+      const threshold = window.innerHeight * 0.8;
+
+      this.animatedElements.forEach(element => {
+        const elementOffset = element.getBoundingClientRect().top;
+
+        if (elementOffset < threshold) {
+          console.log('Adding classes to element:', element);
+          element.classList.add('fade-up', 'visible');
+          this.animationActivated = true;
         }
       });
-    });
-
-    const infoElement = document.querySelector('.info');
-    const photosElement = document.querySelector('.photos');
-
-    if (infoElement) {
-      this.intersectionObserver.observe(infoElement);
-    }
-
-    if (photosElement) {
-      this.intersectionObserver.observe(photosElement);
-    }
-  }
-
-  ngOnDestroy() {
-    if (this.intersectionObserver) {
-      this.intersectionObserver.disconnect();
-    }
-  }
-
-  private applyAnimations() {
-    const infoElement = document.querySelector('.info');
-    const photosElement = document.querySelector('.photos');
-
-    if (infoElement) {
-      infoElement.classList.add('fade-up');
-    }
-
-    if (photosElement) {
-      photosElement.classList.add('fade-down');
     }
   }
 }
