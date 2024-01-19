@@ -60,13 +60,22 @@ iframe {
 }
 
 .fade-up {
-    animation: fadeUp 2s;
+  animation: fadeUp 0.2s;
 }
 
 .fade-down {
     animation: fadeDown 1.5s;
 }
 
+.title-video,
+.video {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transform: none;
+}
 @keyframes fadeUp {
     from {
         opacity: 0;

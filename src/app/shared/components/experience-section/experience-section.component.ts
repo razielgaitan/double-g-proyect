@@ -19,7 +19,7 @@ export class ExperienceSectionComponent implements AfterViewInit {
   onWindowScroll(event: Event) {
     if (!this.animationActivated && this.containerElement && this.animatedElements) {
       const containerOffset = this.containerElement.getBoundingClientRect().top;
-      const threshold = window.innerHeight * 0.8;
+      const threshold = window.innerHeight * 0.7;
 
       if (containerOffset <= threshold) {
         this.animatedElements.forEach(element => {
