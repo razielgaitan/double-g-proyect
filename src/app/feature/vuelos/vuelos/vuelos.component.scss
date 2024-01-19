@@ -5,7 +5,7 @@
     display: flex;
 
     overflow: hidden;
-    
+    margin-bottom: 100px;
 }
 
 h1{
@@ -49,8 +49,44 @@ h1{
     width: 100%;
 }
 
-@media screen and (max-width: 768px){
-    .bottom{
-        margin-right: 50%
+@media screen and (max-width: 768px) {
+    .container-vuelos {
+        justify-content: center;
+        align-items: center;
     }
+
+    .portada-vuelos {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text-container {
+        max-width: 90%;
+        margin-top: 2vh;
+    }
+    .texto-vuelos {
+        width: 100%;
+    }
+
+    .bottom {
+        position: absolute;
+        width: 70%;
+        margin: 0 auto;
+        bottom: 5vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
 }

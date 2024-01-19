@@ -73,15 +73,13 @@ p {
 
 @media screen and (max-width: 991px) {
     .container {
-        height: 94vh;
-        max-height: 94vh;
+        max-height: 100vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 94vh;
-        max-height: 94vh;
+        max-height: 100vh;
     }
 
     h1 {

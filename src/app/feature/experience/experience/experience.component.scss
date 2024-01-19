@@ -78,6 +78,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin-bottom: 150px;
 }
 
 .service-exp {
@@ -189,12 +190,14 @@ h1 {
             height: 80px;
             clip-path: none;
             align-items: center;
+            text-align: center;
             order: -1;
         }
     
         .title-exp h3 {
             position: relative;
             top: 0;
+            font-size: 1.2rem;
         }
     
         .text-exp {
