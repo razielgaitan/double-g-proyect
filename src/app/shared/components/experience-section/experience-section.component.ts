@@ -6,28 +6,28 @@ import { Component, AfterViewInit, HostListener } from '@angular/core';
   styleUrls: ['./experience-section.component.scss'],
 })
 export class ExperienceSectionComponent implements AfterViewInit {
+  private containerElement: Element | null = null;
   private animatedElements: NodeListOf<Element> | undefined;
   private animationActivated = false;
 
   ngAfterViewInit() {
+    this.containerElement = document.querySelector('.container');
     this.animatedElements = document.querySelectorAll('.info, .photos');
   }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
-    console.log('onWindowScroll triggered');
-    if (!this.animationActivated && this.animatedElements) {
+    if (!this.animationActivated && this.containerElement && this.animatedElements) {
+      const containerOffset = this.containerElement.getBoundingClientRect().top;
       const threshold = window.innerHeight * 0.8;
 
-      this.animatedElements.forEach(element => {
-        const elementOffset = element.getBoundingClientRect().top;
+      if (containerOffset <= threshold) {
+        this.animatedElements.forEach(element => {
+          element.classList.add('visible', 'fade-up');
+        });
 
-        if (elementOffset < threshold) {
-          console.log('Adding classes to element:', element);
-          element.classList.add('fade-up', 'visible');
-          this.animationActivated = true;
-        }
-      });
+        this.animationActivated = true;
+      }
     }
   }
 }
