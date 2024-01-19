@@ -6,7 +6,7 @@ import { HostListener } from '@angular/core';
   templateUrl: './opinion-card.component.html',
   styleUrls: ['./opinion-card.component.scss']
 })
-export class OpinionCardComponent implements OnInit, AfterViewInit, OnDestroy {
+export class OpinionCardComponent implements OnInit, AfterViewInit {
   @ViewChild('slideTrack') slideTrack: ElementRef | undefined | any;
   blogPosts: any[] = [
     {
@@ -67,31 +67,9 @@ export class OpinionCardComponent implements OnInit, AfterViewInit, OnDestroy {
       slideTrackElement.style.animationPlayState = 'running';
     });
 
-    this.intersectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.applyAnimations(entry.target as HTMLElement);
-          this.intersectionObserver?.unobserve(entry.target);
-        }
-      });
-    });
-
-    const sectionElement = document.getElementById('opinions-container');
-
-    if (sectionElement) {
-      this.intersectionObserver?.observe(sectionElement);
-    }
 
   }
 
-  ngOnDestroy() {
-    if (this.intersectionObserver) {
-      this.intersectionObserver.disconnect();
-    }
-  }
-
-  private applyAnimations(element: HTMLElement) {
-    element.classList.add('fade-in');
-  }
+  
 
 }
