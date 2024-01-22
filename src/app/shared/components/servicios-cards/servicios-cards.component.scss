@@ -23,8 +23,11 @@ h1 {
     width: 100%;
 }
 
-#secondSection.fade-in {
-    animation: fadeIn 1.5s ease-in;
+.fade-in {
+    animation: fadeIn 1.5s;
+}
+#secondSection {
+    opacity: 0;
 }
 
 @keyframes fadeIn {

@@ -8,17 +8,27 @@
 
 ></app-portada>
 
-<!--
-    <app-tres-cards-section 
-    mainTitle="Encontramos tu vuelo  juntos" 
-    [cardTitle]="globalTexts" 
-    [cardDesc]="globalDescs"
-    [cardIcons]="globalIcons"
-></app-tres-cards-section>
--->
 <app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que volar con Double G?"></app-tres-cards-section>
 
+<div class="container-vuelos">
+        <img class="background" src="../../../../../assets/images/avion-vuelos.jpeg">
+    <div class="portada-vuelos">
+        <div class="text-container">
+            <h1 class="texto-vuelos">Viaja a donde quieras</h1>
+
+            <h4 class="texto-vuelos">Te buscamos los mejores viajes al mejor precio!</h4>
+        </div>
+        <div class="bottom">
+            <app-primary-button href="https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+Gtype=phone_number&app_absent=0" text="Reservá"></app-primary-button>
+        </div>
+    </div>
+</div>
+
 <app-experience-cards [skipIndex]="2"></app-experience-cards>
+
+<app-floating-whatsapp></app-floating-whatsapp>
+
+
 <app-contacto></app-contacto>
 
 <app-footer></app-footer>

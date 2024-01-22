@@ -61,19 +61,19 @@ export class RentACarComponent implements OnInit {
   
   beneficios = [
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionCarSportOutline',
+      title: 'Coches a tu gusto',
+      text: 'Elegí el auto que mas te guste para viajar.'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionDiamondOutline',
+      title: 'Autos lujosos',
+      text: 'Podrás viajar con autos lujosos por todas partes..'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionEarthOutline',
+      title: 'Destinos únicos',
+      text: 'Viajá donde quieras con Double G.'
     },
   ] 
 

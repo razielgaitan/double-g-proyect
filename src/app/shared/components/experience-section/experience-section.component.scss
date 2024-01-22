@@ -69,6 +69,7 @@
   height: 48px;
   border-radius: 100%;
   margin-right: 20px;
+  box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-button {
@@ -105,6 +106,9 @@
   grid-template-columns: 40% 60%;
 }
 
+.image {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
 #image-1 {
   max-width: 330px;
   max-height: 290px;
@@ -139,35 +143,46 @@
   border-radius: 8px;
 }
 
-.slide-left {
-  animation: fadeInLeft 1s ease-in;
+.fade-up {
+  animation: fadeUp 0.3s;
 }
 
-.slide-right {
-  animation: showRight 1s ease-in;
+.fade-down {
+  animation: fadeDown 0.5s;
 }
 
-@keyframes fadeInLeft {
+
+.info,
+.photos {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0)
+    transform: translateY(30px) scale(0.9);
   }
 
   to {
     opacity: 1;
-    transform: none
+    transform: translateY(0px) scale(1)
   }
 }
 
-@keyframes showRight {
+@keyframes fadeDown {
   from {
     opacity: 0;
-    transform: translate3d(100%, 0, 0)
+    transform: translateY(-30px) scale(0.9);
   }
 
   to {
     opacity: 1;
-    transform: none
+    transform: translateY(0px) scale(1)
   }
 }
 
@@ -188,53 +203,3 @@
     }
 
 }
-
-
-// Animaciones
-
-//view-timeline-name: --info;
-//view-timeline-axis: block;
-//animation-timeline: --info;
-
-/*
-.info {
-  animation: showLeft 4s ease-in;
-  animation-timeline: scroll(root);
-  animation-range: 0 200px;
-  animation-delay: 1s;
-}
-
-.photos {
-  animation: showLeft 4s ease-in;
-  animation-timeline: scroll(root);
-  animation-range: 0 200px;
-  animation-range: entry 60%;
-
-}
-*/
-
-/*
-.image {
-  animation-timeline: view();
-  animation-range: entry 90%;
-  animation-delay: 1s;
-
-}
-.images-container .top #image-1 {
-  animation: showRight 3s forwards;
-}
-
-.images-container .top #image-2 {
-  animation: showRight 3.5s forwards;
-}
-
-#image-3 {
-  animation: showRight 4s forwards;
-}
-
-#image-4 {
-  animation: showRight 4.5s forwards;
-}
-*/
-
-

@@ -1,8 +1,8 @@
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide fade-in" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [class.active]="i === 0">
-      <img [src]="item.image" class="d-block w-100" alt="...">
-      <div class="text">
+      <img [src]="item.image" class="d-block w-100" alt="..." loading="lazy">
+      <div class="text" (click)="navigateToPage(item.link)">
         <h1>{{ item.title }}</h1>
       </div>
     </div>

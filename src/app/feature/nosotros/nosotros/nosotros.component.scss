@@ -29,7 +29,6 @@
         position: relative;
         object-fit: cover;
         border-radius: 8px;
-        filter: brightness(75%);
     }
 
     .portada-info {
@@ -126,6 +125,9 @@
             bottom: 0;
             width: 2px;
             margin: auto;
+            animation: fadeIn ease-in both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 10%;
         }
     
         .circule {
@@ -154,6 +156,10 @@
             margin-top: 15px;
             padding: 0 60px 50px;
             position: relative;
+
+            animation: fadeIn ease-in both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 10%;
         }
     
         .title-experience h3 {
@@ -181,6 +187,10 @@
             padding: 0 60px 60px;
             margin-top: 15px;
             position: relative;
+
+            animation: fadeIn ease-in both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 10%;
         }
     
         @media screen and (max-width:600px) {
@@ -221,6 +231,9 @@
 
     .beneficios-main-title {
         margin-bottom: 3rem;
+        animation: fadeIn ease-in both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 10%;
     }
 
     .beneficios-main-title h1 {
@@ -242,6 +255,24 @@
 
     .beneficio {
         text-align: center;
+        animation: fadeIn ease-in both;
+        animation-timeline: view();
+        animation-range: entry 5% cover 5%;
+    }
+    .beneficio:first-child {
+        animation-range: entry 5% cover 5%;
+    }
+
+    .beneficio:nth-child(2) {
+        animation-range: entry 10% cover 10%;
+    }
+
+    .beneficio:nth-child(3) {
+        animation-range: entry 15% cover 15%;
+    }
+
+    .beneficio:nth-child(4) {
+        animation-range: entry 20% cover 20%;
     }
 
     .logo-beneficio {
@@ -296,6 +327,56 @@
         }
         
     }
+     @media screen and (max-width:1024px) {
+        .slider-beneficios {
+            animation: fadeIn ease-in both;
+            animation-timeline: view();
+            animation-range: entry 15% cover 15%;
+        }
+    
+    }
 }
 
 
+.fade-up {
+    animation: fadeUp 1s;
+}
+
+.fade-down {
+    animation: fadeDown 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1)
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1)
+    }
+}

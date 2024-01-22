@@ -11,19 +11,19 @@ export class VuelosComponent {
   //globalIcons: string[] = ['ionCarSportOutline', 'ionCalendarOutline', 'ionOptionsOutline'];
   beneficios = [
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionEarthOutline',
+      title: 'Diversos Destinos',
+      text: 'Te ayudamos a encontrar el destino perfecto para tu nueva aventura'
     },
     {
-      icon: 'ionAirplaneOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionOptionsOutline',
+      title: 'Flexibilidad',
+      text: 'Nos adaptamos a tus planes y tus decisiones!'
     },
     {
-      icon: 'ionBedOutline',
-      title: 'Alojamientos',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      icon: 'ionStarOutline',
+      title: 'Hermosos Lugares',
+      text: 'Te brindamos vuelos y guias para que puedas disfrutar tu viaje al 100%'
     },
   ] 
 }
