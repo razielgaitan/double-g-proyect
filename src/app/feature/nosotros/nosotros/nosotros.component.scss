@@ -51,6 +51,11 @@
         line-height: 32px;
     }
 
+    .portada-info-img  {
+        width: 100%;
+        border-radius: 8px;
+    }
+
     .grid-caracteristicas {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -65,7 +70,8 @@
         max-width: 100%;
         height: auto;
     }
-    .caracteristica p{
+
+    .caracteristica p {
         display: flex;
         align-items: center; 
         padding: 10px;
@@ -80,7 +86,7 @@
         align-items: center;
         font-size: 1.5em;
         color: black;
-        background-color: var(--primary-color);
+        background-color: #DDD291;
         opacity: 0.45;
         transition: color 0.5s;
         width: 48px;
