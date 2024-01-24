@@ -35,10 +35,7 @@ const routes: Routes = [
     path: 'nosotros',
     loadChildren: () => import('./feature/nosotros/nosotros.module').then((m) => m.NosotrosModule),
   },
-  {
-    path: 'contacto',
-    loadChildren: () => import('./feature/contacto/contacto.module').then((m) => m.ContactoModule),
-  },
+
   {
     path: 'experience',
     loadChildren: () => import('./feature/experience/experience.module').then((m) => m.ExperienceModule),
