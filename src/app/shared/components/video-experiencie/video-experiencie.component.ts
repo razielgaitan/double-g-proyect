@@ -8,11 +8,15 @@ import { Component, ViewChild, AfterViewInit, ElementRef, HostListener } from '@
 export class VideoExperiencieComponent implements AfterViewInit {
   @ViewChild('videoPlayer') videoPlayer: ElementRef | undefined;
   videoId = '9vfNDed835A';
+  href: string = 'https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0';
 
   private videoContainerElement: Element | null = null;
   private animatedElements: NodeListOf<Element> | undefined;
   private videoAnimationActive = false;
 
+  redirectToPage() {
+    window.location.href = this.href;
+  }
   ngAfterViewInit() {
     const video = this.videoPlayer?.nativeElement as HTMLIFrameElement;
     video.src = `https://www.youtube.com/embed/${this.videoId}?autoplay=1`;

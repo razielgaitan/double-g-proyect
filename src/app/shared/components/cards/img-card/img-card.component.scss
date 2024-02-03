@@ -9,11 +9,12 @@
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 460px;
+    height: 400px;
     overflow: hidden;
     border: none;
     border-radius: 8px;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    background-color: #bf941b;
 }
 
 .card-content {
@@ -23,6 +24,7 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
+    background-color: #bf941b;
 }
 
 .card-content.flipped {
@@ -52,6 +54,8 @@
     text-align: center;
     align-items: center;
     padding: 10px;
+    background-color: #bf941b;
+    color: white;
 }
 
 .card-front img {
