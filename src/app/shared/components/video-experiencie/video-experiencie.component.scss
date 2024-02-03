@@ -1,18 +1,26 @@
+.video-section-container{
+    width: 100%;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../../../src/assets/images/bg-3cards.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid black;
+}
+
 .video-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    // margin-bottom: 100px;
-    margin-left: 10%;
-    margin-right: 10px;
+    
     width: 1400px;
-    max-width: 100%;
-    width: 80%;  
+    max-width: 100%; 
 
-    padding: 5%;
+    padding: 1rem;
     overflow: hidden;
 }
 
@@ -39,6 +47,71 @@ p{
     text-align: left;
 }
 
+.button-form {
+    width: 180px;
+    margin: 0;
+}
+.btn-epic {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 52px;
+    background: #fff;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition-delay: 0.6s;
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 0.965;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--primary-color);
+      border-radius: 50% 50% 0 0;
+      transform: translateY(100%) scaleY(0.5);
+      transition: all 0.6s ease;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 0;
+      transform: translateY(0) scaleY(1);
+      transition: all 0.6s ease;
+    }
+  
+    a{
+      color: var(--primary-font-color);
+    }
+    span {
+      display: grid;
+      place-items: center;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      transition: transform 0.5s ease;
+      color: var(--primary-font-color);
+      background-color: #f3dd53;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+  }
+  
 .video {
     max-width: 100%;
     max-height: 100%;

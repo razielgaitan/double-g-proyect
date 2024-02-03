@@ -46,14 +46,14 @@ export class CarouselComponent {
       image: '../../../../assets/images/luxury.2.jpg', 
       title: 'Luxury', 
       secTitle: 'Estilo 100% Miami', 
-      desc:'Descripción:Disfruta la elegancia y el confort con nuestro exclusivo servicio de renta de autos lujosos y yates. Reserva ahora y haz de tu viaje una experiencia de alto nivel con Double G.', 
+      desc:'Disfruta la elegancia y el confort con nuestro exclusivo servicio de renta de autos lujosos y yates. Reserva ahora y haz de tu viaje una experiencia de alto nivel con Double G.', 
       link: '/luxury' 
     },
     { 
       image: '../../../../assets/images/yate2.jpg', 
       title: 'Cruceros', 
       secTitle: 'Navega con Nosotros', 
-      desc:'. Descripción: Embárcate en una experiencia inolvidable con nuestros servicios de cruceros. Ofrecemos una selección de cruceros que se adaptan a todos los gustos. Con comodidades de primera clase, entretenimiento de calidad y una atención excepcional, cada travesía se convierte en una escapada única.', 
+      desc:'Embárcate en una experiencia inolvidable con nuestros servicios de cruceros. Ofrecemos una selección de cruceros que se adaptan a todos los gustos. Con comodidades de primera clase, entretenimiento de calidad y una atención excepcional, cada travesía se convierte en una escapada única.', 
       link: '/cruceros' 
     },
   ];
