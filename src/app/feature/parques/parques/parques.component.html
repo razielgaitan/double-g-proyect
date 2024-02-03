@@ -3,7 +3,13 @@
     mainTitle="Parques Tematicos">
 </app-portada>
 
-
+<app-tres-cards-section [cardData]="introParque" mainTitle="Disfruta de la diversión " mainText="Sumérgete en la magia de los parques temáticos de la
+Florida. Desde emocionantes atracciones hasta encuentros con
+personajes icónicos, ofrecemos una experiencia única y llena de
+diversión para toda la familia."></app-tres-cards-section>
+<div class="parques-main-title">
+    <h1>Parques de la Florida</h1>
+</div>
 <div class="park-portada">
     <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 192.756 192.756"
@@ -203,16 +209,14 @@
 
 </div>
 
-
-
-<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que eligir a Double G?"></app-tres-cards-section>
-
 <app-experience-cards [skipIndex]="3" [subTitleFlag]=true mainTitle="¿Tienes todo para tu viaje?"></app-experience-cards>
 <app-floating-whatsapp></app-floating-whatsapp>
 <app-contacto 
     functionName="whatsapp"
-    mainTitle="¡Hospedate en los Resorts!"
-    subTitle="Consulta disponibilidad"
+    mainTitle="Comienza a Disfrutar de la magia de Orlando"
+    subTitle=" Consigue tus tickets de manera fácil y rápida. Somos agentes
+    oficiales de Disney World y podrás obtener promociones exclusivas. También
+    te asesoramos sobre las mejores opciones de parques en toda la Florida."
 ></app-contacto>
 
 <app-footer></app-footer>

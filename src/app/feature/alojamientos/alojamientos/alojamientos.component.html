@@ -2,19 +2,26 @@
 
 <app-portada
     backImg="../../../../../assets/images/hotel-room.jpg"
-    secTitle="MIAMI ES COMODIDAD"
+    secTitle="Hospedajes únicos, experiencias inolvidables"
     mainTitle="Alojamientos"
-    desc="Conoce nuestras opciones de hospedaje"
+    desc="Contamos con una increíble oferta de alojamientos, desde hoteles hasta apartamentos frente a la playa. Tu comodidad y bienestar son nuestra prioridad."
 ></app-portada>
 
+<app-tres-cards-section [cardData]="tiposAlojamientos" mainTitle="Tenemos el alojamiento perfecto para ti" mainText="Encuentra el hospedaje perfecto con nosotros. Ya sea
+un elegante hotel, un cómodo departamento o casa completa,
+adaptamos tu estadía a tus preferencias. Double G, tu elección para
+un viaje inolvidable."></app-tres-cards-section>
 
 
-<app-mosaico mainTitle="Destinos" desc="¡Encontra tu siguiente alojamiento en diferentes partes del mundo!"
+<app-mosaico mainTitle="Mejores ubicaciones en la Florida" desc="Contamos con alojamientos en
+distintos puntos importantes de Florida. ¿Buscas cerca de la playa o
+de la magia de Orlando? Tenemos el lugar ideal para cada tipo de
+viajero. Descubre nuestras principales ubicaciones."
     [images]="mosaicoImages" [texts]="mosaicoTexts"
 ></app-mosaico>
 
     
-<app-tres-cards-section [cardData]="beneficios" mainTitle="Ventajas de Double G"></app-tres-cards-section>
+<!--<app-tres-cards-section [cardData]="beneficios" mainTitle="Ventajas de Double G"></app-tres-cards-section>-->
 
 <app-experience-cards [skipIndex]="0"></app-experience-cards>
 <app-floating-whatsapp></app-floating-whatsapp>

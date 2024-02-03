@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 export class LuxuryCarrouselComponent {
   @Input() cardData: any[] = [];
   @Input() title: string = "";
+  @Input() text: string = "";
 }

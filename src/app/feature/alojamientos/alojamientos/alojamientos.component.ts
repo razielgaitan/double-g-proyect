@@ -6,6 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./alojamientos.component.scss']
 })
 export class AlojamientosComponent {
+
+  tiposAlojamientos = [
+    {
+      icon: 'ionBedOutline',
+      title: 'Hoteles',
+      text: 'Disfruta el confort de la mejor hotelería de Miami y La Florida.'
+    },
+    {
+      icon: 'ionStarOutline',
+      title: 'Departamentos y casas',
+      text: 'Elige la comodidad y libertad de nuestras unidades que esperan por ti.'
+    },
+    {
+      icon: 'ionCalendarOutline',
+      title: 'Temáticos y parques',
+      text: 'Tenemos hospedajes en los increíbles parques de Orlando. Disfruta de una increíble experiencia!'
+    },
+  ]
+
   mosaicoImages: string[] = ['https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
     'https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_640,q_75,w_1000/https://assets.simpleviewcms.com/simpleview/image/upload/v1/clients/ftlauderdale/AJR_FTL_Beach_0364_1__02d4d0a7-c538-42dc-ae3d-89f575ba4bf8.png',
     'https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',

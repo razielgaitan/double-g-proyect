@@ -9,7 +9,13 @@
 
 <div class="container" *ngIf="!isPhoneScreen">
     <div class="title">
-        <h2>Maneja el modelo que necesites</h2>
+        <h2>Disfruta del mejor modelo para tu viaje</h2>
+    </div>
+    <div class="rent-text">
+        <p>Recorre la Florida con nuestra amplia flota de autos. Desde
+            compactos para la ciudad hasta SUVs para aventuras familiares,
+            tenemos el vehículo perfecto para cada viaje. Nuestros asesores te
+            ayudarán a elegir el mejor auto que se adapte a tus necesidades.</p>
     </div>
     <input *ngFor="let car of carData; let i = index" type="radio" name="slider" [id]="'s' + (i + 1)"
         [checked]="i === 0">

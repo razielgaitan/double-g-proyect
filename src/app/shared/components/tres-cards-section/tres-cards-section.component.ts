@@ -11,6 +11,7 @@ export class TresCardsSectionComponent implements OnInit {
   // @Input() cardDesc: string[] = [];
   // @Input() cardIcons: string[] = [];
   @Input() mainTitle: string = 'Beneficios';
+  @Input() mainText: string = '';
   @Input() cardData: any[] = [];
 
   isScreenSmall = false;
