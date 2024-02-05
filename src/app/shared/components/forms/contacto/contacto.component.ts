@@ -58,15 +58,13 @@ export class ContactoComponent {
         </style>
       </head>
       <body>
-        <script data-b24-form="inline/24/qtkzc4" data-skip-moving="true">
-          (function (w, d, u) {
-            var s = d.createElement('script');
-            s.async = true;
-            s.src = u + '?' + (Date.now() / 180000 | 0);
-            var h = d.getElementsByTagName('script')[0];
-            h.parentNode.insertBefore(s, h);
-          })(window, document, 'https://cdn.bitrix24.es/b23099479/crm/form/loader_24.js');
-        </script>
+      <script data-b24-form="inline/34/m7faax" data-skip-moving="true">
+      (function(w,d,u){
+      var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+      var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+      })(window,document,'https://cdn.bitrix24.es/b23099479/crm/form/loader_34.js');
+      </script>
+      
       </body>
       </html>
     `;

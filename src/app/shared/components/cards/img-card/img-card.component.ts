@@ -11,6 +11,10 @@ export class ImgCardComponent {
   @Input() cardDesc: string = '';
   @Input() href: string = '';
 
+  redirectToPage() {
+    window.location.href = this.href;
+  }
+
   private cardFlipped = false;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
