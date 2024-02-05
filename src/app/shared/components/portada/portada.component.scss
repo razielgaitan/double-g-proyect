@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 16px;
     padding: auto;
     background-color: var(--primary-color);
     width: fit-content;
@@ -47,17 +47,26 @@ h4 {
 }
 .main-title-container{ 
     margin-top: 16px;
+    text-wrap: balance;
 }
 h1{
-    font-size: 60px;
+    font-size: 4rem;
     color: #fff;
+    margin: 0;
 }
 .portada-text-container{
     margin-top: 16px;
+    background-color: #00000048;
+    justify-content: center;
+    text-align: center;
 }
 p {
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #fff;
+    margin: 15px;
+    text-wrap: balance;
+    padding: 1rem 0;
 }
 
 .fade-in {
@@ -74,6 +83,12 @@ p {
     }
 }
 
+@media screen and (max-width: 1024px){
+    h1{
+      font-size: 3.2rem;
+    }
+  }
+
 @media screen and (max-width: 991px) {
     .container {
         max-height: 100vh;
@@ -84,12 +99,25 @@ p {
     .container {
         max-height: 100vh;
     }
+    .content {
+        width: 100%;
+        
+      }
+    p {
+        font-size: 0.8rem;
+      }
 
     h1 {
         font-size: 40px;
     }
 
     h4 {
-        font-size: 16px;
-    }
+        font-size: 0.9rem;
+      }
 }
+
+@media screen and (max-width: 430px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }

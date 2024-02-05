@@ -27,6 +27,10 @@
 .title-video {
     padding: 20px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h2 {
@@ -49,7 +53,7 @@ p{
 
 .button-form {
     width: 180px;
-    margin: 0;
+    margin: 16px auto 0;
 }
 .btn-epic {
     position: relative;

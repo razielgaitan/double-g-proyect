@@ -9,8 +9,8 @@
       <p class="card-text">
         {{ cardDesc }}
       </p>
-      <div class="card-button" style="width:90%;">
-        <app-primary-button [href]="href" text="Más información"></app-primary-button>
+      <div class="card-button" style="width:90%;" href="href"  (click)="redirectToPage()">
+        <app-primary-button  text="Más información"></app-primary-button>
       </div>
     </div>
   </div>

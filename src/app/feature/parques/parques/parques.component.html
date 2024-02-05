@@ -1,6 +1,9 @@
 
-<app-portada backImg="../../../../../assets/images/disney.jpg" secTitle="DIVIERTETE EN LOS PARQUES DE ORLANDO Y TAMPA"
-    mainTitle="Parques Tematicos">
+<app-portada 
+    backImg="../../../../../assets/images/disney.jpg" 
+    secTitle="Vive la aventura"
+    mainTitle="Parques Tematicos"
+    desc="Consigue tus Tickets a los Mejores Parques Temáticos. Ofrecemos acceso a los destinos más emocionantes y entretenidos. Asegura tu entrada y prepárate para vivir experiencias inolvidables. ¡Descubre la magia que tenemos para ti!">
 </app-portada>
 
 <app-tres-cards-section [cardData]="introParque" mainTitle="Disfruta de la diversión " mainText="Sumérgete en la magia de los parques temáticos de la
@@ -152,7 +155,7 @@ diversión para toda la familia."></app-tres-cards-section>
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container" style="margin: 0 auto 100px;">
 
     <div class="background-container">
         <div class="park-container">
@@ -210,6 +213,21 @@ diversión para toda la familia."></app-tres-cards-section>
 </div>
 
 <app-experience-cards [skipIndex]="3" [subTitleFlag]=true mainTitle="¿Tienes todo para tu viaje?"></app-experience-cards>
+
+<div class="container-revendedor">
+    <img class="background" src="../../../../assets/images/seaworld-orlando.jpg">
+<div class="portada-revendedor">
+    <div class="text-revendedor">
+        <h1 class="texto-revendedor">¿Eres agente revendedor?</h1>
+
+        <h4 class="texto-revendedor">Sumate a nuestro equipo de agentes. Somos agentes oficiales de Disney. Aprovecha promociones exclusivas!</h4>
+    </div>
+    <div class="bottom">
+        <app-primary-button href="https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+Gtype=phone_number&app_absent=0" text="Más información"></app-primary-button>
+    </div>
+</div>
+</div>
+
 <app-floating-whatsapp></app-floating-whatsapp>
 <app-contacto 
     functionName="whatsapp"

@@ -7,9 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class PrimaryButtonComponent {
   @Input() text: string = '';
-  @Input() href: string = '';
-
-  redirectToPage() {
-    window.location.href = this.href;
-  }
 }
