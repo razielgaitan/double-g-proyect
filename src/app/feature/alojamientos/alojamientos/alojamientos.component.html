@@ -7,10 +7,98 @@
     desc="Contamos con una increíble oferta de alojamientos, desde hoteles hasta apartamentos frente a la playa. Tu comodidad y bienestar son nuestra prioridad."
 ></app-portada>
 
-<app-tres-cards-section [cardData]="tiposAlojamientos" mainTitle="Tenemos el alojamiento perfecto para ti" mainText="Encuentra el hospedaje perfecto con nosotros. Ya sea
+<!-- <app-tres-cards-section [cardData]="tiposAlojamientos" mainTitle="Tenemos el alojamiento perfecto para ti" mainText="Encuentra el hospedaje perfecto con nosotros. Ya sea
 un elegante hotel, un cómodo departamento o casa completa,
 adaptamos tu estadía a tus preferencias. Double G, tu elección para
-un viaje inolvidable."></app-tres-cards-section>
+un viaje inolvidable."></app-tres-cards-section> -->
+
+
+<div class="beneficios-container">
+    <div class="beneficios-main-title">
+        <h1>Tenemos el alojamiento perfecto para ti</h1>
+    </div>
+    <div class="beneficios-main-text">
+        <p>Encuentra el hospedaje perfecto con nosotros. Ya sea
+            un elegante hotel, un cómodo departamento o casa completa,
+            adaptamos tu estadía a tus preferencias. Double G, tu elección para
+            un viaje inolvidable</p>
+    </div>
+    <div class="grid-beneficios" *ngIf="!isPhoneScreen">
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <ng-icon class="icon" [name]="beneficios[0].icon"></ng-icon>
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[0].title }}</h3>
+            </div>
+            <p>{{ beneficios[0].text }}</p>
+        </div>
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <ng-icon class="icon" [name]="beneficios[1].icon"></ng-icon>
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[1].title }}</h3>
+            </div>
+            <p>{{ beneficios[1].text }}</p>
+        </div>
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <img  src="../../../../assets/images/disney.png" >
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[2].title }}</h3>
+            </div>
+            <p>{{ beneficios[2].text }}</p>
+        </div>
+    </div>
+    
+
+    <div class="slider-beneficios" *ngIf="isPhoneScreen">
+        <swiper-container pagination="true" pagination-clickable="true" space-between="50">
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <ng-icon class="icon" [name]="beneficios[0].icon"></ng-icon>
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[0].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[0].text }}</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <ng-icon class="icon" [name]="beneficios[1].icon"></ng-icon>
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[1].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[1].text }}</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <img  src="../../../../assets/images/disney.png" >
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[2].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[2].text }}</p>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
+
+
+
+
+
+
+
 
 
 <app-mosaico mainTitle="Mejores ubicaciones en la Florida" desc="Contamos con alojamientos en

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-alojamientos',
@@ -42,18 +42,38 @@ export class AlojamientosComponent {
   beneficios = [
     {
       icon: 'ionBedOutline',
-      title: 'Comodidad',
-      text: 'Sumérgete en la comodidad y la hospitalidad excepcional con nuestro servicio de alojamientos.'
+      title: 'Hoteles',
+      text: 'Disfruta el confort de la mejor hotelería de Miami y La Florida.'
     },
     {
-      icon: 'ionStarOutline',
-      title: 'Mejores lugares',
-      text: 'Reservamos los mejores lugares para tu comodidad.'
+      icon: 'ionHomeOutline',
+      title: ' Departamentos y casas',
+      text: 'Elige la comodidad y libertad de nuestras unidades que esperan por ti.'
     },
     {
       icon: 'ionCalendarOutline',
-      title: 'Flexibilidad',
-      text: 'Elejimos las mejores temporadas para que puedas disfrutar un viaje inolvidable'
+      title: 'Temáticos y parques',
+      text: 'Tenemos hospedajes en los increíbles parques de Orlando. Disfruta de una increíble experiencia!'
     },
   ]
+
+  isScreenSmall = false;
+  isPhoneScreen = false;
+
+  ngOnInit(): void {
+    this.checkScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.checkScreenSize();
+  }
+
+  private checkScreenSize(): void {
+    const screenWidth = window.innerWidth;
+
+    this.isPhoneScreen = screenWidth <= 768;
+    this.isScreenSmall = screenWidth <= 600;
+  }
+
 }
