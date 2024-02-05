@@ -9,7 +9,20 @@ export class ExperienceSectionComponent implements AfterViewInit {
   private containerElement: Element | null = null;
   private animatedElements: NodeListOf<Element> | undefined;
   private animationActivated = false;
-
+  imageData = [
+    {
+      imageSrc: '../../../../../assets/images/Luxury.jpg'
+    },
+    {
+      imageSrc: '../../../../../assets/images/crucero.webp'
+    },
+    {
+      imageSrc: '../../../../assets/images/yate2.jpg'
+    },
+    {
+      imageSrc: '../../../../../assets/images/alojamiento.jpg'
+    }
+  ];
   ngAfterViewInit() {
     this.containerElement = document.querySelector('.container');
     this.animatedElements = document.querySelectorAll('.info, .photos');

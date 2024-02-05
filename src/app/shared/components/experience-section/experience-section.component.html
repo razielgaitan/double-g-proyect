@@ -44,7 +44,21 @@
         </div>
         <div class="photos">
             <div class="images-container">
-                <div class="top">
+                <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+
+                    <swiper-slide *ngFor="let card of imageData">
+                        <div class="round-item">
+                            <div class="card">
+                                <img class="card-img" [src]="card.imageSrc">
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="top">
                     <div class="image" id="image-1">
                         <img src="../../../../../assets/images/Luxury.jpg" class="exp-img" alt="Luxury">
                     </div>
@@ -59,7 +73,4 @@
                     <div class="image" id="image-4">
                         <img src="../../../../../assets/images/alojamiento.jpg" class="exp-img" alt="Alojamiento">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div>-->
