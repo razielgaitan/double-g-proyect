@@ -43,4 +43,7 @@ export class ParquesComponent {
       text: 'Con Double G te llevamos y traemos a cada uno de los parques.'
     },
   ]
+  selectFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
+  }
 }

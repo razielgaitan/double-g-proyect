@@ -26,4 +26,8 @@ export class VuelosComponent {
       text: 'Experimenta tarifas claras y competitivas, sin sorpresas, para que puedas planificar tu viaje con confianza.'
     },
   ] 
+
+  selectFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
+  }
 }
