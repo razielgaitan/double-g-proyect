@@ -12,27 +12,32 @@ export class LuxuryComponent {
 
   carData = [
     {
-      imageSrc: 'https://cdn.24net.cz/5/obrazek/ikonka-37505',
+      imageSrc: '../../../../assets/images/luxury-car-1.jpg',
       name: 'Auto 1',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://hips.hearstapps.com/hmg-prod/images/2022-mercedes-benz-s500-4matic-109-1642184016.jpg?crop=0.591xw:0.665xh;0.137xw,0.274xh&resize=768:*',
+      imageSrc: '../../../../assets/images/luxury-car-2.jpg',
       name: 'Auto 2',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://www.forbes.com/wheels/wp-content/uploads/2022/11/Best_Midsize_SUVs_2023_SEO.630.jpg',
+      imageSrc: '../../../../assets/images/luxury-car-3.jpg',
       name: 'Auto 3',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://hips.hearstapps.com/hmg-prod/images/lipman-jl96651-64797ddda108f.jpg',
+      imageSrc: '../../../../assets/images/luxury-car-4.jpg',
       name: 'Auto 4',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://www.chevrolet.com.ar/content/dam/chevrolet/mercosur/argentina/espanol/index/performance/performance-subcontent/02-images/2018-segmento-deportivos-masthead.jpg?imwidth=960',
+      imageSrc: '../../../../assets/images/luxury-car-6.jpg',
+      name: 'Auto 5',
+      loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+    },
+    {
+      imageSrc: '../../../../assets/images/luxury-car-5.jpg',
       name: 'Auto 5',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     }

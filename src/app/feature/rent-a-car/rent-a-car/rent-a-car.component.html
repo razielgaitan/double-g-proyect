@@ -1,9 +1,9 @@
 
 <app-portada
     backImg="../../../../../assets/images/ren-a-car-2.jpg"
-    secTitle="MUEVETE POR LA FLORIDA CON EL ESTILO QUE MERECES"
+    secTitle="Explora a tu ritmo"
     mainTitle="Rent a Car"
-
+    desc="Listo para recorrer Miami? Ofrecemos una amplia flota de autos para todo tipo de viajes. Con recogida conveniente en el aeropuerto, un proceso de reserva fácil y la posibilidad de explorar la Florida sin restricciones, hacemos que cada recorrido sea una experiencia única."
 ></app-portada>
 
 
@@ -36,6 +36,12 @@
 
 <div class="title" *ngIf="isPhoneScreen">
     <h2>Maneja el modelo que necesites</h2>
+</div>
+<div class="rent-text" *ngIf="isPhoneScreen">
+    <p>Recorre la Florida con nuestra amplia flota de autos. Desde
+        compactos para la ciudad hasta SUVs para aventuras familiares,
+        tenemos el vehículo perfecto para cada viaje. Nuestros asesores te
+        ayudarán a elegir el mejor auto que se adapte a tus necesidades.</p>
 </div>
 <div *ngIf="isPhoneScreen" class="grid-container">
     <div class="grid-card" *ngFor="let car of carData">

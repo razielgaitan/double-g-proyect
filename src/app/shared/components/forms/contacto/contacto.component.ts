@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ContactoComponent {
   @Input() mainTitle: string = "¿Listo para empacar?";
-  @Input() subTitle: string = "Te estamos esperando";
+  @Input() subTitle: string = "Tu próxima aventura está a solo un clic de distancia. Contáctanos para planificar las vacaciones que sueñas. Nuestros asesores están listos para ayudarte!";
   @Input() functionName: string = "contactForm";
 
   openBitrix24Popup(): void {

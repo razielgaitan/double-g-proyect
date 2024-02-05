@@ -25,14 +25,14 @@ export class CarouselComponent {
     { 
       image: '../../../../assets/images/ren-a-car-2.jpg', 
       title: 'Rent a car', 
-      secTitle: ' Explora a tu ritmo', 
-      desc:' Listo para recorrer Miami? Ofrecemos una amplia flota de autos para todo tipo de viajes. Con recogida conveniente en el aeropuerto, un proceso de reserva fácil y la posibilidad de explorar la Florida sin restricciones, hacemos que cada recorrido sea una experiencia única.', 
+      secTitle: 'Explora a tu ritmo', 
+      desc:'Listo para recorrer Miami? Ofrecemos una amplia flota de autos para todo tipo de viajes. Con recogida conveniente en el aeropuerto, un proceso de reserva fácil y la posibilidad de explorar la Florida sin restricciones, hacemos que cada recorrido sea una experiencia única.', 
       link: '/rent-a-car' 
     },
     { 
       image: '../../../../assets/images/aeropuerto.jpg', 
       title: 'Vuelos', 
-      secTitle: ' Despega junto a Double G', 
+      secTitle: 'Despega junto a Double G', 
       desc:'Planificar tu próximo viaje es fácil. Conectamos tus sueños con destinos fascinantes y experiencias inolvidables. Desde vuelos directos a conexiones estratégicas, te ofrecemos opciones que se adaptan a tus necesidades y preferencias.', 
       link: '/vuelos' },
     { 

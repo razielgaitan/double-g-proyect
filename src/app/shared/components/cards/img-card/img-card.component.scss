@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 350px;
+    height: 360px;
     overflow: hidden;
     border: none;
     border-radius: 8px;
@@ -55,6 +55,9 @@
     color: white;
 }
 
+.card-text {
+    line-height: 1.3rem;
+}
 .card-front img {
     position: absolute;
     width: 100%;
