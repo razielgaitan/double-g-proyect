@@ -66,12 +66,12 @@ export class RentACarComponent implements OnInit {
       text: ' Contamos con una amplia flota de autos, desde compactos hasta SUVs de lujo, adaptados a todos los estilos de viaje.'
     },
     {
-      icon: 'ionDiamondOutline',
+      icon: 'ionLockClosedOutline',
       title: 'Transparencia y seguridad',
       text: ' Disfruta de un proceso de renta claro y seguro, con tarifas transparentes y medidas que garantizan tu tranquilidad.'
     },
     {
-      icon: 'ionEarthOutline',
+      icon: 'ionPersonOutline',
       title: 'Atención personalizada',
       text: 'Experimenta un servicio personalizado que se adapta a tus necesidades, asegurando una experiencia de conducción sin complicaciones.'
     },

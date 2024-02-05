@@ -4,7 +4,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule } from '@angular/material/icon';
 import { NgIconsModule } from '@ng-icons/core'
-import { ionCarSportOutline, ionHomeOutline, ionCalendarOutline , ionOptionsOutline ,ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline,ionCashOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline } from '@ng-icons/ionicons';
+import { ionCarSportOutline, ionHomeOutline, ionCalendarOutline , ionOptionsOutline ,ionStarOutline, ionBedOutline, ionAirplaneOutline,ionPersonOutline, ionColorWandOutline,ionCashOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline,ionLockClosedOutline } from '@ng-icons/ionicons';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ImgCardComponent } from './components/cards/img-card/img-card.component';
@@ -56,7 +56,7 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
     FontAwesomeModule,
     MatIconModule,
     MatTooltipModule,
-    NgIconsModule.withIcons({ ionCarSportOutline,ionHomeOutline ,ionCalendarOutline, ionOptionsOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline,ionCashOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline }),
+    NgIconsModule.withIcons({ ionCarSportOutline,ionHomeOutline ,ionCalendarOutline, ionOptionsOutline, ionStarOutline, ionBedOutline, ionAirplaneOutline, ionColorWandOutline,ionPersonOutline, ionBoatOutline, ionEarthOutline, ionIdCardOutline,ionCashOutline, ionReaderOutline, ionPeopleOutline, ionBusinessOutline, ionDiamondOutline,ionLockClosedOutline }),
   ],
   exports: [
     NavBarComponent,
