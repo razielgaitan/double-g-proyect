@@ -3,7 +3,7 @@
     <div class="blog_post" *ngFor="let post of blogPosts.slice(0, maxCardsToShow)">
       
       <div class="img_pod">
-        <img [src]="post.imageUrl" alt="Imagen de la opinión">
+        <img [src]="post.imageUrl" alt="Imagen de la opinión" loading="lazy">
       </div>
       
       <div class="container_copy">

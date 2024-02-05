@@ -7,7 +7,7 @@
     </div>
     <div class="destinos-cards">
         <div class="destino" *ngFor="let image of images; let i = index" [attr.id]="'img-' + (i + 1)">
-            <img [src]="image" class="card-image" [alt]="texts[i]">
+            <img [src]="image" class="card-image" [alt]="texts[i]" loading="lazy">
             <div class="card-text">
                 <p>{{ texts[i] }}</p>
             </div>

@@ -49,7 +49,7 @@
                     <swiper-slide *ngFor="let card of imageData">
                         <div class="round-item">
                             <div class="card">
-                                <img class="card-img" [src]="card.imageSrc">
+                                <img class="card-img" [src]="card.imageSrc" loading="lazy">
                             </div>
                         </div>
                     </swiper-slide>
@@ -57,20 +57,3 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="top">
-                    <div class="image" id="image-1">
-                        <img src="../../../../../assets/images/Luxury.jpg" class="exp-img" alt="Luxury">
-                    </div>
-                    <div class="image" id="image-2">
-                        <img src="../../../../../assets/images/crucero.webp" class="exp-img" alt="Crucero">
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="image" id="image-3">
-                        <img src="../../../../assets/images/yate2.jpg" class="exp-img" alt="Yate">
-                    </div>
-                    <div class="image" id="image-4">
-                        <img src="../../../../../assets/images/alojamiento.jpg" class="exp-img" alt="Alojamiento">
-                    </div>
-                </div>-->
