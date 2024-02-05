@@ -1,7 +1,7 @@
 <div class="service-card" (mouseenter)="flipCard(true)" (mouseleave)="flipCard(false)">
   <div class="card-content" [class.flipped]="isCardFlipped()">
     <div class="card-front">
-      <img [src]="cardImg" class="card-img-top" alt="...">
+      <img [src]="cardImg" class="card-img-top" alt="..." loading="lazy" loading="lazy">
       <h5 class="card-title">{{ cardTitle }}</h5>
     </div>
 
