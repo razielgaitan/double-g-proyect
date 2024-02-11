@@ -98,8 +98,8 @@ p{
 }
 .park-container {
     display: grid;
-    max-width: 80%; 
-    width: 100%;
+    max-width: 1400px; 
+    width: 80%;
     grid-template-columns: auto auto;
     grid-template-rows: 340px;
     gap: 20px;
@@ -186,8 +186,8 @@ p{
     }
 
     .logo {
-        max-width: 450px;
-        height: 450px;
+        max-width: 350px;
+        height: 350px;
     }
 
 
@@ -225,10 +225,12 @@ p{
         align-items: center;
         justify-content: center;
         padding: 20px;
-        margin-top: 60px;
         width: 350px;
         gap: 100px;
+        margin-top: 100px;
+        margin-bottom: 0;
     }
+
     .background-container {
         margin: 50px 0;
         overflow: visible;
@@ -277,6 +279,7 @@ p{
 @media screen and (max-width: 400px) {
     .grid-container {
         width: 250px;
+        margin-top: 60px;
     }
     .photo {
         width: 250px;
