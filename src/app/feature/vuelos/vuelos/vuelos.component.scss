@@ -5,13 +5,12 @@
     display: flex;
 
     overflow: hidden;
-    margin-bottom: 100px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2),
         0px -8px 20px rgba(0, 0, 0, 0.2);
 }
-
 h1{
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .background {
@@ -39,7 +38,7 @@ h1{
 }
 
 .bottom{
-    margin-top: 20%;
+    margin-top: 16px;
     margin-left: 15%;
     align-items: center;
     justify-content: center;
@@ -49,8 +48,19 @@ h1{
 
 .texto-vuelos{
     width: 100%;
+    margin-bottom: 16px;
 }
+@media screen and (max-width: 1024px) {
 
+    h1{
+        line-height: 2.5rem;
+    }
+
+    h4{
+
+    }
+
+}
 @media screen and (max-width: 768px) {
     .container-vuelos {
         justify-content: center;

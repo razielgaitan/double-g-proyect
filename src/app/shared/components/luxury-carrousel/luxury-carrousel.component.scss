@@ -18,7 +18,14 @@ a {
     animation-range: entry 20% cover 20%;
 }
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+}
+p {
+    width: 1200px;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1rem;
 }
 .card {
     position: relative;

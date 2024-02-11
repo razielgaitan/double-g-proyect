@@ -2,51 +2,58 @@
     <div class="container">
         <div class="info">
             <div class="title">
-                <h2>Vive la Experiencia 360</h2>
+                <h2>Vive una experiencia completa</h2>
             </div>
             <div class="info-text">
-                <p>Creamos un itinerario completo y personalizado que refleje tus sueños de viaje</p>
+                <p>Explora la Florida con una perspectiva única y
+                    auténtica. Más que una agencia de viajes, somos tus aliados para
+                    crear momentos inolvidables. </p>
+                <p>
+                    Permite que nuestro equipo te guíe en un viaje personalizado que va más allá de las expectativas, nos dedicamos a hacer que cada momento de tu viaje sea inolvidable.
+                </p>
             </div>
             <div class="list">
                 <ul>
                     <li>
                         <span><i class="fa fa-code-fork" aria-hidden="true"></i></span>
-                        <span>Conéctate con turistas internacionales</span>
+                        <span>Atención Personalizada: Recibe asesoramiento experto a medida.</span>
                     </li>
                     <li>
                         <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span>Mejora tu visión del Mundo</span>
+                        <span>Experiencia Local: Descubre Miami y la Florida de manera auténtica</span>
                     </li>
                     <li>
-                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
-                        <span>Conviértete en Viajero</span>
+                        <span><i class="fa fa-address-card " aria-hidden="true"></i></span>
+                        <span>Reservas Sin Complicaciones</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-compass" aria-hidden="true"></i></span>
+                        <span>Aventuras Personalizadas: Diseñamos tu viaje según tus preferencias.</span>
+                    </li>
+                    <li style="margin: 0;">
+                        <span><i class="fa fa-handshake" aria-hidden="true"></i></span>
+                        <span>Seguridad y Confianza: Somos agentes oficiales listos para asesorarte.</span>
                     </li>
                 </ul>
             </div>
-            <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
+            <div class="experience-button">
                 <div class="info-button" style="max-width: 30%;">
-                    <app-primary-button text="Explora" href="/experience"></app-primary-button>
+                    <app-primary-button text="Explora" (click)="selectFunction()"></app-primary-button>
                 </div>
             </div>
         </div>
         <div class="photos">
             <div class="images-container">
-                <div class="top">
-                    <div class="image" id="image-1">
-                        <img src="../../../../../assets/images/Luxury.jpg" class="exp-img" alt="Luxury">
-                    </div>
-                    <div class="image" id="image-2">
-                        <img src="../../../../../assets/images/crucero.webp" class="exp-img" alt="Crucero">
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="image" id="image-3">
-                        <img src="../../../../assets/images/yate2.jpg" class="exp-img" alt="Yate">
-                    </div>
-                    <div class="image" id="image-4">
-                        <img src="../../../../../assets/images/alojamiento.jpg" class="exp-img" alt="Alojamiento">
-                    </div>
-                </div>
+                <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+
+                    <swiper-slide *ngFor="let card of imageData">
+                        <div class="round-item">
+                            <div class="card">
+                                <img class="card-img" [src]="card.imageSrc" loading="lazy">
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
             </div>
         </div>
     </div>

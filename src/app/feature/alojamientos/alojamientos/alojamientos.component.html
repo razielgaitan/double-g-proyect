@@ -2,21 +2,111 @@
 
 <app-portada
     backImg="../../../../../assets/images/hotel-room.jpg"
-    secTitle="MIAMI ES COMODIDAD"
+    secTitle="Hospedajes únicos, experiencias inolvidables"
     mainTitle="Alojamientos"
-    desc="Conoce nuestras opciones de hospedaje"
+    desc="Contamos con una increíble oferta de alojamientos, desde hoteles hasta apartamentos frente a la playa. Tu comodidad y bienestar son nuestra prioridad."
 ></app-portada>
 
 
+<div class="beneficios-container">
+    <div class="beneficios-main-title">
+        <h1>Tenemos el alojamiento perfecto para ti</h1>
+    </div>
+    <div class="beneficios-main-text">
+        <p>Encuentra el hospedaje perfecto con nosotros. Ya sea
+            un elegante hotel, un cómodo departamento o casa completa,
+            adaptamos tu estadía a tus preferencias. Double G, tu elección para
+            un viaje inolvidable</p>
+    </div>
+    <div class="grid-beneficios" *ngIf="!isPhoneScreen">
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <ng-icon class="icon" [name]="beneficios[0].icon"></ng-icon>
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[0].title }}</h3>
+            </div>
+            <p>{{ beneficios[0].text }}</p>
+        </div>
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <ng-icon class="icon" [name]="beneficios[1].icon"></ng-icon>
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[1].title }}</h3>
+            </div>
+            <p>{{ beneficios[1].text }}</p>
+        </div>
+        <div class="beneficio">
+            <div class="logo-beneficio">
+                <img  src="../../../../assets/images/disney.png" loading="lazy">
+            </div>
+            <div class="beneficio-title">
+                <h3>{{ beneficios[2].title }}</h3>
+            </div>
+            <p>{{ beneficios[2].text }}</p>
+        </div>
+    </div>
+    
 
-<app-mosaico mainTitle="Destinos" desc="¡Encontra tu siguiente alojamiento en diferentes partes del mundo!"
+    <div class="slider-beneficios" *ngIf="isPhoneScreen">
+        <swiper-container pagination="true" pagination-clickable="true" space-between="50">
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <ng-icon class="icon" [name]="beneficios[0].icon"></ng-icon>
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[0].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[0].text }}</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <ng-icon class="icon" [name]="beneficios[1].icon"></ng-icon>
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[1].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[1].text }}</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide >
+                <div class="beneficio">
+                    <div class="logo-beneficio">
+                        <img  src="../../../../assets/images/disney.png" loading="lazy">
+                    </div>
+                    <div class="beneficio-title">
+                        <h3>{{ beneficios[2].title }}</h3>
+                    </div>
+                    <p>{{ beneficios[2].text }}</p>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<app-mosaico mainTitle="Mejores ubicaciones en la Florida" desc="Contamos con alojamientos en
+distintos puntos importantes de Florida. ¿Buscas cerca de la playa o
+de la magia de Orlando? Tenemos el lugar ideal para cada tipo de
+viajero. Descubre nuestras principales ubicaciones."
     [images]="mosaicoImages" [texts]="mosaicoTexts"
 ></app-mosaico>
 
-    
-<app-tres-cards-section [cardData]="beneficios" mainTitle="Ventajas de Double G"></app-tres-cards-section>
-
 <app-experience-cards [skipIndex]="0"></app-experience-cards>
+
 <app-floating-whatsapp></app-floating-whatsapp>
+
 <app-contacto></app-contacto>
+
 <app-footer></app-footer>

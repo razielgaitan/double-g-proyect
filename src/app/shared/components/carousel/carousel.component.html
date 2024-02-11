@@ -2,8 +2,16 @@
   <div class="carousel-inner">
     <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [class.active]="i === 0">
       <img [src]="item.image" class="d-block w-100" alt="..." loading="lazy">
-      <div class="text" (click)="navigateToPage(item.link)">
-        <h1>{{ item.title }}</h1>
+      <div class="content">
+        <div class="secondary-title-container">
+            <h4>{{ item.secTitle }}</h4>
+        </div>
+        <div class="main-title-container" (click)="navigateToPage(item.link)">
+          <h1>{{ item.title }}</h1>
+        </div>
+        <div class="portada-text-container">
+            <p>{{ item.desc }}</p>
+        </div>
       </div>
     </div>
   </div>

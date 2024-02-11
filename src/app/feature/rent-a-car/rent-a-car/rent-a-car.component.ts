@@ -62,18 +62,18 @@ export class RentACarComponent implements OnInit {
   beneficios = [
     {
       icon: 'ionCarSportOutline',
-      title: 'Coches a tu gusto',
-      text: 'Elegí el auto que mas te guste para viajar.'
+      title: 'Variedad de vehículos',
+      text: ' Contamos con una amplia flota de autos, desde compactos hasta SUVs de lujo, adaptados a todos los estilos de viaje.'
     },
     {
-      icon: 'ionDiamondOutline',
-      title: 'Autos lujosos',
-      text: 'Podrás viajar con autos lujosos por todas partes..'
+      icon: 'ionLockClosedOutline',
+      title: 'Transparencia y seguridad',
+      text: ' Disfruta de un proceso de renta claro y seguro, con tarifas transparentes y medidas que garantizan tu tranquilidad.'
     },
     {
-      icon: 'ionEarthOutline',
-      title: 'Destinos únicos',
-      text: 'Viajá donde quieras con Double G.'
+      icon: 'ionPersonOutline',
+      title: 'Atención personalizada',
+      text: 'Experimenta un servicio personalizado que se adapta a tus necesidades, asegurando una experiencia de conducción sin complicaciones.'
     },
   ] 
 

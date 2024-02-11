@@ -1,15 +1,15 @@
 
 <app-portada
     backImg="../../../../../assets/images/aeropuerto.jpg"
-    secTitle="DESPEGA JUNTO A DOUBLE G"
+    secTitle="Despega junto a Double G"
     mainTitle="Vuelos"
-
+    desc="Planificar tu próximo viaje es fácil. Conectamos tus sueños con destinos fascinantes y experiencias inolvidables. Desde vuelos directos a conexiones estratégicas, te ofrecemos opciones que se adaptan a tus necesidades y preferencias."
 ></app-portada>
 
-<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que volar con Double G?"></app-tres-cards-section>
+<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por qué volar con Double G?"></app-tres-cards-section>
 
 <div class="container-vuelos">
-        <img class="background" src="../../../../../assets/images/avion-vuelos.jpeg">
+        <img class="background" src="../../../../../assets/images/avion-vuelos.jpeg" loading="lazy">
     <div class="portada-vuelos">
         <div class="text-container">
             <h1 class="texto-vuelos">Viaja a donde quieras</h1>
@@ -17,7 +17,7 @@
             <h4 class="texto-vuelos">Te buscamos los mejores viajes al mejor precio!</h4>
         </div>
         <div class="bottom">
-            <app-primary-button href="https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+Gtype=phone_number&app_absent=0" text="Reservá"></app-primary-button>
+            <app-primary-button (click)="selectFunction()" text="Reservá"></app-primary-button>
         </div>
     </div>
 </div>

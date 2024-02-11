@@ -50,6 +50,23 @@
     margin: 0 auto; 
 }
 
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos img{
+    width: 100px;
+    margin-right: 2%;
+    color: white;
+}
+.iconos svg{
+    width: 100px;
+    margin-right: 2%;
+    color: white;
+}
+
 .title {
     position: relative;
     color: var(--primary-color);
@@ -227,8 +244,10 @@ li {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    
-        
+    .iconos img{
+        width: 40px;}
+        .iconos svg{
+            width: 40px;}
 
     .media-icons a {
         margin: 5px;

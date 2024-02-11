@@ -1,3 +1,12 @@
+.parques-main-title {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.parques-main-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
 .park-portada {
     position: relative;
     width: 100%;
@@ -7,6 +16,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+p{
+    font-size: 1rem;
 }
 
 .img-park-portada {
@@ -26,8 +39,8 @@
 
 .logo {
     position: relative;
-    max-width: 300px;
-    height: 300px;
+    max-width: 220px;
+    height: 220px;
     z-index: 1;
     border-radius: 50%;
     background-color: rgb(238, 238, 254);
@@ -50,6 +63,16 @@
     max-height: 100%;
     border-radius: 50%;
 }
+
+.portada-title {
+    display: flex;
+    justify-content: center;
+}
+.portada-title h2 {
+    max-width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+}
 //------------------------------------------------------------------
 
 .grid-container {
@@ -59,7 +82,7 @@
     gap: 50px;
     width: 100%;
     max-width: 100%;
-    margin: 100px auto;
+    margin: 0 auto 50px;
     align-items: center;
     justify-content: center; 
 }
@@ -75,8 +98,8 @@
 }
 .park-container {
     display: grid;
-    max-width: 80%; 
-    width: 100%;
+    max-width: 1400px; 
+    width: 80%;
     grid-template-columns: auto auto;
     grid-template-rows: 340px;
     gap: 20px;
@@ -163,8 +186,8 @@
     }
 
     .logo {
-        max-width: 450px;
-        height: 450px;
+        max-width: 350px;
+        height: 350px;
     }
 
 
@@ -202,15 +225,18 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-        margin-top: 120px;
         width: 350px;
         gap: 100px;
+        margin-top: 100px;
+        margin-bottom: 0;
     }
+
     .background-container {
         margin: 50px 0;
         overflow: visible;
         border-radius: 8px;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        animation-range: entry -20% cover 10%;
     }
     .park-container {
         grid-template-columns: 1fr;
@@ -253,6 +279,7 @@
 @media screen and (max-width: 400px) {
     .grid-container {
         width: 250px;
+        margin-top: 60px;
     }
     .photo {
         width: 250px;
@@ -264,4 +291,103 @@
         height: 250px;
     }
     
+}
+
+//---------------------------------------------------------------------------------------------------
+.container-revendedor{
+    position: relative;
+    height: 60vh;
+    max-height: 85vh;
+    display: flex;
+    margin-top: 50px;
+
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2),
+        0px -8px 20px rgba(0, 0, 0, 0.2);
+
+    color: #fff;
+}
+.container-revendedor h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.container-revendedor .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada-revendedor{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 5%;
+    margin-left: 70%;
+    text-align: center;
+    margin-right: 5%;
+    
+}
+
+.container-revendedor img{
+    width: 100%;
+}
+
+.container-revendedor .bottom{
+    margin-top: 16px;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.texto-revendedor{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-revendedor {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portada-revendedor {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text-revendedor {
+        max-width: 90%;
+        margin-top: 2vh;
+    }
+    .texto-revendedor {
+        width: 100%;
+    }
+
+    .container-revendedor .bottom {
+        position: absolute;
+        width: 70%;
+        margin: 0 auto;
+        bottom: 5vh;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .container-revendedor h1{
+        font-size: 1.5rem;
+    }
+
+    .container-revendedor h4{
+        font-size: 1.2rem;
+    }
+
 }

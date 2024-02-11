@@ -11,6 +11,10 @@ export class HomeComponent {
 
   @ViewChild('firstSection') contentElement: ElementRef | undefined;
 
+  selectFunction(){
+    window.open('https://g.page/r/CeGo9_1DwiXREB0/review', '_blank')
+  }
+
   scrollDown() {
     if (this.contentElement) {
       this.contentElement.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });

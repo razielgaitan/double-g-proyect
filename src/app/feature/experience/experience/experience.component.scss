@@ -148,12 +148,14 @@ h1 {
 }
 
 .text-exp p{
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    // font-weight: 500;
     margin: 0;
 }
 
-
+p{
+    font-size: 1rem;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
