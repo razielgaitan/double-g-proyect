@@ -1,18 +1,19 @@
 
     <div class="container">
         <h1>{{ title }}</h1>
+        <p>{{ text }}</p>
         <swiper-container class="mySwiper" navigation="true" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
 
             <swiper-slide *ngFor="let card of cardData">
                 <div class="round-item">
-                <div class="card">
-                    <img class="card-img" [src]="card.imageSrc">
-                </div>
+                    <div class="card">
+                        <img class="card-img" [src]="card.imageSrc" loading="lazy">
+                    </div>
                 </div>
             </swiper-slide>
         </swiper-container>
         <div class="luxury-button">
-            <app-primary-button text="Pedir Asesoramiento" href="https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0"></app-primary-button>
+            <app-primary-button text="Pedir Asesoramiento" (click)="selectFunction()"></app-primary-button>
         </div>
     </div>
 

@@ -1,9 +1,18 @@
 
-<app-portada backImg="../../../../../assets/images/disney.jpg" secTitle="DIVIERTETE EN LOS PARQUES DE ORLANDO Y TAMPA"
-    mainTitle="Parques Tematicos">
+<app-portada 
+    backImg="../../../../../assets/images/disney.jpg" 
+    secTitle="Vive la aventura"
+    mainTitle="Parques Tematicos"
+    desc="Consigue tus Tickets a los Mejores Parques Temáticos. Ofrecemos acceso a los destinos más emocionantes y entretenidos. Asegura tu entrada y prepárate para vivir experiencias inolvidables. ¡Descubre la magia que tenemos para ti!">
 </app-portada>
 
-
+<app-tres-cards-section [cardData]="introParque" mainTitle="Disfruta de la diversión " mainText="Sumérgete en la magia de los parques temáticos de la
+Florida. Desde emocionantes atracciones hasta encuentros con
+personajes icónicos, ofrecemos una experiencia única y llena de
+diversión para toda la familia."></app-tres-cards-section>
+<div class="parques-main-title">
+    <h1>Parques de la Florida</h1>
+</div>
 <div class="park-portada">
     <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 192.756 192.756"
@@ -20,7 +29,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="../../../../assets/images/EPCOT.jpg">
+                <img src="../../../../assets/images/EPCOT.jpg" loading="lazy">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -47,7 +56,7 @@
             </div>
             <div class="item photo">
                 <img
-                    src="../../../../assets/images/magic-kingodm.jpg">
+                    src="../../../../assets/images/magic-kingodm.jpg" loading="lazy">
             </div>
         </div>
     </div>
@@ -55,7 +64,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="../../../../assets/images/animal-kingdom.jpg">
+                <img src="../../../../assets/images/animal-kingdom.jpg" loading="lazy">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -100,7 +109,7 @@
                 </div>
             </div>
             <div class="item photo">
-                <img src="../../../../assets/images/universal-orlando-resort.jpg">
+                <img src="../../../../assets/images/universal-orlando-resort.jpg" loading="lazy">
             </div>
         </div>
     </div>
@@ -108,7 +117,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="../../../../assets/images/jurassic-park.jpg">
+                <img src="../../../../assets/images/jurassic-park.jpg" loading="lazy">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -134,7 +143,7 @@
                 </div>
             </div>
             <div class="item photo">
-                <img src="../../../../assets/images/volvano-bay.jpg">
+                <img src="../../../../assets/images/volvano-bay.jpg" loading="lazy">
             </div>
         </div>
     </div>
@@ -146,12 +155,12 @@
     </div>
 </div>
 
-<div class="grid-container">
+<div class="grid-container" style="margin: 0 auto 100px;">
 
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="../../../../assets/images/busch-gardens.jpg">
+                <img src="../../../../assets/images/busch-gardens.jpg" loading="lazy">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -177,7 +186,7 @@
                 </div>
             </div>
             <div class="item photo">
-                <img src="../../../../assets/images/seaworld-orlando.jpg">
+                <img src="../../../../assets/images/seaworld-orlando.jpg" loading="lazy">
             </div>
         </div>
     </div>
@@ -185,7 +194,7 @@
     <div class="background-container">
         <div class="park-container">
             <div class="item photo">
-                <img src="../../../../assets/images/adventure-island.jpg">
+                <img src="../../../../assets/images/adventure-island.jpg" loading="lazy">
             </div>
             <div class="item info">
                 <div class="title-container">
@@ -203,16 +212,29 @@
 
 </div>
 
-
-
-<app-tres-cards-section [cardData]="beneficios" mainTitle="¿Por que eligir a Double G?"></app-tres-cards-section>
-
 <app-experience-cards [skipIndex]="3" [subTitleFlag]=true mainTitle="¿Tienes todo para tu viaje?"></app-experience-cards>
+
+<div class="container-revendedor">
+    <img class="background" src="../../../../assets/images/seaworld-orlando.jpg" loading="lazy">
+<div class="portada-revendedor">
+    <div class="text-revendedor">
+        <h1 class="texto-revendedor">¿Eres agente revendedor?</h1>
+
+        <h4 class="texto-revendedor">Sumate a nuestro equipo de agentes. Somos agentes oficiales de Disney. Aprovecha promociones exclusivas!</h4>
+    </div>
+    <div class="bottom">
+        <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+    </div>
+</div>
+</div>
+
 <app-floating-whatsapp></app-floating-whatsapp>
 <app-contacto 
     functionName="whatsapp"
-    mainTitle="¡Hospedate en los Resorts!"
-    subTitle="Consulta disponibilidad"
+    mainTitle="Comienza a Disfrutar de la magia de Orlando"
+    subTitle=" Consigue tus tickets de manera fácil y rápida. Somos agentes
+    oficiales de Disney World y podrás obtener promociones exclusivas. También
+    te asesoramos sobre las mejores opciones de parques en toda la Florida."
 ></app-contacto>
 
 <app-footer></app-footer>

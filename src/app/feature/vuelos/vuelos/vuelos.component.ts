@@ -17,13 +17,17 @@ export class VuelosComponent {
     },
     {
       icon: 'ionOptionsOutline',
-      title: 'Flexibilidad',
-      text: 'Nos adaptamos a tus planes y tus decisiones!'
+      title: 'Atención Personalizada',
+      text: 'Recibe un servicio personalizado en cada paso, desde la reserva hasta tu llegada, garantizando una experiencia de vuelo única.'
     },
     {
       icon: 'ionStarOutline',
-      title: 'Hermosos Lugares',
-      text: 'Te brindamos vuelos y guias para que puedas disfrutar tu viaje al 100%'
+      title: 'Tarifas Transparentes',
+      text: 'Experimenta tarifas claras y competitivas, sin sorpresas, para que puedas planificar tu viaje con confianza.'
     },
   ] 
+
+  selectFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
+  }
 }

@@ -1,8 +1,6 @@
-
 .carousel-item {
   position: relative;
   height: 86vh;
-  margin-bottom: 100px;
   overflow: hidden;
   box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.1);
 }
@@ -15,32 +13,6 @@ img {
   height: 100%;
   object-fit: cover;
   filter: brightness(75%);
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 400px;
-  height: 130px;
-  padding: 20px;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 2px solid #fff;
-  cursor: pointer;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #fff;
-  font-weight: 500;
-  line-height: 1.2;
-  margin: 0;
 }
 
 .controls-container {
@@ -56,6 +28,62 @@ h1 {
   top: -12%;
 }
 
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secondary-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 16px;
+  padding: auto;
+  background-color: var(--primary-color);
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h4 {
+  margin: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+h1{
+  font-size: 4rem;
+  color: #fff;
+  margin: 0;
+}
+.portada-text-container{
+  margin-top: 16px;
+  background-color: #00000048;
+  justify-content: center;
+  text-align: center;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1024px){
+  h1{
+    font-size: 3.2rem;
+  }
+}
+
 @media screen and (max-width: 1024px) and (max-height:1368px) {
   .carousel-item {
     height: 90vh;
@@ -69,28 +97,27 @@ h1 {
 }
 
 @media screen and (max-width: 980px) {
+  #carouselExampleControls {
+    margin-top: 74px;
+  }
   .carousel-item {
     height: 100vh;
   }
 }
 
 @media (max-width: 768px) {
-
-  .text {
-    width: 75%;
-    max-width: 400px;
-    height: 130px;
-    padding: 15px;
-    font-size: 1.8rem;
+  p {
+    font-size: 0.8rem;
   }
-
-  h1 {
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-
   .carousel-item {
     height: 100vh;
+  }
+  .content {
+    width: 75%;
+    
+  }
+  h4 {
+    font-size: 0.9rem;
   }
 
 }
@@ -99,11 +126,8 @@ h1 {
   .carousel-item {
     height: 100vh;
   }
-  .text {
-    width: 65%;
-  }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 

@@ -5,9 +5,9 @@
 <app-carousel></app-carousel>
 
 
-<app-experience-section></app-experience-section>
-
 <app-video-experiencie></app-video-experiencie>
+
+<app-experience-section></app-experience-section>
 
 <app-servicios-cards></app-servicios-cards>
 
@@ -15,16 +15,21 @@
 
 <div class="opinion-section">
   <div class="opinion-title">
-    <h1 class="text-color-gray title">Opiniones de nuestros clientes</h1>
+    <h1 class="text-color-gray title">Testimonios de Viajeros Double G</h1>
   </div>
   <div class="opinions">
     <app-opinion-card></app-opinion-card>
   </div>
 </div>
+<div class="button-form" style="width: 320px;margin: 0 auto;text-align: center;max-width: 90%;">
+  <app-primary-button text=" Cuéntanos tu experiencia"  (click)="selectFunction()"></app-primary-button>
+</div>
 
 <app-floating-whatsapp></app-floating-whatsapp>
 
-<app-contacto-newsletter></app-contacto-newsletter>
+<app-contacto
+    subTitle="Tu próxima aventura está a solo un clic de distancia. Contáctanos para planificar las vacaciones que sueñas. Nuestros asesores están listos para ayudarte!"
+></app-contacto>
 
 
 <app-footer></app-footer>
