@@ -7,7 +7,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 251, 251)
+    background-color: rgb(255, 251, 251);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 h1 {
