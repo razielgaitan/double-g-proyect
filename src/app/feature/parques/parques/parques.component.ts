@@ -23,7 +23,7 @@ export class ParquesComponent {
     {
       icon: 'ionCalendarOutline',
       title: ' Otros parques temáticos',
-      text: 'Tenemos otros parques increíbles para ti. Descúbrelos!'
+      text: 'Tenemos otros parques increíbles para tí. ¡Descúbrelos!'
     },
   ]
   beneficios = [

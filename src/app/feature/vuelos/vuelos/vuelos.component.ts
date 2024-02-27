@@ -12,18 +12,18 @@ export class VuelosComponent {
   beneficios = [
     {
       icon: 'ionEarthOutline',
-      title: 'Diversos Destinos',
+      title: 'Diversos destinos',
       text: 'Te ayudamos a encontrar el destino perfecto para tu nueva aventura'
     },
     {
       icon: 'ionOptionsOutline',
-      title: 'Atención Personalizada',
+      title: 'Atención personalizada',
       text: 'Recibe un servicio personalizado en cada paso, desde la reserva hasta tu llegada, garantizando una experiencia de vuelo única.'
     },
     {
       icon: 'ionStarOutline',
-      title: 'Tarifas Transparentes',
-      text: 'Experimenta tarifas claras y competitivas, sin sorpresas, para que puedas planificar tu viaje con confianza.'
+      title: 'Tarifas transparentes',
+      text: 'Ofrecemos tarifas claras y competitivas, sin sorpresas, para que puedas planificar tu viaje con confianza.'
     },
   ] 
 
