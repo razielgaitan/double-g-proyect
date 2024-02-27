@@ -1,6 +1,6 @@
 .video-section-container{
     width: 100%;
-    margin: 100px auto 0;
+    margin: 0 auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@
     padding: 20px;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
@@ -43,6 +43,7 @@ h2 {
     max-width: 100%;
     max-height: auto;
     text-align: left;
+    width: 90%;
 }
 
 p{
@@ -56,7 +57,7 @@ p{
 
 .button-form {
     width: 180px;
-    margin: 16px auto 0;
+    margin: 16px 0 0;
 }
 .btn-epic {
     position: relative;
@@ -247,6 +248,9 @@ video {
     p{
         margin: 0 auto;
         text-align: center;
+    }
+    .title-video {
+        align-items: center;
     }
 
 }
