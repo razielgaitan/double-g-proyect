@@ -43,7 +43,17 @@
   }
 }
 
-
+.icon-text-edited {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: -4px;
+  &:hover {
+    color: var(--primary-color);
+  }
+}
 
 .top-line {
   display: flex;
@@ -171,6 +181,26 @@
   flex-direction: column;
   align-items: center;
 }
+
+.icon-link-alojamiento {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.icon-link-rent {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
 
 ng-icon {
   padding-bottom: 45px;
@@ -327,6 +357,11 @@ img:hover {
   .nav-item {
     display: flex;
     flex-direction: row;
+  }
+  .alojamiento {
+    
+    flex-direction: row;
+    margin-right: 100px;
   }
 
   .nav-icon-mobile {

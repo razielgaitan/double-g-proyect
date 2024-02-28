@@ -43,17 +43,17 @@ export class AlojamientosComponent {
     {
       icon: 'ionBedOutline',
       title: 'Hoteles',
-      text: 'Disfruta el confort de la mejor hotelería de Miami y La Florida.'
+      text: 'Disfruta el confort de la mejor hotelería de Miami y la Florida.'
     },
     {
       icon: 'ionHomeOutline',
-      title: ' Departamentos y casas',
-      text: 'Elige la comodidad y libertad de nuestras unidades que esperan por ti.'
+      title: 'Departamentos y casas',
+      text: 'Elige la comodidad y libertad de nuestras unidades que esperan por tí.'
     },
     {
       icon: 'ionCalendarOutline',
-      title: 'Temáticos y parques',
-      text: 'Tenemos hospedajes en los increíbles parques de Orlando. Disfruta de una increíble experiencia!'
+      title: 'Parques temáticos',
+      text: 'Tenemos hospedajes en los increíbles parques de Orlando. ¡Disfruta de una increíble experiencia!'
     },
   ]
 

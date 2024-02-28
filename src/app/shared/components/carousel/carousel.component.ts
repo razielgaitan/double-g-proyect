@@ -11,8 +11,8 @@ export class CarouselComponent {
     { 
       image: '../../../../assets/images/coast-miami.jpg', 
       title: 'Disfruta de una Experiencia Única', 
-      secTitle: 'Explora, Descansa, Vive La Florida', 
-      desc:'Somos Double G, tu agencia oficial en la Florida, dedicada a crear momentos únicos y personalizados para tu viaje. Cada detalle está pensado para que vivas la Florida de una manera única. Descubre la diferencia de viajar con nosotros.', 
+      secTitle: ' Disfruta de una experiencia única', 
+      desc:'Somos Double G, tu agencia oficial en la Florida, dedicada a crear momentos únicos y personalizados para tu viaje. Cada detalle está pensado para que vivas la ciudad de una manera única. Descubre la diferencia de viajar con nosotros.', 
       link: '/home' 
     },
     { 

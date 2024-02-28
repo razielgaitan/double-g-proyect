@@ -34,7 +34,7 @@ export class ExperienceCardsComponent {
     },
     {
       icon: 'ionColorWandOutline', 
-      title: 'Parque Tematicos',
+      title: 'Parques Temáticos',
       text: '¡Sumérgete en la magia y la diversión con nuestro servicio de visita a parques temáticos!',
       link: '/parques'
     },
@@ -55,7 +55,9 @@ export class ExperienceCardsComponent {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   navigateToPage(page: string): void {
-    this.router.navigate([page], { relativeTo: this.route });
+    this.router.navigate([page], { relativeTo: this.route }).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 }
 
