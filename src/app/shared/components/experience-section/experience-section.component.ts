@@ -30,10 +30,13 @@ export class ExperienceSectionComponent implements AfterViewInit {
   }
 
   constructor( private router: Router){}
-  selectFunction(){
-    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
+  selectFunction() {
+    // Redirige a la ruta /servicios
+    this.router.navigate(['/servicios']).then(() => {
+      // Desplázate al principio de la página después de que la navegación haya tenido lugar
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
-
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
     if (!this.animationActivated && this.containerElement && this.animatedElements) {

@@ -5,7 +5,7 @@
 	background: linear-gradient(to right,  rgb(238, 238, 254) 0%,rgba(255,255,255,0) 100%);
 }
 
-$animationSpeed: 15s;
+$animationSpeed: 20s;
 $blogPostWidth: 990px; 
 
 @keyframes scroll {
@@ -14,19 +14,18 @@ $blogPostWidth: 990px;
 }
 
 
-.contenedor{
+#opinions-container{
   background: rgb(238, 238, 254);
   height: auto;
   max-width: 100%;
 	margin: auto;
-	overflow:hidden;
+	overflow-x:hidden;
   width: 90%; 
   max-width: 1000px;
 	position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   
   &::before,
@@ -55,18 +54,20 @@ $blogPostWidth: 990px;
     width: 100%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    height: auto;
 	}
 }
 
 .blog_post {
-  justify-content: center; 
+  justify-content: flex-start; 
+  padding-top: 5.2rem;
   display: flex;
   flex-direction: column; 
   flex: 0 0 calc(100% - 20px);
   align-items: center;
   background: #fff;
   max-width: 270px;
-  height: 300px;
+  min-height: 300px;
   border-radius: 10px;
   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
   position: relative;
@@ -171,7 +172,7 @@ p {
 
 
 @media screen and (max-width: 768px) {
-  .contenedor {
+  #opinions-container {
     width: 100%;
   }
 
@@ -183,7 +184,7 @@ p {
 }
 
 @media screen and (max-width: 485px) {
-  .contenedor {
+  #opinions-container {
     width: 100%;
   }
 
