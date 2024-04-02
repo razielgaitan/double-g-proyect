@@ -11,7 +11,7 @@ export class AlojamientosComponent {
     {
       icon: 'ionBedOutline',
       title: 'Hoteles',
-      text: 'Disfruta el confort de la mejor hotelería de Miami y La Florida.'
+      text: 'Disfruta el confort de la mejor hotelería en todo el mundo.'
     },
     {
       icon: 'ionStarOutline',
@@ -36,7 +36,9 @@ export class AlojamientosComponent {
     'https://imageio.forbes.com/blogs-images/thumbnails/blog_946/pt_946_6348_o.jpg?format=jpg&height=600&width=1200&fit=bounds',
 
   ];
-  mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Surfside', 'Indian Greek'];
+  //sacar horizontal-surfside-beach-sc.jpg ,     https://imageio.forbes.com/blogs-images/thumbnails/blog_946/pt_946_6348_o.jpg?format=jpg&height=600&width=1200&fit=bounds,        https://www.jetsetter.com//uploads/sites/7/2018/07/GettyImages-866059648-1380x690.jpg
+  // remplazar por orden que aparece en el brief cada foto
+  mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Naples', 'Sarasota'];
 
 
   beneficios = [
@@ -74,6 +76,10 @@ export class AlojamientosComponent {
 
     this.isPhoneScreen = screenWidth <= 768;
     this.isScreenSmall = screenWidth <= 600;
+  }
+
+  selectFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
   }
 
 }
