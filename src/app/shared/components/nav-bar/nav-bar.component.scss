@@ -139,7 +139,11 @@
 }
 
 .icon-link:hover ng-icon,
-.icon-link:hover .icon-text {
+.icon-link-rent:hover ng-icon,
+.icon-link-alojamiento:hover ng-icon,
+.icon-link:hover .icon-text,
+.icon-link-rent:hover .icon-text-edited,
+.icon-link-alojamiento:hover .icon-text-edited {
   color: var(--primary-color);
 }
 
