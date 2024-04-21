@@ -1,7 +1,7 @@
 
 
 <app-portada
-    backImg="../../../../../assets/images/hotel-room.jpg"
+    backImg="../../../../../assets/images/portada-alojamientos.jpg"
     secTitle="Hospedajes únicos, experiencias inolvidables"
     mainTitle="Alojamientos"
     desc="Contamos con una increíble oferta de alojamientos, desde hoteles hasta apartamentos frente a la playa. Tu comodidad y bienestar son nuestra prioridad."
@@ -93,12 +93,27 @@
 
 
 
+
 <app-mosaico mainTitle="Mejores ubicaciones en la Florida" desc="Contamos con alojamientos en
 distintos puntos importantes de Florida. ¿Buscas cerca de la playa o
 de la magia de Orlando? Tenemos el lugar ideal para cada tipo de
 viajero. Descubre nuestras principales ubicaciones."
     [images]="mosaicoImages" [texts]="mosaicoTexts"
 ></app-mosaico>
+
+<div class="container-revendedor">
+    <img class="background" src="../../../../assets/images/seaworld-orlando.jpg" loading="lazy">
+    <div class="portada-revendedor">
+        <div class="text-revendedor">
+            <h1 class="texto-revendedor">¿Conoces los hoteles temáticos de Orlando?</h1>
+        
+            <h4 class="texto-revendedor">Disfruta de una experiencia mágica completa alojandote en los hoteles de los parques de temáticos ¡Tenemos precios exclusivos!</h4>
+        </div>
+        <div class="bottom">
+            <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+        </div>
+    </div>
+</div>
 
 <app-experience-cards [skipIndex]="0"></app-experience-cards>
 
