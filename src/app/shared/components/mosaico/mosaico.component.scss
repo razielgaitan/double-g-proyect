@@ -35,7 +35,7 @@ p{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 300px));
-    grid-template-rows: 32vh 32vh 32vh;
+    grid-template-rows: clamp(12vh,10vh + 10vw,32vh) clamp(12vh,10vh + 10vw,32vh) clamp(12vh,10vh + 10vw,32vh) clamp(12vh,10vh + 10vw,32vh);
     gap: 20px;
     margin: 0 auto;
     justify-content: center;
@@ -64,16 +64,40 @@ p{
     filter: brightness(75%);
 }
 
+//#img-4 {
+//    grid-area: 1/4/3/5;
+//}
+//
+//#img-5 {
+//    grid-area: 2/1/4/2;
+//}
+//#img-6 {
+//    grid-area: 2/2/2/4;
+//}
+#img-1 {
+    grid-area: 1/1/2/3;
+}
+
 #img-4 {
-    grid-area: 1/4/3/5;
+    grid-area: 2/1/4/2;
 }
 
 #img-5 {
-    grid-area: 2/1/4/2;
+    grid-area: 2/2/3/4;
 }
+
 #img-6 {
-    grid-area: 2/2/2/4;
+    grid-area: 2/4/4/5;
 }
+
+#img-7 {
+    grid-area: 3/2/4/4;
+}
+
+#img-10 {
+    grid-area: 4/3/5/5;
+}
+
 .card-text {
     position: absolute;
     bottom: 0;
@@ -103,43 +127,50 @@ p{
     }
 }
 
-@media screen and (max-width:1024px) {
-    .destinos-cards {
-        grid-template-rows: 25vh 25vh 25vh;
-    }
-}
-
-@media screen and (max-width:912px) {
-    .destinos-cards {
-        grid-template-rows: 20vh 20vh 20vh;
-    }
-}
 
 @media screen and (max-width:768px) {
     .destinos-cards {
         grid-template-columns: repeat(2, minmax(auto, 300px));
-        grid-template-rows: repeat(6, minmax(auto, 200px));
+        grid-template-rows: repeat(7, clamp(15vh, 12vh + 10vw, 32vh));
+        gap: 0.8rem;
     }
 
     
+    #img-1 {
+        grid-area: auto;
+    }
+    
     #img-4 {
+        grid-area: 3/1/5/2;
+    }
+    
+    #img-5 {
+        grid-area: auto;
+    }
+    
+    #img-6 {
+        grid-area: auto;
+    }
+    
+    #img-7 {
+        grid-area: auto;
+    }
+    
+    #img-10 {
+        grid-area: 7/1/8/3;
+    }
+
+    #img-2 {
         grid-area: 1/2/3/3;
     }
 
-    #img-5 {
-        grid-area: 3/1/5/2;
-    }
-    #img-6{
-        grid-area: 4/2/4/2;
-    }
-    
-    #img-7{
-        grid-area: 5/1/6/3;
+    #img-8 {
+        grid-area: 5/2/7/3;
     }
 }
 
-@media screen and (max-width:400px) {
-    .destinos-cards {
-        grid-template-rows: repeat(6, minmax(auto, 15vh));
-    }
-}
+//@media screen and (max-width:400px) {
+//    .destinos-cards {
+//        grid-template-rows: repeat(6, minmax(auto, 15vh));
+//    }
+//}
