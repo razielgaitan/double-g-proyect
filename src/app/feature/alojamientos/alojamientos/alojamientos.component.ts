@@ -11,7 +11,7 @@ export class AlojamientosComponent {
     {
       icon: 'ionBedOutline',
       title: 'Hoteles',
-      text: 'Disfruta el confort de la mejor hotelería de Miami y La Florida.'
+      text: 'Disfruta el confort de la mejor hotelería en todo el mundo.'
     },
     {
       icon: 'ionStarOutline',
@@ -30,20 +30,21 @@ export class AlojamientosComponent {
     'https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
     'https://secretescapes-web.imgix.net/hotels/4683/a96e3ca9_8c20_461c_8dee_6f4bebd84b06.jpg?w=640&h=459&fit=crop&crop=entropy&auto=format,compress',
     'https://www.miamiandbeaches.com/getmedia/695d7afd-b742-4e22-87fd-f44da6fedec4/Sunny_Isles_Beach_aerial_pier_1440x900.jpg?width=1000&resizemode=force',
-    'https://www.jetsetter.com//uploads/sites/7/2018/07/GettyImages-866059648-1380x690.jpg',
-    'https://alwaysontheshore.com/wp-content/uploads/2021/01/002-1-1080x675.jpg',
-    'https://static.cozycozy.com/images/catalog/bg2/horizontal-surfside-beach-sc.jpg',
-    'https://imageio.forbes.com/blogs-images/thumbnails/blog_946/pt_946_6348_o.jpg?format=jpg&height=600&width=1200&fit=bounds',
-
+    '../../../../assets/images/TAMPA.jpg',
+    '../../../../assets/images/KISSIMEE.JPG',
+    '../../../../assets/images/Naples.jpg',
+    '../../../../assets/images/SARASOTA.jpg',
+    '../../../../assets/images/KEYWEST.jpg',
   ];
-  mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Florida Beach', 'Kissimmee', 'Surfside', 'Indian Greek'];
+  
+  mosaicoTexts: string[] = ['Miami Beach' ,'Fort Lauderdale', 'Hallandale', 'Hollywood Beach', 'Sunny Isles', 'Tampa', 'Kissimee', 'Naples', 'Sarasota', 'Key West'];
 
 
   beneficios = [
     {
       icon: 'ionBedOutline',
       title: 'Hoteles',
-      text: 'Disfruta el confort de la mejor hotelería de Miami y la Florida.'
+      text: 'Disfruta el confort de la mejor hotelería en todo el mundo.'
     },
     {
       icon: 'ionHomeOutline',
@@ -74,6 +75,10 @@ export class AlojamientosComponent {
 
     this.isPhoneScreen = screenWidth <= 768;
     this.isScreenSmall = screenWidth <= 600;
+  }
+
+  selectFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank')
   }
 
 }

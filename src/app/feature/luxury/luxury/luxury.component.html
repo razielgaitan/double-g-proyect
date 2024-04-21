@@ -1,15 +1,28 @@
-
-
-<app-portada 
-    backImg="../../../../../assets/images/luxury.2.jpg" 
-    secTitle="Estilo 100% Miami"
-    mainTitle="Luxury"
-    desc="Disfruta la elegancia y el confort con nuestro exclusivo servicio de renta de autos lujosos y yates. Reserva ahora y haz de tu viaje una experiencia de alto nivel con Double G."
+<app-portada
+  backImg="../../../../../assets/images/luxury.2.jpg"
+  secTitle="Estilo 100% Miami"
+  mainTitle="Luxury"
+  desc="Disfruta la elegancia y el confort con nuestro exclusivo servicio de renta de autos lujosos y yates. Reserva ahora y haz de tu viaje una experiencia de alto nivel con Double G."
 ></app-portada>
 
-<app-luxury-carrousel [cardData]="yateData" title="Alquiler de yates" text="Descubre la experiencia exclusiva de navegar por Miami. Con nuestro servicio de alquiler de yates, disfruta de un día increíble, vistas panorámicas y un servicio de primera clase. Haz que cada momento en el agua sea inolvidable."></app-luxury-carrousel>
-
-<app-luxury-carrousel [cardData]="carData" title="Renta de vehículos luxury" text=" Recorre la Florida con nuestra exclusiva oferta de renta de vehículos de alta gama. Ferrari, Lamborghini y muchos más, ofrecemos una flota que combina rendimiento, confort y sofisticación."></app-luxury-carrousel>
+<app-luxury-carrousel
+  [cardData]="yateData"
+  title="Alquiler de Yates"
+  text="Descubre la experiencia exclusiva de navegar por Miami. Con nuestro servicio de alquiler de yates privados, disfruta de un día increíble, vistas panorámicas y un servicio de primera clase, recorriendo por los canales increíbles de la ciudad."
+></app-luxury-carrousel>
+<div class="container">
+  <p>
+    Contamos con yates desde 21 a 100 pies. Cada embarcación incluye comodidades
+    increíbles y está tripulada por un equipo de profesionales experimentados
+    para garantizar su comodidad, relajación y disfrute. Puede elegir turnos de
+    2, 4 u 8 horas y/o planear eventos únicos.
+  </p>
+</div>
+<app-luxury-carrousel
+  [cardData]="carData"
+  title="Renta de vehículos luxury"
+  text=" Recorre la Florida con nuestra exclusiva oferta de renta de vehículos de alta gama. Ferrari, Lamborghini y muchos más, ofrecemos una flota que combina rendimiento, confort y sofisticación."
+></app-luxury-carrousel>
 
 <app-experience-cards [skipIndex]="4"></app-experience-cards>
 <app-floating-whatsapp></app-floating-whatsapp>
