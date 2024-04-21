@@ -1,0 +1,21 @@
+p {
+    width: 1200px;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    margin: 50px auto;
+    animation: fadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 20%;
+}
