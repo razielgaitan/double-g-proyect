@@ -1,0 +1,14 @@
+<div class="photos">
+    <div class="images-container">
+        <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+
+            <swiper-slide *ngFor="let card of images">
+                <div class="round-item">
+                    <div class="card">
+                        <img class="card-img" [src]="card.imageSrc" loading="lazy">
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>
