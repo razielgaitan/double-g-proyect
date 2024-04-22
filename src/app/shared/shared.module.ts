@@ -24,6 +24,7 @@ import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.
 import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-carrousel.component';
 import { ExperienceCardsComponent } from './components/experience-cards/experience-cards.component';
 import { ServiciosCardsComponent } from './components/servicios-cards/servicios-cards.component';
+import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
 
 
 
@@ -49,7 +50,7 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
     ServiciosCardsComponent,
-
+    MiniSliderComponent,
   ],
   imports: [
     CommonModule,
@@ -78,6 +79,7 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
     ServiciosCardsComponent,
+    MiniSliderComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

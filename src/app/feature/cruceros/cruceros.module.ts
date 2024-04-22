@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CrucerosRoutingModule } from './cruceros-routing.module';
 import { CrucerosComponent } from './cruceros/cruceros.component';
@@ -11,5 +11,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CrucerosRoutingModule,
     SharedModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
+
 })
 export class CrucerosModule { }
