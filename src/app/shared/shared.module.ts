@@ -27,6 +27,8 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
 import { ParquesSliderComponent } from './components/parques-slider/parques-slider.component';
 import { UniversalSliderComponent } from './components/universal-slider/universal-slider.component';
 import { OtrosParquesSliderComponent } from './components/otros-parques-slider/otros-parques-slider.component';
+import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+
 
 
 
@@ -55,7 +57,7 @@ import { OtrosParquesSliderComponent } from './components/otros-parques-slider/o
     ParquesSliderComponent,
     UniversalSliderComponent,
     OtrosParquesSliderComponent,
-
+    MiniSliderComponent,
   ],
   imports: [
     CommonModule,
@@ -87,6 +89,7 @@ import { OtrosParquesSliderComponent } from './components/otros-parques-slider/o
     ParquesSliderComponent,
     UniversalSliderComponent,
     OtrosParquesSliderComponent,
+    MiniSliderComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

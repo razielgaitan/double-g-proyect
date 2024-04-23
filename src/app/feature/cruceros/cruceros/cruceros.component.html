@@ -22,59 +22,32 @@
       <ul>
         <li>
           <span><i class="fa fa-ship" aria-hidden="true"></i></span>
-          <span>Relájate con el mar abierto</span>
+          <span>Múltiples y únicos destinos como el Caribe, siendo Miami uno de los principales puertos del mundo</span>
         </li>
         <li>
-          <span><i class="fa fa-flag" aria-hidden="true"></i></span>
-          <span>Disfruta las vistas de la costa</span>
-        </li>
-        <li>
-          <span><i class="fa fa-map" aria-hidden="true"></i></span>
-          <span>Emprende una nueva aventura</span>
+          <span><i class="fa fa-star" aria-hidden="true"></i></span>
+          <span>Vive el lujo y la comodidad, espectáculos y actividades únicas.</span>
         </li>
       </ul>
     </div>
   </div>
+  <!-- <div class="">
+    <app-mini-slider [images]="images"></app-mini-slider>
+  </div> -->
   <div class="photos">
     <div class="images-container">
-      <div class="top">
-        <div class="image" id="image-1">
-          <img
-            src="https://content.boats.com/files/Tipos-de-yates.jpg"
-            class="exp-img"
-            alt="Luxury"
-            loading="lazy"
-          />
-        </div>
-        <div class="image" id="image-2">
-          <img
-            src="../../../../../assets/images/crucero.webp"
-            class="exp-img"
-            alt="Crucero"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div class="bottom">
-        <div class="image" id="image-3">
-          <img
-            src="../../../../assets/images/yate2.jpg"
-            class="exp-img"
-            alt="Yate"
-            loading="lazy"
-          />
-        </div>
-        <div class="image" id="image-4">
-          <img
-            src="https://content.boats.com/files/Tipo-de-yates_yate-crucero-a-motor.jpg"
-            class="exp-img"
-            alt="Alojamiento"
-            loading="lazy"
-          />
-        </div>
-      </div>
+        <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
+
+            <swiper-slide *ngFor="let card of images">
+                <div class="round-item">
+                    <div class="card">
+                        <img class="card-img" [src]="card.imageSrc" loading="lazy">
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
     </div>
-  </div>
+</div>
 </div>
 
 <app-experience-cards [skipIndex]="5"></app-experience-cards>
