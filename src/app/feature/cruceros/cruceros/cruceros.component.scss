@@ -281,3 +281,18 @@ swiper-container {
     transform: translateY(0px) scale(1);
   }
 }
+
+//------------------------------------------------------------------------------------------------------------------
+.empresas-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto; 
+}
+.empresas-main-title {
+  margin: 50px auto;
+  padding: 0 15px;
+}

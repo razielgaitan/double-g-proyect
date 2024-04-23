@@ -59,6 +59,8 @@ export class ExperienceCardsComponent {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+
 }
 
 
