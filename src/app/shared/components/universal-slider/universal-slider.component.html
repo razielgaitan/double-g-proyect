@@ -1,0 +1,62 @@
+<div class="card-slider-wrapper">
+    <i class="fa-solid fa-angle-left" (click)="onClickIcon('left')" #arrowIcon1></i>
+    <ul class="card-carousel" #carousel>
+        <li class="card" #firstImg>
+            <div class="img">
+                <img src="../../../../assets/images/parques/Universal Studios Florida.webp">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Universal Studios Florida</h3>
+                </div>
+                <div class="card-text">
+                    <p>Es como ver los programas de televisión que más te gustan y tus películas favoritas en la vida real, excepto por lo que pasa en las atracciones, como los giros, las vueltas y las caídas. Disfruta parte del mundo de Harry Potter y los Minions!
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/Universal's Islands of Adventure.webp">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Universal Islands of Adventure</h3>
+                </div>
+                <div class="card-text">
+                    <p>Superhéroes. Criaturas mágicas. La escuela de Harry Potter y hasta dinosaurios! Súbete a varias atracciones. Algunas te empaparán. Algunos solo desordenarán tu cabello. Algunos harán que tu cabeza dé vueltas.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/universal-s-volcano-bay.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Universal Volcano Bay</h3>
+                </div>
+                <div class="card-text">
+                    <p>Este parque acuático temático es un paraíso tropical donde encontrarás emoción y relajamiento. Buscadores de emociones, prepárense para zambullidas que desafían la gravedad y los toboganes de agua más rápidos que jamás hayan visto.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+    </ul>
+    <i class="fa-solid fa-angle-right" (click)="onClickIcon('right')" #arrowIcon2></i> 
+</div>

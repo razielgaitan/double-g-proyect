@@ -1,0 +1,80 @@
+<div class="card-slider-wrapper">
+    <i class="fa-solid fa-angle-left" (click)="onClickIcon('left')" #arrowIcon1></i>
+    <ul class="card-carousel" #carousel>
+        <li class="card" #firstImg>
+            <div class="img">
+                <img src="../../../../assets/images/parques/legolando.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Legoland Florida</h3>
+                </div>
+                <div class="card-text">
+                    <p>Diseñado especialmente para familias con niños, este parque tiene atracciones emocionantes, espectáculos interactivos y exhibiciones educativas, todo inspirado en el popular juguete de construcción. Disfruta de montañas rusas, paseos acuáticos, zonas de juego y más, todo dentro de un ambiente colorido y divertido.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/NASA.avif">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>NASA: Kennedy Space Center Orlando</h3>
+                </div>
+                <div class="card-text">
+                    <p>Ideal para los amantes del espacio y la exploración. Los visitantes pueden explorar exposiciones interactivas, ver cohetes históricos y naves espaciales, y aprender sobre la historia y el futuro de la exploración espacial.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/busch-gardens.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Busch Gardens Tampa Bay</h3>
+                </div>
+                <div class="card-text">
+                    <p>Disfruta de este emocionante parque temático, conocido por sus emocionantes montañas rusas, espectáculos en vivo y experiencias de safari.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/seaworld-orlando.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>SeaWorld Orlando</h3>
+                </div>
+                <div class="card-text">
+                    <p>Sumérgete en las maravillas de SeaWorld Orlando, donde el mundo acuático cobra vida. ¡No dejes de disfrutar de la magia de SeaWorld Orlando!</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+    </ul>
+    <i class="fa-solid fa-angle-right" (click)="onClickIcon('right')" #arrowIcon2></i> 
+</div>
