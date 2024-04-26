@@ -286,3 +286,21 @@ p{
         margin-left: 0;
     }}
 }
+
+//-------------------------------------------------------------------------
+// Cambio de bg
+.park-section {
+    transition: background-color 1s ease;
+}
+.cambio-bg {
+    background-color: var(--universal-blue);
+
+    .park-portada .logo svg {
+        fill: white;
+        transition: fill 1s ease;
+    }
+    .park-portada, .parques-wrapper {
+        color: white;
+        transition: color 1s ease;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-parques',
@@ -43,6 +43,15 @@ export class ParquesComponent {
       text: 'Con Double G te llevamos y traemos a cada uno de los parques.'
     },
   ]
+
+  currentSection: string = '';
+  activeSection: string = '';
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.changeBackground();
+  }
+
   selectFunction(): void {
     const bitrix24Html = `
       <!DOCTYPE html>
@@ -110,4 +119,42 @@ export class ParquesComponent {
       console.error('No se pudo abrir la nueva ventana o pestaña.');
     }
   }
+
+  changeBackground() {
+    const sections = this.getSectionsInfo();
+
+    for (const section of sections) {
+      if (this.isSectionInView(section)) {
+        this.currentSection = section.id;
+        this.activeSection = this.currentSection;
+        return;
+      }
+    }
+
+    this.currentSection = 'disney-section';
+    this.activeSection = this.currentSection;
+  }
+
+  getSectionsInfo(): { id: string; top: number; height: number }[] {
+    const sections = ['disney-section', 'universal-section', 'otros-parques-section'];
+    return sections.map(id => {
+      const element = document.getElementById(id) as HTMLElement | null;
+      return {
+        id,
+        top: element?.offsetTop || 0,
+        height: element?.offsetHeight || 0
+      };
+    });
+  }
+
+  isSectionInView(section: { top: number; height: number }): boolean {
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollPosition = window.scrollY;
+
+    return (
+      scrollPosition > section.top - clientHeight / 2 &&
+      scrollPosition < section.top + section.height / 2
+    );
+  }
+
 }
