@@ -69,6 +69,48 @@ export class CrucerosComponent implements AfterViewInit, OnDestroy {
       imageSrc: '../../../../assets/images/crucero-7.avif'
     },
   ];
+
+  empresasData = [
+    {
+      empTitle: 'Carnival',
+      empLogo: '../../../../assets/logo/cruceros/carnival-logo.svg',
+    },
+    {
+      empTitle: 'Celebrity Cruises',
+      empLogo: '../../../../assets/logo/cruceros/celebrity-cruises.svg',
+    },
+    {
+      empTitle: 'Disney Cruceros',
+      empLogo: '../../../../assets/logo/cruceros/disney-cruceros.svg',
+    },
+    {
+      empTitle: 'NCL',
+      empLogo: '../../../../assets/logo/cruceros/logo-ncl-white.svg',
+    },
+    {
+      empTitle: 'Oceania Cruises',
+      empLogo: '../../../../assets/logo/cruceros/logo-oceania-cruises.svg',
+    },
+    {
+      empTitle: 'SBN',
+      empLogo: '../../../../assets/logo/cruceros/logo-sbn.svg',
+    },
+    {
+      empTitle: 'MSC Cruceros',
+      empLogo: '../../../../assets/logo/cruceros/msc-cruceros-logo.svg',
+    },
+    {
+      empTitle: 'Royal Caribbean',
+      empLogo: '../../../../assets/logo/cruceros/royal-caribbean-logo-white.svg',
+    },
+    {
+      empTitle: 'Voyages Cruceros',
+      empLogo: '../../../../assets/logo/cruceros/voyages-cruceros.svg',
+    },
+  ];
+
+
+
   
   private intersectionObserver: IntersectionObserver | undefined;
   ngAfterViewInit() {

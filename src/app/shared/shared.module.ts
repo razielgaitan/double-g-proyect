@@ -28,6 +28,7 @@ import { ParquesSliderComponent } from './components/parques-slider/parques-slid
 import { UniversalSliderComponent } from './components/universal-slider/universal-slider.component';
 import { OtrosParquesSliderComponent } from './components/otros-parques-slider/otros-parques-slider.component';
 import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+import { CarouselMarcasComponent } from './components/carousel-marcas/carousel-marcas.component';
 
 
 
@@ -58,6 +59,7 @@ import { MiniSliderComponent } from './components/mini-slider/mini-slider.compon
     UniversalSliderComponent,
     OtrosParquesSliderComponent,
     MiniSliderComponent,
+    CarouselMarcasComponent,
   ],
   imports: [
     CommonModule,
@@ -90,6 +92,7 @@ import { MiniSliderComponent } from './components/mini-slider/mini-slider.compon
     UniversalSliderComponent,
     OtrosParquesSliderComponent,
     MiniSliderComponent,
+    CarouselMarcasComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

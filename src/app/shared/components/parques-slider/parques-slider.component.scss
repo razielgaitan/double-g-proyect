@@ -11,6 +11,7 @@
     height: 50px;
     width: 50px;
     background: #fff;
+    color:black;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -79,8 +80,24 @@
     border-bottom-left-radius: 0px;
     background-color: rgba(37, 59, 86, 0.8);
     object-fit: cover;
-    
+    position: relative;
 }
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.image-overlay span {
+    font-size: 14px;
+}
+
 .card .img img{
     width: 100%;
     height: 100%;
