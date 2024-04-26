@@ -73,11 +73,11 @@ export class CrucerosComponent implements AfterViewInit, OnDestroy {
   empresasData = [
     {
       empTitle: 'Carnival',
-      empLogo: '../../../../assets/logo/cruceros/carnival-logo-png.avif',
+      empLogo: '../../../../assets/logo/cruceros/carnival-logo.svg',
     },
     {
       empTitle: 'Celebrity Cruises',
-      empLogo: '../../../../assets/logo/cruceros/celebrity-cruises-white.webp',
+      empLogo: '../../../../assets/logo/cruceros/celebrity-cruises.svg',
     },
     {
       empTitle: 'Disney Cruceros',
