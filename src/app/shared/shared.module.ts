@@ -28,7 +28,7 @@ import { ParquesSliderComponent } from './components/parques-slider/parques-slid
 import { UniversalSliderComponent } from './components/universal-slider/universal-slider.component';
 import { OtrosParquesSliderComponent } from './components/otros-parques-slider/otros-parques-slider.component';
 import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -60,6 +60,7 @@ import { MiniSliderComponent } from './components/mini-slider/mini-slider.compon
     MiniSliderComponent,
   ],
   imports: [
+    MatDialogModule,
     CommonModule,
     FontAwesomeModule,
     MatIconModule,
