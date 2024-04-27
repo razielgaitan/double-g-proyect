@@ -28,9 +28,8 @@ import { ParquesSliderComponent } from './components/parques-slider/parques-slid
 import { UniversalSliderComponent } from './components/universal-slider/universal-slider.component';
 import { OtrosParquesSliderComponent } from './components/otros-parques-slider/otros-parques-slider.component';
 import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+import { MatDialogModule } from '@angular/material/dialog';
 import { CarouselMarcasComponent } from './components/carousel-marcas/carousel-marcas.component';
-
-
 
 
 //import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -62,6 +61,7 @@ import { CarouselMarcasComponent } from './components/carousel-marcas/carousel-m
     CarouselMarcasComponent,
   ],
   imports: [
+    MatDialogModule,
     CommonModule,
     FontAwesomeModule,
     MatIconModule,
