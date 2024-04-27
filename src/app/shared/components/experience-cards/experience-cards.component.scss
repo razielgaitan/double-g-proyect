@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px; 
-    max-width: 100%; 
+    width: 100%; 
 }
 
 ng-icon {
@@ -121,6 +121,16 @@ p{
     }
 }
 
+@media screen and (max-width: 1660px) {
+    .seis-cards {
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .cinco-cards {
+        max-width: 1000px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .cards {

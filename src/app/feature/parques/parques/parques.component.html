@@ -14,7 +14,8 @@ diversión para toda la familia."></app-tres-cards-section>
     <h1>Parques de la Florida</h1>
 </div>
 
-<section>
+<section class="park-section" id="disney-section" [ngClass]="{'cambio-bg': currentSection === 'universal-section'}">
+    
     <div class="park-portada">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 192.756 192.756"
@@ -34,7 +35,7 @@ diversión para toda la familia."></app-tres-cards-section>
 </section>
 
 
-<section>
+<section class="park-section" id="universal-section" [ngClass]="{'cambio-bg': currentSection === 'universal-section'}">
     <div class="park-portada">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
@@ -54,7 +55,7 @@ diversión para toda la familia."></app-tres-cards-section>
     </div>
 </section>
 
-<section>
+<section class="park-section" id="otros-parques-section" [ngClass]="{'cambio-bg': currentSection === 'universal-section'}">
     <div class="park-portada">
         <div class="portada-title">
             <h2 id="otros-parques-title">Tenemos más parques para tí</h2>
