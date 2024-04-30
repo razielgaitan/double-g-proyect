@@ -31,6 +31,7 @@
   background-image: url('../../../../assets/images/copa_america.png');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 30vh;
 }
 
 .content {
@@ -76,6 +77,7 @@
 .pop-up-button {
   width: 90%;
   max-width: 132px;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
