@@ -55,8 +55,6 @@
     text-align: center;
     color: #808080;
     font-size: 1.2rem;
-  }
-  div {
     margin-top: 1rem;
   }
 
@@ -66,11 +64,13 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .pop-up-title {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
   
 }
 
@@ -78,10 +78,16 @@
   width: 90%;
   max-width: 132px;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {
   .pop-up-container {
     flex-direction: column;
+  }
+  .logo {
+    margin-top: -2.5rem;
+    background-color: white;
+    padding: 0.4rem;
   }
 }
