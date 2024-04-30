@@ -1,7 +1,7 @@
 <div class="alojamiento-global">
     <h3 class="text-color title">{{ mainTitle }}</h3>
     <h4 class="text-color subtitle" *ngIf="subTitleFlag">{{ subTitleText }}</h4>
-    <div class="contenedor-cards">
+    <div class="contenedor-cards" [ngClass]="skipIndex === -1 ? 'seis-cards' : 'cinco-cards'">
         <ng-container *ngFor="let card of cardData; let i = index">
             <div class="cards" *ngIf="i !== skipIndex">
                 <div class="content">

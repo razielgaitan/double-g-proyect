@@ -1,0 +1,117 @@
+<div class="card-slider-wrapper">
+    <i class="fa-solid fa-angle-left" (click)="onClickIcon('left')" #arrowIcon1></i>
+    <ul class="card-carousel" #carousel>
+        <li class="card" #firstImg>
+            <div class="img">
+                <img src="../../../../assets/images/parques/magic-kingodm.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Magic Kingdom</h3>
+                </div>
+                <div class="card-text">
+                    <p>Disfruta de las atracciones clásicas de Disney, fuegos artificiales, espectáculos musicales y la compañía de los personajes y princesas más queridas. Disfruta de las atracciones clásicas de Disney, fuegos artificiales, espectáculos musicales y la compañía de los personajes y princesas más queridas.</p>
+                </div>
+                <div class="bottom-card">
+                    <div class="card-button">
+                        <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                      </div>
+                </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/Disney's Hollywood Studios.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Disney's Hollywood Studios</h3>
+                </div>
+                <div class="card-text">
+                    <p>Sumérgete en la magia del cine mientras exploras emocionantes atracciones basadas en tus películas y programas favoritos. Podrás viajar a galaxias lejanas en Star Wars: Galaxy's Edge y vivir atracciones como Toy Story Mania y Rock 'n' Roller Coaster</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/animal-kingdom.jpg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Disney's Animal Kingdom</h3>
+                </div>
+                <div class="card-text">
+                    <p>Disfruta de emocionantes safaris, aventuras en la jungla y encuentros cercanos con criaturas mágicas. Un parque lleno de naturaleza y emoción, sede de Pandora, el mundo de Avatar.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/EPCOT.avif">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>EPCOT</h3>
+                </div>
+                <div class="card-text">
+                    <p>Descubre las culturas del mundo en sus increíbles pabellones internacionales. En este parque te divertirás en sus emocionantes atracciones y vivirás un día diferente con acceso a increíble gastronomía de distintos países.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/Typhoon Lagoon.jpg">
+                <div class="image-overlay">
+                    <span>Parque Acuatico</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Disney's Typhoon Lagoon</h3>
+                </div>
+                <div class="card-text">
+                    <p>Disfruta de una emocionante aventura acuática con toboganes, olas gigantes y una playa relajante. Sumérgete en la diversión y refrescate en este paraíso tropical.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+        <li class="card">
+            <div class="img">
+                <img src="../../../../assets/images/parques/Disney's Blizzard Beach.jpeg">
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <h3>Disney's Blizzard Beach</h3>
+                </div>
+                <div class="card-text">
+                    <p>Conoce el increíble parque acuático con temática de montaña nevada, donde puedes deslizarte por toboganes helados, flotar por ríos tranquilos y disfrutar del sol en una playa tropical.</p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="card-button">
+                    <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+                  </div>
+            </div>
+        </li>
+    </ul>
+    <i class="fa-solid fa-angle-right" (click)="onClickIcon('right')" #arrowIcon2></i> 
+</div>

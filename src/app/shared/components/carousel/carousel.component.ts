@@ -16,7 +16,7 @@ export class CarouselComponent {
       link: '/home' 
     },
     { 
-      image: '../../../../assets/images/hotel-room.jpg', 
+      image: '../../../../assets/images/portada-alojamientos.jpg', 
       title: 'Alojamientos', 
       secTitle: 'Hospedajes únicos, experiencias inolvidables', 
       desc:'Contamos con una increíble oferta de alojamientos, desde hoteles hasta apartamentos frente a la playa. Tu comodidad y bienestar son nuestra prioridad.', 
