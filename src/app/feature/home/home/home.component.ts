@@ -23,7 +23,7 @@ export class HomeComponent {
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(PopUpComponent, {
       width: '90vw',
-      height: '90vh',
+      height: '60vh',
       enterAnimationDuration,
       exitAnimationDuration,
     });

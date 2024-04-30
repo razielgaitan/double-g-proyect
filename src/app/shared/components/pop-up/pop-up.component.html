@@ -1,11 +1,11 @@
 <div class="pop-up-container">
   <div id="img"></div>
   <div class="content">
+    <mat-icon id="close-icon" (click)="closeDialog()">close</mat-icon>
     <div class="logo">
-      <mat-icon id="close-icon" (click)="closeDialog()">close</mat-icon>
       <img href="#" alt="logo" src="../../../../assets/logo/Logo - Negro.svg"/>
     </div>
-    <div>
+    <div class="pop-up-title">
       <h1>¡Vive la Copa América 2024 junto a Double G!</h1>
     </div>
     <div class="description">
@@ -23,7 +23,7 @@
         USA!
       </p>
     </div>
-    <div>
+    <div class="pop-up-button">
       <app-primary-button text="Contactanos" (click)="navigate()"></app-primary-button>
     </div>
   </div>
