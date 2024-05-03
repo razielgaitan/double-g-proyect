@@ -10,7 +10,7 @@ export class ExperienceCardsComponent {
   @Input() mainTitle: string = "Vive un experiencia completa";
   @Input() skipIndex: number = -1;
   @Input() subTitleFlag: boolean = false;
-  @Input() subTitleText: string = "Arma tu experiencia completa";
+  @Input() subTitleText: string = "Armamos tu experiencia completa";
 
   //@Input() cardData: any[] = [];
   cardData = [
@@ -59,6 +59,8 @@ export class ExperienceCardsComponent {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+
 }
 
 

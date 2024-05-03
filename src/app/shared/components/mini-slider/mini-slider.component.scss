@@ -1,0 +1,89 @@
+.photos {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .images-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  swiper-slide .round-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    margin: 0;
+  }
+  swiper-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 600px;
+    swiper-slide {
+      width: 100%;
+      height: 100%;
+    }
+    .card {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      color: black;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+    }
+    .card-img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .fade-up {
+    animation: fadeUp 0.3s;
+  }
+  
+  .fade-down {
+    animation: fadeDown 0.5s;
+  }
+  
+  
+  .info,
+  .photos {
+    opacity: 0;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: none;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px) scale(1)
+    }
+  }
+  
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px) scale(1)
+    }
+  }

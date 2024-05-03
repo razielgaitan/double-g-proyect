@@ -1,231 +1,363 @@
-
-<!--Portada-->
+<div class="">
+  <!-- PORTADA PRINCIPAL -->
+  <div class="portada">
+    <div class="portada-text">Somos Double G</div>
+  </div>
+</div>
 <div class="portada-container fade-up">
   <div class="portada-img">
-    <img src="../../../../../assets/images/miami-costa-piedras.jpg" loading="lazy"/>
+    <img
+      src="../../../../../assets/images/miami-costa-piedras.jpg"
+      loading="lazy"
+    />
   </div>
 
   <div class="portada-info fade-down">
-    <h1>Explora la Florida con nosotros</h1>
+    <h1>Creando experiencias únicas</h1>
     <p>
-      Nuestra misión es que puedas armar tu experiencia completa y personalizada
-      en un solo lugar.
+      En Double G, nos dedicamos a proporcionar experiencias de viaje
+      excepcionales internacionalmente. Somos una agencia oficial con base en la
+      Florida y nos enorgullece ofrecer una amplia gama de servicios, desde la
+      organización de alojamiento en los mejores hoteles y departamentos,
+      transporte hasta la planificación detallada de emocionantes itinerarios de
+      viaje.
     </p>
-    <div class="grid-caracteristicas">
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-bed"></i></span>Alojamientos
-          </p>
-        </div>
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-plane"></i></span>Vuelos
-          </p>
-        </div>
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-wand-magic-sparkles"></i></span
-            >Parques
-          </p>
-        </div>
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-car"></i></span>Vehículos
-          </p>
-        </div>
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-star"></i></span>Luxury
-          </p>
-        </div>
-        <div class="caracteristica">
-          <p>
-            <span><i aria-hidden="true" class="fa fa-ship"></i></span>Cruceros
-          </p>
-        </div>
+    <p>Nuestro equipo altamente calificado está comprometido a brindar un
+      servicio personalizado y atención meticulosa a cada detalle, asegurando
+      que cada viaje sea único y memorable.</p>
+    <p>Somos apasionados por viajar y nuestro diferencial radica en la profunda comprensión de los destinos que
+      ofrecemos y nuestra capacidad para adaptar cada experiencia de viaje a las necesidades y deseos individuales de nuestros clientes. Nos esforzamos por
+      superar las expectativas al ofrecer asesoramiento experto, acceso privilegiado a atracciones y eventos exclusivos, y un compromiso
+      inquebrantable con la excelencia en el servicio al cliente.</p>
+    <p>Con Double G, puedes confiar en que tu viaje será una experiencia única e inolvidable.</p>
+  </div>
+</div>
+<app-experience-cards [subTitleFlag]=true mainTitle="Conoce todos nuestros servicios" subTitleText="Armamos tu experiencia completa"></app-experience-cards>
+<div class="beneficios-container">
+  <div class="beneficios-main-title">
+    <h1>¿Porque reservar con Double G?</h1>
+  </div>
+  <div class="grid-beneficios" *ngIf="!isPhoneScreen">
+    <div class="beneficio">
+      <div class="logo-beneficio">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/117/117529.png"
+          width="40"
+          height="36"
+          fill="none"
+          class="advantageBannerIcon__1Fz-"
+          loading="lazy"
+        />
       </div>
+      <div class="beneficio-title">
+        <h3>Accesibilidad</h3>
+      </div>
+      <p>
+        En Double G, nos esforzamos por ofrecer una experiencia inclusiva para
+        todos nuestros usuarios.
+      </p>
+    </div>
+
+    <div class="beneficio">
+      <div class="logo-beneficio">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1259/1259387.png"
+          width="40"
+          height="36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="advantageBannerIcon__1Fz-"
+          loading="lazy"
+        />
+      </div>
+      <div class="beneficio-title">
+        <h3>Experiencias inolvidables</h3>
+      </div>
+      <p>
+        Desde exóticos destinos hasta joyas escondidas, cada viaje que ofrecemos
+        es una oportunidad para descubrir el mundo de una manera única.
+      </p>
+    </div>
+
+    <div class="beneficio">
+      <div class="logo-beneficio">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png"
+          width="40"
+          height="36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="advantageBannerIcon__1Fz-"
+          loading="lazy"
+        />
+      </div>
+      <div class="beneficio-title">
+        <h3>La calidad es nuestra prioridad</h3>
+      </div>
+      <p>
+        Cada destino, cada experiencia, está seleccionado con cuidado para
+        garantizar que disfrutes de la más alta calidad en cada momento de tu
+        viaje.
+      </p>
+    </div>
+
+    <div class="beneficio">
+      <div class="logo-beneficio">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png"
+          width="40"
+          height="36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="advantageBannerIcon__1Fz-"
+          loading="lazy"
+        />
+      </div>
+      <div class="beneficio-title">
+        <h3>Servicio de atención al cliente</h3>
+      </div>
+      <p>
+        Nuestro equipo dedicado está aquí para asegurarse de que cada paso de tu
+        viaje sea perfecto.
+      </p>
+    </div>
   </div>
 
+  <div class="slider-beneficios" *ngIf="isPhoneScreen">
+    <swiper-container
+      pagination="true"
+      pagination-clickable="true"
+      space-between="50"
+      loop="true"
+    >
+      <swiper-slide>
+        <div class="beneficio">
+          <div class="logo-beneficio">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/117/117529.png"
+              width="40"
+              height="36"
+              fill="none"
+              class="advantageBannerIcon__1Fz-"
+              loading="lazy"
+            />
+          </div>
+          <div class="beneficio-title">
+            <h3>Accesibilidad</h3>
+          </div>
+          <p>
+            En Double G, nos esforzamos por ofrecer una experiencia inclusiva
+            para todos nuestros usuarios.
+          </p>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="beneficio">
+          <div class="logo-beneficio">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1259/1259387.png"
+              width="40"
+              height="36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="advantageBannerIcon__1Fz-"
+              loading="lazy"
+            />
+          </div>
+          <div class="beneficio-title">
+            <h3>Experiencias inolvidables</h3>
+          </div>
+          <p>
+            Desde exóticos destinos hasta joyas escondidas, cada viaje que
+            ofrecemos es una oportunidad para descubrir el mundo de una manera
+            única.
+          </p>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="beneficio">
+          <div class="logo-beneficio">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png"
+              width="40"
+              height="36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="advantageBannerIcon__1Fz-"
+              loading="lazy"
+            />
+          </div>
+          <div class="beneficio-title">
+            <h3>La calidad es nuestra prioridad</h3>
+          </div>
+          <p>
+            Cada destino, cada experiencia, está seleccionado con cuidado para
+            garantizar que disfrutes de la más alta calidad en cada momento de
+            tu viaje.
+          </p>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="beneficio">
+          <div class="logo-beneficio">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png"
+              width="40"
+              height="36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="advantageBannerIcon__1Fz-"
+              loading="lazy"
+            />
+          </div>
+          <div class="beneficio-title">
+            <h3>Servicio de atención al cliente</h3>
+          </div>
+          <p>
+            Nuestro equipo dedicado está aquí para asegurarse de que cada paso
+            de tu viaje sea perfecto.
+          </p>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
 </div>
-<!-- Experience -->
+
+<app-contacto
+  mainTitle="¿Quieres sumarte al equipo como operador?"
+  subTitle="Somos una agencia certificada de la Florida y vendedores oficiales de Disney y Universal, ¡sumate a nuestro equipo como operador! Contáctanos para más información."
+  buttonName="Contacto formulario"
+  functionName="revendedor"
+></app-contacto>
+
+<app-floating-whatsapp></app-floating-whatsapp>
+<app-footer></app-footer>
+
+
+  <!-- <div class="portada-container fade-up">
+  
+  </div>
+</div>
 <div class="experience-container">
-    <span class="main-line"></span>
-    <div class="grid-experiencie">
-
-        <div class="logo-experience  left-box" [style.order]="isScreenSmall ? 1 : 1">
-            <img loading="lazy" decoding="async" width="128" height="128"
-                src="https://cdn-icons-png.flaticon.com/512/2933/2933772.png"
-                data-src="https://cdn-icons-png.flaticon.com/512/2933/2933772.png"
-                class="attachment-full size-full lazy loaded" alt="" data-was-processed="true" loading="lazy">
-            <span class="circule"></span>
-        </div>
-        <div class="info-experience" [style.order]="isScreenSmall ? 2 : 2">
-            <div class="title-experience">
-                <h3>HOTELES Y TRASLADOS</h3>
-            </div>
-            <div class="text-experience">
-                <p>En Double G, entendemos la importancia de un alojamiento cómodo y acogedor durante tus viajes. Es por eso que nos complace ofrecerte una amplia variedad de opciones de hospedaje en hoteles cuidadosamente seleccionados. Desde lujosos resorts hasta acogedores hoteles boutique, hemos establecido colaboraciones con establecimientos que cumplen con nuestros estándares de calidad.</p>
-            </div>
-        </div>
-
-
-        <div class="info-experience left-box" [style.order]="isScreenSmall ? 4 : 3">
-            <div class="title-experience">
-                <h3>LUGARES ÚNICOS</h3>
-            </div>
-            <div class="text-experience">
-                <p>Ofrecemos en nuestra plataforma online, tours en USA y en todo el mundo. A los mejores precios del mercado.</p>
-            </div>
-            <span class="circule"></span>
-        </div>
-        <div class="logo-experience" [style.order]="isScreenSmall ? 3 : 4">
-            <img loading="lazy" decoding="async" width="128" height="128"
-                src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png"
-                data-src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png"
-                class="attachment-full size-full lazy loaded" alt="" data-was-processed="true" loading="lazy">
-        </div>
-
-
-        <div class="logo-experience left-box" [style.order]="isScreenSmall ? 5 : 5">
-            <img loading="lazy" decoding="async" width="128" height="128"
-                src="https://cdn-icons-png.flaticon.com/512/4950/4950544.png"
-                data-src="https://cdn-icons-png.flaticon.com/512/4950/4950544.png"
-                class="attachment-full size-full lazy loaded" alt="" data-was-processed="true">
-            <span class="circule" loading="lazy"></span>
-        </div>
-        <div class="info-experience" [style.order]="isScreenSmall ? 6 : 6">
-            <div class="title-experience">
-                <h3>RENTAS DE AUTOS</h3>
-            </div>
-            <div class="text-experience">
-                <p>Servicio de alquiler. Variedad en planes y ofertas para viajes en familia.</p>
-            </div>
-        </div>
-
-
-        <div class="info-experience left-box" [style.order]="isScreenSmall ? 8 : 7">
-            <div class="title-experience">
-                <h3>EXCLUSIVIDAD</h3>
-            </div>
-            <div class="text-experience">
-                <p>Te presentamos una colección exclusiva de experiencias de viaje que van más allá de lo convencional. Cada destino, cada detalle ha sido seleccionado con esmero para brindarte una experiencia única e inolvidable. Desde alojamientos exclusivos hasta itinerarios cuidadosamente diseñados, te ofrecemos la oportunidad de explorar el mundo de una manera completamente distinta.</p>
-            </div>
-            <span class="circule"></span>
-        </div>
-        <div class="logo-experience" [style.order]="isScreenSmall ? 7 : 8">
-            <img loading="lazy" decoding="async" width="128" height="128"
-                src="https://cdn-icons-png.flaticon.com/512/98/98233.png"
-                data-src="https://cdn-icons-png.flaticon.com/512/98/98233.png"
-                class="attachment-full size-full lazy loaded" alt="" data-was-processed="true" loading="lazy">
-        </div>
-
+  <span class="main-line"></span>
+  <div class="grid-experiencie">
+    <div class="logo-experience left-box" [style.order]="isScreenSmall ? 1 : 1">
+      <img
+        loading="lazy"
+        decoding="async"
+        width="128"
+        height="128"
+        src="https://cdn-icons-png.flaticon.com/512/2933/2933772.png"
+        data-src="https://cdn-icons-png.flaticon.com/512/2933/2933772.png"
+        class="attachment-full size-full lazy loaded"
+        alt=""
+        data-was-processed="true"
+        loading="lazy"
+      />
+      <span class="circule"></span>
+    </div>
+    <div class="info-experience" [style.order]="isScreenSmall ? 2 : 2">
+      <div class="title-experience">
+        <h3>HOTELES Y TRASLADOS</h3>
+      </div>
+      <div class="text-experience">
+        <p>
+          En Double G, entendemos la importancia de un alojamiento cómodo y
+          acogedor durante tus viajes. Es por eso que nos complace ofrecerte una
+          amplia variedad de opciones de hospedaje en hoteles cuidadosamente
+          seleccionados. Desde lujosos resorts hasta acogedores hoteles
+          boutique, hemos establecido colaboraciones con establecimientos que
+          cumplen con nuestros estándares de calidad.
+        </p>
+      </div>
     </div>
 
-</div>
-
-
-
-<!--Beneficios-->
-<div class="beneficios-container">
-    <div class="beneficios-main-title">
-        <h1>¿Porque reservar con Double G?</h1>
+    <div class="info-experience left-box" [style.order]="isScreenSmall ? 4 : 3">
+      <div class="title-experience">
+        <h3>LUGARES ÚNICOS</h3>
+      </div>
+      <div class="text-experience">
+        <p>
+          Ofrecemos en nuestra plataforma online, tours en USA y en todo el
+          mundo. A los mejores precios del mercado.
+        </p>
+      </div>
+      <span class="circule"></span>
     </div>
-    <div class="grid-beneficios" *ngIf="!isPhoneScreen">
-        <div class="beneficio">
-            <div class="logo-beneficio">
-                <img src="https://cdn-icons-png.flaticon.com/512/117/117529.png" width="40" height="36" fill="none" class="advantageBannerIcon__1Fz-" loading="lazy">
-            </div>
-            <div class="beneficio-title">
-                <h3>Accesibilidad</h3>
-            </div>
-            <p>En Double G, nos esforzamos por ofrecer una experiencia inclusiva para todos nuestros usuarios.</p>
-        </div>
-
-        <div class="beneficio">
-            <div class="logo-beneficio">
-                <img src="https://cdn-icons-png.flaticon.com/512/1259/1259387.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-            </div>
-            <div class="beneficio-title">
-                <h3>Experiencias inolvidables</h3>
-            </div>
-            <p>Desde exóticos destinos hasta joyas escondidas, cada viaje que ofrecemos es una oportunidad para descubrir el mundo de una manera única.</p>
-        </div>
-
-        <div class="beneficio">
-            <div class="logo-beneficio">
-                <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-            </div>
-            <div class="beneficio-title">
-                <h3>La calidad es nuestra prioridad</h3>
-            </div>
-            <p>Cada destino, cada experiencia, está seleccionado con cuidado para garantizar que disfrutes de la más alta calidad en cada momento de tu viaje.</p>
-        </div>
-
-        <div class="beneficio">
-            <div class="logo-beneficio">
-                <img src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-            </div>
-            <div class="beneficio-title">
-                <h3>Servicio de atención al cliente</h3>
-            </div>
-            <p>Nuestro equipo dedicado está aquí para asegurarse de que cada paso de tu viaje sea perfecto.</p>
-        </div>
+    <div class="logo-experience" [style.order]="isScreenSmall ? 3 : 4">
+      <img
+        loading="lazy"
+        decoding="async"
+        width="128"
+        height="128"
+        src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png"
+        data-src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png"
+        class="attachment-full size-full lazy loaded"
+        alt=""
+        data-was-processed="true"
+        loading="lazy"
+      />
     </div>
 
-    <div class="slider-beneficios" *ngIf="isPhoneScreen">
-        <swiper-container pagination="true" pagination-clickable="true" space-between="50" loop="true">
-            <swiper-slide>
-                <div class="beneficio">
-                    <div class="logo-beneficio">
-                        <img src="https://cdn-icons-png.flaticon.com/512/117/117529.png" width="40" height="36" fill="none" class="advantageBannerIcon__1Fz-" loading="lazy">
-                    </div>
-                    <div class="beneficio-title">
-                        <h3>Accesibilidad</h3>
-                    </div>
-                    <p>En Double G, nos esforzamos por ofrecer una experiencia inclusiva para todos nuestros usuarios.</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="beneficio">
-                    <div class="logo-beneficio">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1259/1259387.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-                    </div>
-                    <div class="beneficio-title">
-                        <h3>Experiencias inolvidables</h3>
-                    </div>
-                    <p>Desde exóticos destinos hasta joyas escondidas, cada viaje que ofrecemos es una oportunidad para descubrir el mundo de una manera única.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="beneficio">
-                    <div class="logo-beneficio">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-                    </div>
-                    <div class="beneficio-title">
-                        <h3>La calidad es nuestra prioridad</h3>
-                    </div>
-                    <p>Cada destino, cada experiencia, está seleccionado con cuidado para garantizar que disfrutes de la más alta calidad en cada momento de tu viaje.</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="beneficio">
-                    <div class="logo-beneficio">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png" width="40" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="advantageBannerIcon__1Fz-" loading="lazy">
-                    </div>
-                    <div class="beneficio-title">
-                        <h3>Servicio de atención al cliente</h3>
-                    </div>
-                    <p>Nuestro equipo dedicado está aquí para asegurarse de que cada paso de tu viaje sea perfecto.</p>
-                </div>
-            </swiper-slide>
-        </swiper-container>
+    <div class="logo-experience left-box" [style.order]="isScreenSmall ? 5 : 5">
+      <img
+        loading="lazy"
+        decoding="async"
+        width="128"
+        height="128"
+        src="https://cdn-icons-png.flaticon.com/512/4950/4950544.png"
+        data-src="https://cdn-icons-png.flaticon.com/512/4950/4950544.png"
+        class="attachment-full size-full lazy loaded"
+        alt=""
+        data-was-processed="true"
+      />
+      <span class="circule" loading="lazy"></span>
     </div>
+    <div class="info-experience" [style.order]="isScreenSmall ? 6 : 6">
+      <div class="title-experience">
+        <h3>RENTAS DE AUTOS</h3>
+      </div>
+      <div class="text-experience">
+        <p>
+          Servicio de alquiler. Variedad en planes y ofertas para viajes en
+          familia.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-experience left-box" [style.order]="isScreenSmall ? 8 : 7">
+      <div class="title-experience">
+        <h3>EXCLUSIVIDAD</h3>
+      </div>
+      <div class="text-experience">
+        <p>
+          Te presentamos una colección exclusiva de experiencias de viaje que
+          van más allá de lo convencional. Cada destino, cada detalle ha sido
+          seleccionado con esmero para brindarte una experiencia única e
+          inolvidable. Desde alojamientos exclusivos hasta itinerarios
+          cuidadosamente diseñados, te ofrecemos la oportunidad de explorar el
+          mundo de una manera completamente distinta.
+        </p>
+      </div>
+      <span class="circule"></span>
+    </div>
+    <div class="logo-experience" [style.order]="isScreenSmall ? 7 : 8">
+      <img
+        loading="lazy"
+        decoding="async"
+        width="128"
+        height="128"
+        src="https://cdn-icons-png.flaticon.com/512/98/98233.png"
+        data-src="https://cdn-icons-png.flaticon.com/512/98/98233.png"
+        class="attachment-full size-full lazy loaded"
+        alt=""
+        data-was-processed="true"
+        loading="lazy"
+      />
+    </div>
+  </div>
 </div>
 
 
 <app-floating-whatsapp></app-floating-whatsapp>
-
-<app-contacto></app-contacto>
-
-<app-footer></app-footer>
+<app-footer></app-footer> -->

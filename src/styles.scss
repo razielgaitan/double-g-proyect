@@ -59,6 +59,14 @@ a {
 li {
   list-style: none;
 }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1rem;
+}
 app-nav-bar{
   position: sticky;
   top: 0;
@@ -70,6 +78,7 @@ app-nav-bar{
 :root {
   --primary-color: #caaf00;
   --primary-font-color: #4a4a4a;
+  --universal-blue:#162b75;
 }
 
 :root {

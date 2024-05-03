@@ -24,7 +24,12 @@ import { GaleriaAutosComponent } from './components/galeria-autos/galeria-autos.
 import { LuxuryCarrouselComponent } from './components/luxury-carrousel/luxury-carrousel.component';
 import { ExperienceCardsComponent } from './components/experience-cards/experience-cards.component';
 import { ServiciosCardsComponent } from './components/servicios-cards/servicios-cards.component';
-
+import { ParquesSliderComponent } from './components/parques-slider/parques-slider.component';
+import { UniversalSliderComponent } from './components/universal-slider/universal-slider.component';
+import { OtrosParquesSliderComponent } from './components/otros-parques-slider/otros-parques-slider.component';
+import { MiniSliderComponent } from './components/mini-slider/mini-slider.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselMarcasComponent } from './components/carousel-marcas/carousel-marcas.component';
 
 
 //import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -49,9 +54,14 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
     ServiciosCardsComponent,
-
+    ParquesSliderComponent,
+    UniversalSliderComponent,
+    OtrosParquesSliderComponent,
+    MiniSliderComponent,
+    CarouselMarcasComponent,
   ],
   imports: [
+    MatDialogModule,
     CommonModule,
     FontAwesomeModule,
     MatIconModule,
@@ -78,6 +88,11 @@ import { ServiciosCardsComponent } from './components/servicios-cards/servicios-
     LuxuryCarrouselComponent,
     ExperienceCardsComponent,
     ServiciosCardsComponent,
+    ParquesSliderComponent,
+    UniversalSliderComponent,
+    OtrosParquesSliderComponent,
+    MiniSliderComponent,
+    CarouselMarcasComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA  ]
 })

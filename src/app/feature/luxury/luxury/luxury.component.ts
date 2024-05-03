@@ -45,27 +45,27 @@ export class LuxuryComponent {
 
   yateData = [
     {
-      imageSrc: 'https://content.boats.com/files/Tipos-de-yates.jpg',
+      imageSrc: '../../../../assets/images/yate6.jpeg',
       name: 'Yate 1',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://content.boats.com/files/Tipo-de-yates_yate-crucero-a-motor.jpg',
+      imageSrc: '../../../../assets/images/yate2.jpeg',
       name: 'Yate 2',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://content.boats.com/files/Tipos-de-yates_Motovelero.jpg',
+      imageSrc: '../../../../assets/images/yate3.JPG',
       name: 'Yate 3',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://content.boats.com/files/Tipos-de-yates_resistencia.jpg',
+      imageSrc: '../../../../assets/images/yate4.jpeg',
       name: 'Yate 4',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: 'https://content.boats.com/files/Tipos-de-yates_yate-multicasco.jpg',
+      imageSrc: '../../../../assets/images/yate5.jpeg',
       name: 'Yate 5',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     }
