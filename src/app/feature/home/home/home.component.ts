@@ -17,13 +17,11 @@ export class HomeComponent {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.openDialog('3000ms', '1500ms');
+    this.openDialog('500ms', '300ms');
   }
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(PopUpComponent, {
-      width: '90vw',
-      height: '60vh',
       enterAnimationDuration,
       exitAnimationDuration,
     });
