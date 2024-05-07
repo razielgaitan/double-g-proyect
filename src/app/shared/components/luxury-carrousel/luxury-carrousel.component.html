@@ -12,6 +12,7 @@
                 </div>
             </swiper-slide>
         </swiper-container>
+        <p *ngIf="text2Flag">{{ text2 }}</p>
         <div class="luxury-button">
             <app-primary-button text="Pedir asesoramiento" (click)="selectFunction()"></app-primary-button>
         </div>

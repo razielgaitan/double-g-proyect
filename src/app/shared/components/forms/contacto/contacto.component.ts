@@ -153,7 +153,7 @@ export class ContactoComponent {
   }
 
   openWhatsApp() {
-    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+posibilidades+de+alquiler+de+DOUBLE+G&type=phone_number&app_absent=0', '_blank');
+    window.open('https://api.whatsapp.com/send/?phone=19546218999', '_blank');
   }
 
   selectFunction(): void {
