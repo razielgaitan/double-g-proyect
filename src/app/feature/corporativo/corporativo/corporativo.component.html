@@ -1,1 +1,186 @@
-<p>corporativo works!</p>
+<div class="">
+    <!-- PORTADA PRINCIPAL -->
+    <div class="portada">
+      <div class="portada-text">Corporativo</div>
+    </div>
+  </div>
+
+  <div class="portada-container fade-up">
+    <div class="portada-img">
+      <img
+        src="../../../../../assets/images/miami-costa-piedras.jpg"
+        loading="lazy"
+      />
+    </div>
+  
+    <div class="portada-info fade-down">
+      <p>
+        En Double G te ayudamos en la gestión y asesoramiento de viajes corporativos. Nuestro equipo altamente experimentado se dedica a simplificar y agilizar cada aspecto de sus viajes comerciales y laborales. 
+      </p>
+      <p>Nos aseguramos de que cada detalle se maneje con precisión y eficiencia garantizando que sus empleados lleguen a sus destinos de manera oportuna y en las mejores condiciones, permitiéndoles concentrarse en lo que realmente importa: su trabajo.</p>
+    </div>
+  </div>
+
+  <div class="beneficios-container">
+    <div class="beneficios-main-title">
+      <h1>Nuestros principales servicios</h1>
+    </div>
+    <div class="grid-beneficios" *ngIf="!isPhoneScreen">
+      <div class="beneficio">
+        <div class="logo-beneficio">
+          <img
+            src="../../../../assets/logo/corporativo-servicios/vuelos.png"
+            width="40"
+            height="36"
+            fill="none"
+            class="advantageBannerIcon__1Fz-"
+            loading="lazy"
+          />
+        </div>
+        <div class="beneficio-title">
+          <h3>Vuelos</h3>
+        </div>
+      </div>
+  
+      <div class="beneficio">
+        <div class="logo-beneficio">
+          <img
+            src="../../../../assets/logo/corporativo-servicios/traslado.png"
+            width="40"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="advantageBannerIcon__1Fz-"
+            loading="lazy"
+          />
+        </div>
+        <div class="beneficio-title">
+          <h3>Traslados ejecutivos</h3>
+        </div>
+      </div>
+  
+      <div class="beneficio">
+        <div class="logo-beneficio">
+          <img
+            src="../../../../assets/logo/corporativo-servicios/hotel.png"
+            width="40"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="advantageBannerIcon__1Fz-"
+            loading="lazy"
+          />
+        </div>
+        <div class="beneficio-title">
+          <h3>Alojamientos</h3>
+        </div>
+      </div>
+  
+      <div class="beneficio">
+        <div class="logo-beneficio">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png"
+            width="40"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="advantageBannerIcon__1Fz-"
+            loading="lazy"
+          />
+        </div>
+        <div class="beneficio-title">
+          <h3>Gestión de itinerarios</h3>
+        </div>
+      </div>
+    </div>
+  
+    <div class="slider-beneficios" *ngIf="isPhoneScreen">
+      <swiper-container
+        pagination="true"
+        pagination-clickable="true"
+        space-between="50"
+        loop="true"
+      >
+        <swiper-slide>
+          <div class="beneficio">
+            <div class="logo-beneficio">
+              <img
+                src="../../../../assets/logo/corporativo-servicios/vuelos.png"
+                width="40"
+                height="36"
+                fill="none"
+                class="advantageBannerIcon__1Fz-"
+                loading="lazy"
+              />
+            </div>
+            <div class="beneficio-title">
+              <h3>Vuelos</h3>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="beneficio">
+            <div class="logo-beneficio">
+              <img
+                src="../../../../assets/logo/corporativo-servicios/traslado.png"
+                width="40"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="advantageBannerIcon__1Fz-"
+                loading="lazy"
+              />
+            </div>
+            <div class="beneficio-title">
+              <h3>Traslados ejecutivos</h3>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="beneficio">
+            <div class="logo-beneficio">
+              <img
+                src="../../../../assets/logo/corporativo-servicios/hotel.png"
+                width="40"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="advantageBannerIcon__1Fz-"
+                loading="lazy"
+              />
+            </div>
+            <div class="beneficio-title">
+              <h3>Alojamientos</h3>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="beneficio">
+            <div class="logo-beneficio">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4814/4814842.png"
+                width="40"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="advantageBannerIcon__1Fz-"
+                loading="lazy"
+              />
+            </div>
+            <div class="beneficio-title">
+              <h3>Gestión de itinerarios</h3>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+
+
+<app-contacto
+    mainTitle="¡Viajemos juntos!"
+    subTitle="Contáctenos y descubra cómo optimizar sus viajes ejecutivos."
+    functionName="whatsapp"
+></app-contacto>
+  
+<app-footer></app-footer>
