@@ -17,7 +17,7 @@ export class HomeComponent {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.openDialog('500ms', '300ms');
+    this.openDialog('100ms', '10ms');
   }
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
