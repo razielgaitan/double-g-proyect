@@ -143,8 +143,7 @@ img{
 //---------------------------------------------------------------------------------------------------
 .container-revendedor{
     position: relative;
-    height: 60vh;
-    max-height: 85vh;
+    min-height: 65vh;
     display: flex;
 
     overflow: hidden;
@@ -169,7 +168,7 @@ img{
     width: 100%;
     z-index: 1;
     margin-top: 5%;
-    margin-left: 70%;
+    margin-left: 55%;
     text-align: center;
     margin-right: 5%;
     
@@ -182,6 +181,7 @@ img{
 
 .container-revendedor .bottom{
     margin-top: 16px;
+    margin-bottom: 16px;
     margin-left: 15%;
     align-items: center;
     justify-content: center;
@@ -217,10 +217,10 @@ img{
     }
 
     .container-revendedor .bottom {
-        position: absolute;
+        //position: absolute;
         width: 70%;
         margin: 0 auto;
-        bottom: 5vh;
+        bottom: 0;
     }
 }
 

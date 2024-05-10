@@ -9,7 +9,7 @@
 <app-tres-cards-section [cardData]="introParque" mainTitle="Disfruta de la diversión " mainText="Sumérgete en la magia de los parques temáticos de la
 Florida. Desde emocionantes atracciones hasta encuentros con
 personajes icónicos, ofrecemos una experiencia única y llena de
-diversión para toda la familia."></app-tres-cards-section>
+diversión para toda la familia." [iconIMGFlag]="true"></app-tres-cards-section>
 <div class="parques-main-title">
     <h1>Parques de la Florida</h1>
 </div>
@@ -27,7 +27,7 @@ diversión para toda la familia."></app-tres-cards-section>
     </div>
 
     <div class="parques-wrapper">
-        <h2>Bienvenidos a un destino de ensueño</h2>
+        <h2>Bienvenidos a un destino mágico</h2>
         <p>La fantasía es real. Aquí los clásicos Disney y las leyendas de Star Wars cobran vida como en ningún otro sitio.</p>
         <app-parques-slider></app-parques-slider>
     </div>
@@ -50,7 +50,7 @@ diversión para toda la familia."></app-tres-cards-section>
     </div>
     <div class="parques-wrapper">
         <h2>Disfruta de Universal Orlando Resort</h2>
-        <p>Con tres parques temáticos, ocho hoteles de complejos y CityWalk, disfrutarás de diversión y aventura infinitas.</p>
+        <p>Con cuatro parques temáticos, más de ocho complejos de hoteles y CityWalk, disfrutarás de diversión y aventuras infinitas.</p>
         <app-universal-slider></app-universal-slider>
     </div>
 </section>
@@ -103,6 +103,19 @@ diversión para toda la familia."></app-tres-cards-section>
 
 </section>
 
+<div class="container-revendedor">
+    <img class="background" src="../../../../assets/images/ORLANDO.webp" loading="lazy">
+    <div class="portada-revendedor">
+        <div class="text-revendedor">
+            <h1 class="texto-revendedor">Disfruta de los hoteles temáticos</h1>
+        
+            <h4 class="texto-revendedor">Sumérgete en una experiencia completa: aprovecha los packs que incluyen alojamiento en los hoteles de Disney y Universal. ¡Tenemos precios promocionales para tí!</h4>
+        </div>
+        <div class="bottom">
+            <app-primary-button (click)="botonHotelesFunction()" text="Más información"></app-primary-button>
+        </div>
+    </div>
+</div>
 
 <app-experience-cards [skipIndex]="3" [subTitleFlag]=true mainTitle="¿Tienes todo para tu viaje?"></app-experience-cards>
 
@@ -110,12 +123,12 @@ diversión para toda la familia."></app-tres-cards-section>
     <img class="background" src="../../../../assets/images/seaworld-orlando.jpg" loading="lazy">
     <div class="portada-revendedor">
         <div class="text-revendedor">
-            <h1 class="texto-revendedor">¿Eres agente revendedor?</h1>
+            <h1 class="texto-revendedor">¿Sos agente oficial de Disney?</h1>
         
-            <h4 class="texto-revendedor">Sumate a nuestro equipo de operadores. Somos agentes oficiales de Disney. ¡Aprovecha promociones exclusivas!</h4>
+            <h4 class="texto-revendedor">Sumate a nuestro equipo. Se parte de nuestra agencia oficial de Disney y Universal y potencia tus ventas con todo nuestro soporte.</h4>
         </div>
         <div class="bottom">
-            <app-primary-button (click)="selectFunction()" text="Más información"></app-primary-button>
+            <app-primary-button (click)="selectFunction()" text="Quiero ser parte"></app-primary-button>
         </div>
     </div>
 </div>
