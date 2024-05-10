@@ -69,15 +69,13 @@
     justify-content: flex-start;
     text-align: center;
 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 
 .card .img {
     height: 175px;
     width: 100%;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 0px;
+    border-radius: 12px;
     background-color: rgba(37, 59, 86, 0.8);
     object-fit: cover;
     
@@ -133,6 +131,9 @@
 @media  screen and (max-width:900px) {
     .card-slider-wrapper .card-carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    .card-carousel .card {
+        scroll-snap-align: center;
     }
 }
 

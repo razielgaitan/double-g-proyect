@@ -105,7 +105,7 @@ export class NavBarComponent implements OnInit{
     const navbarCollapse = document.querySelector('.navbar-collapse');
     const toggleButton = document.querySelector('.navbar-toggler');
 
-    if (window.innerWidth > 980) { 
+    if (window.innerWidth > 990) { 
       navbarCollapse?.classList.remove('show');
     } 
     

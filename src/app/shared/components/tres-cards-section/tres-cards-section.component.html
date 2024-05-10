@@ -10,7 +10,8 @@
     <div class="grid-beneficios" *ngIf="!isPhoneScreen">
         <div class="beneficio" *ngFor="let beneficio of cardData">
             <div class="logo-beneficio">
-                <ng-icon class="icon" [name]="beneficio.icon"></ng-icon>
+                <ng-icon *ngIf="!iconIMGFlag" class="icon" [name]="beneficio.icon"></ng-icon>
+                <img *ngIf="iconIMGFlag" [src]="beneficio.icon">
             </div>
             <div class="beneficio-title">
                 <h3>{{ beneficio.title }}</h3>
@@ -24,7 +25,8 @@
             <swiper-slide *ngFor="let beneficio of cardData">
                 <div class="beneficio">
                     <div class="logo-beneficio">
-                        <ng-icon class="icon" [name]="beneficio.icon"></ng-icon>
+                        <ng-icon *ngIf="!iconIMGFlag"class="icon" [name]="beneficio.icon"></ng-icon>
+                        <img *ngIf="iconIMGFlag" [src]="beneficio.icon">
                     </div>
                     <div class="beneficio-title">
                         <h3>{{ beneficio.title }}</h3>

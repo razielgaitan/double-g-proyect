@@ -13,7 +13,8 @@ export class TresCardsSectionComponent implements OnInit {
   @Input() mainTitle: string = 'Beneficios';
   @Input() mainText: string = '';
   @Input() cardData: any[] = [];
-
+  @Input() iconIMGFlag: boolean = false;
+  
   isScreenSmall = false;
   isPhoneScreen = false;
 

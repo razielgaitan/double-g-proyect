@@ -11,18 +11,18 @@ export class ParquesComponent {
   globalIcons: string[] = ['ionCarSportOutline', 'ionCalendarOutline', 'ionOptionsOutline'];
   introParque = [
     {
-      icon: 'ionBedOutline',
+      icon: '../../../../assets/logo/Parques-cards/disney-svgrepo-com.svg',
       title: 'Disney World',
       text: 'Vive la magia de Disney en su máxima expresión con nuestras opciones exclusivas. '
     },
     {
-      icon: 'ionStarOutline',
+      icon: '../../../../assets/logo/Parques-cards/universal-3.svg',
       title: 'Universal Studios',
       text: 'Disfruta la aventura, descubre experiencias emocionantes y crea recuerdos inolvidables'
     },
     {
-      icon: 'ionCalendarOutline',
-      title: ' Otros parques temáticos',
+      icon: '../../../../assets/logo/Parques-cards/ferris-wheel_5528036.png',
+      title: 'Otros parques temáticos',
       text: 'Tenemos otros parques increíbles para tí. ¡Descúbrelos!'
     },
   ]
@@ -118,6 +118,10 @@ export class ParquesComponent {
     if (!popupWindow) {
       console.error('No se pudo abrir la nueva ventana o pestaña.');
     }
+  }
+
+  botonHotelesFunction(){
+    window.open('https://api.whatsapp.com/send/?phone=19546218999&text=Hola%21+Me+gustaría+conocer+las+ofertas+y+packs+de+los+hoteles+temáticos&type=phone_number&app_absent=0', '_blank')
   }
 
   changeBackground() {

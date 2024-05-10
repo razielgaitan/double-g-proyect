@@ -6,55 +6,43 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./rent-a-car.component.scss']
 })
 export class RentACarComponent implements OnInit {
-  /*
-  mosaicoImages: string[] = ['https://cdn.24net.cz/5/obrazek/ikonka-37505',
-  'https://hips.hearstapps.com/hmg-prod/images/2022-mercedes-benz-s500-4matic-109-1642184016.jpg?crop=0.591xw:0.665xh;0.137xw,0.274xh&resize=768:*',
-  'https://www.forbes.com/wheels/wp-content/uploads/2022/11/Best_Midsize_SUVs_2023_SEO.630.jpg',
-  'https://hips.hearstapps.com/hmg-prod/images/lipman-jl96651-64797ddda108f.jpg',
-  'https://www.chevrolet.com.ar/content/dam/chevrolet/mercosur/argentina/espanol/index/performance/performance-subcontent/02-images/2018-segmento-deportivos-masthead.jpg?imwidth=960',
-  'https://moneyinc.com/wp-content/uploads/2022/01/2022-Jeep-Wagoneer-750x422.jpg'
-  ];
-  mosaicoTexts: string[] = ['MID-SIZE', 'FULL-SIZE', 'SUV-MID-SIZE', 'MINIVAN', 'DEPORTIVOS', 'SUV-FULL-SIZE'];
-*/
-
-
   
   // Variables del slider
   carData = [
     {
       imageSrc: '../../../../assets/images/COROLLA.jpeg',
       name: 'MID-SIZE',
-      price: 'FULL ECONOMIC',
+      price: '2 grandes y 2 medianas',
       persons: '5'
     },
     {
       imageSrc: '../../../../assets/images/camry.jpeg',
       name: 'FULL-SIZE',
-      price: 'FULL ECONOMIC',
+      price: '2 grandes y 2 medianas',
       persons: '5'
     },
     {
       imageSrc: '../../../../assets/images/NISSANROGUE.jpg',
       name: 'SUV-MID-SIZE',
-      price: 'ECONOMIC',
+      price: '3 grandes y 2 medianas',
       persons: '5'
     },
     {
       imageSrc: '../../../../assets/images/HIGHLANDER.jpg',
       name: 'SUV-FULL-SIZE',
-      price: 'ECONOMIC',
+      price: '3 grandes y 3 medianas',
       persons: '7-8'
     },
     {
       imageSrc: '../../../../assets/images/Sienna.png',
       name: 'MINIVAN',
-      price: 'ECONOMIC',
+      price: '4 grandes y 2 medianas',
       persons: '7-8'
     },
     {
       imageSrc: '../../../../assets/images/2023-VICTORY.jpg',
       name: 'PREMIUM',
-      price: 'EXPENSIVE',
+      price: '2 medianas',
       persons: '2-3'
     },
   ];
@@ -73,7 +61,7 @@ export class RentACarComponent implements OnInit {
     {
       icon: 'ionPersonOutline',
       title: 'Atención personalizada',
-      text: 'Experimenta un servicio personalizado que se adapta a tus necesidades, asegurando una experiencia de conducción sin complicaciones.'
+      text: 'Experimenta un servicio personalizado que se adapte a tus necesidades. Disfruta de nuestro servicio de búsqueda en el aeropuerto para tu máxima comodidad.'
     },
   ] 
 

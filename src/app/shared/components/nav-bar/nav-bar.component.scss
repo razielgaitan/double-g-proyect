@@ -235,6 +235,19 @@ img:hover {
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .container-right {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container-right {
+    display: none;
+  }
+  .top-line {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 980px) {
   .contenedor {
     z-index: 1000;
@@ -248,9 +261,6 @@ img:hover {
     width: 100vw;
   }
 
-  .container-right {
-    display: none;
-  }
   .social-nav {
     content: "";
     position: absolute;
@@ -320,10 +330,6 @@ img:hover {
   .media-icons {
     padding-left: 0;
     display: none;
-  }
-
-  .top-line {
-    width: 100%;
   }
 
   .nav-list {
