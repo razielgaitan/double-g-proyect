@@ -12,7 +12,7 @@ export class RentACarComponent implements OnInit {
     {
       imageSrc: '../../../../assets/images/230614-Victory-VSummo-032 (1).jpg',
       name: 'MID-SIZE',
-      price: '2 grandes y 2 medianas',
+      price: '2 grandes y 2 carry on',
       persons: '5'
     },
     {
