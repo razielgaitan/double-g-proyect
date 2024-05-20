@@ -87,6 +87,25 @@
   margin-top: 1rem;
 }
 
+@media (max-height:720px) and (min-width: 768px) {
+  .content {
+  
+    h1 {
+      font-size: clamp(0.5rem, 0.3rem + 1vh, 1.5rem);
+    }
+    .description p {
+      font-size: clamp(0.5rem, 0.3rem + 1vh, 1rem);
+    }
+    .bottom-text {
+      font-size: clamp(0.6rem,0.3rem + 1vh,1.3rem);
+      font-weight: bold;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+  }
+}
+
 @media screen and (max-width: 768px) {
   .pop-up-container {
     flex-direction: column;
