@@ -10,19 +10,19 @@ export class RentACarComponent implements OnInit {
   // Variables del slider
   carData = [
     {
-      imageSrc: '../../../../assets/images/COROLLA.jpeg',
+      imageSrc: '../../../../assets/images/230614-Victory-VSummo-032 (1).jpg',
       name: 'MID-SIZE',
       price: '2 grandes y 2 medianas',
       persons: '5'
     },
     {
-      imageSrc: '../../../../assets/images/camry.jpeg',
+      imageSrc: '../../../../assets/images/DSC03438.jpg',
       name: 'FULL-SIZE',
       price: '2 grandes y 2 medianas',
       persons: '5'
     },
     {
-      imageSrc: '../../../../assets/images/NISSANROGUE.jpg',
+      imageSrc: '../../../../assets/images/DSC03392.jpg',
       name: 'SUV-MID-SIZE',
       price: '3 grandes y 2 medianas',
       persons: '5'
@@ -34,7 +34,7 @@ export class RentACarComponent implements OnInit {
       persons: '7-8'
     },
     {
-      imageSrc: '../../../../assets/images/Sienna.png',
+      imageSrc: '../../../../assets/images/230614-Victory-VSummo-017 (2).jpg',
       name: 'MINIVAN',
       price: '4 grandes y 2 medianas',
       persons: '7-8'

@@ -18,7 +18,7 @@ export class ExperienceSectionComponent implements AfterViewInit {
       imageSrc: '../../../../../assets/images/crucero.webp'
     },
     {
-      imageSrc: '../../../../assets/images/yate2.jpg'
+      imageSrc: '../../../../assets/images/yate4.jpeg'
     },
     {
       imageSrc: '../../../../../assets/images/alojamiento.jpg'
