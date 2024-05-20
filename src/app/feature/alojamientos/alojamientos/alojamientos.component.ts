@@ -25,11 +25,11 @@ export class AlojamientosComponent {
     },
   ]
 
-  mosaicoImages: string[] = ['https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
+  mosaicoImages: string[] = ['../../../../assets/images/MIAMIBEACH.jpeg',
     'https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_640,q_75,w_1000/https://assets.simpleviewcms.com/simpleview/image/upload/v1/clients/ftlauderdale/AJR_FTL_Beach_0364_1__02d4d0a7-c538-42dc-ae3d-89f575ba4bf8.png',
-    'https://static01.nyt.com/images/2021/11/06/multimedia/06sp-waterfront-hallandale-inyt2/06sp-waterfront-hallandale-inyt2-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
-    'https://secretescapes-web.imgix.net/hotels/4683/a96e3ca9_8c20_461c_8dee_6f4bebd84b06.jpg?w=640&h=459&fit=crop&crop=entropy&auto=format,compress',
-    'https://www.miamiandbeaches.com/getmedia/695d7afd-b742-4e22-87fd-f44da6fedec4/Sunny_Isles_Beach_aerial_pier_1440x900.jpg?width=1000&resizemode=force',
+    '../../../../assets/images/HALLANDALE.avif',
+    '../../../../assets/images/hollywood.jpg',
+    '../../../../assets/images/sunny isles.jpg',
     '../../../../assets/images/TAMPA.jpg',
     '../../../../assets/images/KISSIMEE.JPG',
     '../../../../assets/images/Naples.jpg',

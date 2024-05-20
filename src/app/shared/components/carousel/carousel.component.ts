@@ -50,7 +50,7 @@ export class CarouselComponent {
       link: '/luxury' 
     },
     { 
-      image: '../../../../assets/images/yate2.jpg', 
+      image: '../../../../assets/images/crucero-5.jpg', 
       title: 'Cruceros', 
       secTitle: 'Navega con Nosotros', 
       desc:'Embárcate en una experiencia inolvidable con nuestros servicios de cruceros. Ofrecemos una selección de cruceros que se adaptan a todos los gustos. Con comodidades de primera clase, entretenimiento de calidad y una atención excepcional, cada travesía se convierte en una escapada única.', 

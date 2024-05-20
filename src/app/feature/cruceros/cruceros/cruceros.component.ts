@@ -31,7 +31,7 @@ export class CrucerosComponent implements AfterViewInit, OnDestroy {
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
     {
-      imageSrc: '../../../../assets/images/yate2.jpeg',
+      imageSrc: '../../../../assets/images/crucero-5.jpg',
       name: 'Yate 2',
       loremText: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
     },
